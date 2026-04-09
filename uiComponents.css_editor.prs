@@ -1,0 +1,2059 @@
+<properties>
+  <properties class="linked-hash-map">
+    <entry>
+      <string>componentDependencies</string>
+      <table>
+        <format maxRecords="2147483647" reorderable="true">
+          <fields>
+            <field description="Имя" keyfield="true" name="name" type="S">
+              <help>Данное поле определяет имя переменной.</help>
+              <defaultValue/>
+            </field>
+            <field description="Ссылка" name="link" nullable="true" type="S">
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+          </fields>
+          <validators contentType="base64">HEseHQ==</validators>
+        </format>
+        <records>
+          <record>
+            <value name="name">platform-ts-sdk</value>
+            <value name="link">/web/static/js/ts-api.js</value>
+          </record>
+          <record>
+            <value name="name">utils</value>
+            <value name="link">/web/static/js/sdk-component.js</value>
+          </record>
+        </records>
+      </table>
+    </entry>
+    <entry>
+      <string>childInfo</string>
+      <table>
+        <format maxRecords="1" minRecords="1">
+          <fields>
+            <field description="Имя" name="name" notReplicated="true" type="S">
+              <validators contentType="base64">HEkeHRxMHjEgNTAdHFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+              <help>Имя объекта и соответствующего контекста, необходимое для ссылки на данный контекст из других частей системы. Оно должно соответствовать соглашениям по именованию контекстов. ПРЕДУПРЕЖДЕНИЕ: изменение имени приведет к неработоспособности всех ссылок на объект.</help>
+              <defaultValue/>
+            </field>
+            <field description="Описание" name="description" notReplicated="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <defaultValue/>
+            </field>
+            <field advanced="true" description="Источник" editor="code" name="source" type="S">
+              <editorOptions>typescript</editorOptions>
+              <defaultValue contentType="base64">aW1wb3J0IFJlYWN0IGZyb20gInJlYWN0IgppbXBvcnQge0Fic3RyYWN0V2ViQ29tcG9uZW50fSBmcm9tICJ1dGlscyIKCmNsYXNzIE1vZGVsIGV4dGVuZHMgQWJzdHJhY3RXZWJDb21wb25lbnQgaW1wbGVtZW50cyBXZWJDb21wb25lbnRNb2RlbCB7CiAgaW5pdCgpIHt9CiAgZGVzdHJveSgpIHt9Cn0KCmNvbnN0IENvbXBvbmVudDogUmVhY3QuRkM8Q3VzdG9tV3JhcHBlZENvbXBvbmVudFByb3BzPiA9ICh7IGNvbXBvbmVudCwgY29tcG9uZW50TW9kZWwsIHNvbWVWYXJpYWJsZSA9ICIiIH0pID0+IHsKICByZXR1cm4gPHNwYW4+SGVsbG8gV29ybGQg8J+agDwvc3Bhbj4KfTsKCnJlZ2lzdGVyTXlTZWxmKCRDT01QT05FTlRfTkFNRSwgQ29tcG9uZW50LCBNb2RlbCkK</defaultValue>
+            </field>
+            <field advanced="true" description="Скомпилированный Источник" name="compiledSource" nullable="true" type="S">
+              <defaultValue>import React from&quot;react&quot;;const Component=()=&gt;React.createElement(&quot;span&quot;,null,&quot;Hello World \u{1F680}&quot;);registerMySelf($COMPONENT_NAME,Component);</defaultValue>
+            </field>
+            <field description="sourceName" hidden="true" name="sourceName" nullable="true" type="S">
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+          </fields>
+        </format>
+        <records>
+          <record>
+            <value name="name">css_editor</value>
+            <value contentType="base64" name="source">aW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QsIHVzZVJlZiwgdXNlQ2FsbGJhY2sgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IEFic3RyYWN0V2ViQ29tcG9uZW50IH0gZnJvbSAidXRpbHMiOwoKCgpjbGFzcyBNb2RlbCBleHRlbmRzIEFic3RyYWN0V2ViQ29tcG9uZW50IGltcGxlbWVudHMgV2ViQ29tcG9uZW50TW9kZWwgewogIGluaXQoKSB7fQogIGRlc3Ryb3koKSB7fQp9Cgpjb25zdCBDb21wb25lbnQ6IFJlYWN0LkZDPEN1c3RvbVdyYXBwZWRDb21wb25lbnRQcm9wcz4gPSAoeyBjb21wb25lbnRNb2RlbCwgY3NzVXJsID0gIiIsIHN0eWxlcyA9ICIiIH0pID0+IHsKICBjb25zdCBlZGl0b3JSZWYgPSB1c2VSZWY8SFRNTERpdkVsZW1lbnQ+KG51bGwpOwogIGNvbnN0IGFjZUVkaXRvciA9IHVzZVJlZjxhbnk+KG51bGwpOwogIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOwogIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGU8c3RyaW5nIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2Nzc0NvbnRlbnQsIHNldENzc0NvbnRlbnRdID0gdXNlU3RhdGU8c3RyaW5nPigiLyog0J7QsdC90L7QstC40YLRjCDQtdGB0LvQuCDQv9GD0YHRgtC+ICovIik7CiAgY29uc3QgW3RoZW1lLCBzZXRUaGVtZV0gPSB1c2VTdGF0ZSgiY2hyb21lIik7CiAgY29uc3QgW2ZvbnRTaXplLCBzZXRGb250U2l6ZV0gPSB1c2VTdGF0ZSgxNCk7CiAgY29uc3QgW3Nob3dJbnZpc2libGVzLCBzZXRTaG93SW52aXNpYmxlc10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW3NhdmVkU3R5bGVzLCBzZXRTYXZlZFN0eWxlc10gPSB1c2VTdGF0ZTxzdHJpbmc+KCIiKTsgLy8g4oaQINC90L7QstC+0LUg0YHQvtGB0YLQvtGP0L3QuNC1CgogIC8vINCX0LDQs9GA0YPQt9C60LAgQ1NTICjQv9GA0Lgg0LjQt9C80LXQvdC10L3QuNC4IGNzc1VybCkKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgbG9hZENzcyA9IGFzeW5jICgpID0+IHsKICAgICAgdHJ5IHsKICAgICAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgICAgIHNldEVycm9yKG51bGwpOwogICAgICAgIGlmICghY3NzVXJsKSB7CiAgICAgICAgICBzZXRDc3NDb250ZW50KCIvKiDQntCx0L3QvtCy0LjRgtGMINC10YHQu9C4INC/0YPRgdGC0L4gKi8iKTsKICAgICAgICB9IGVsc2UgewogICAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChjc3NVcmwsIHsKICAgICAgICAgICAgY2FjaGU6ICJuby1zdG9yZSIgLy8g4oaQINC+0YLQutC70Y7Rh9Cw0LXQvCDQutGN0YgKICAgICAgICAgIH0pOwogICAgICAgICAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKGBIVFRQICR7cmVzcG9uc2Uuc3RhdHVzfWApOwogICAgICAgICAgc2V0Q3NzQ29udGVudChhd2FpdCByZXNwb25zZS50ZXh0KCkpOwogICAgICAgIH0KICAgICAgfSBjYXRjaCAoZXJyOiBhbnkpIHsKICAgICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSk7CiAgICAgICAgc2V0Q3NzQ29udGVudChgLyogRXJyb3I6ICR7ZXJyLm1lc3NhZ2V9ICovYCk7CiAgICAgIH0gZmluYWxseSB7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgIH0KICAgIH07CgogICAgbG9hZENzcygpOwogIH0sIFtjc3NVcmxdKTsKCiAgLy8g0JjQvdC40YbQuNCw0LvQuNC30LDRhtC40Y8g0YDQtdC00LDQutGC0L7RgNCwICjQvtC00LjQvSDRgNCw0Lcg0L/RgNC4INC80L7QvdGC0LjRgNC+0LLQsNC90LjQuCkKICB1c2VFZmZlY3QoKCkgPT4gewogICAgbGV0IGlzTW91bnRlZCA9IHRydWU7CgogICAgY29uc3QgaW5pdEVkaXRvciA9IGFzeW5jICgpID0+IHsKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCB3aW4gPSB3aW5kb3cgYXMgYW55OwogICAgICAgIGlmICghd2luLmFjZSkgewogICAgICAgICAgc2V0RXJyb3IoIkFjZSBub3QgbG9hZGVkIik7CiAgICAgICAgICBzZXRMb2FkaW5nKGZhbHNlKTsKICAgICAgICAgIHJldHVybjsKICAgICAgICB9CgogICAgICAgIGNvbnN0IGVkaXRvciA9IHdpbi5hY2UuZWRpdChlZGl0b3JSZWYuY3VycmVudCEpOwogICAgICAgIGFjZUVkaXRvci5jdXJyZW50ID0gZWRpdG9yOwoKICAgICAgICBlZGl0b3Iuc2V0VmFsdWUoY3NzQ29udGVudCwgLTEpOwogICAgICAgIGVkaXRvci5zZXNzaW9uLnNldE1vZGUoImFjZS9tb2RlL2NzcyIpOwoKICAgICAgICBlZGl0b3Iuc2V0T3B0aW9ucyh7CiAgICAgICAgICBmb250U2l6ZTogZm9udFNpemUgKyAicHgiLAogICAgICAgICAgZm9udEZhbWlseTogIidNb25hY28nLCAnTWVubG8nLCAnVWJ1bnR1IE1vbm8nLCBtb25vc3BhY2UiLAogICAgICAgICAgc2hvd0xpbmVOdW1iZXJzOiB0cnVlLAogICAgICAgICAgdXNlV29ya2VyOiB0cnVlLAogICAgICAgICAgZW5hYmxlQmFzaWNBdXRvY29tcGxldGlvbjogdHJ1ZSwKICAgICAgICAgIGVuYWJsZUxpdmVBdXRvY29tcGxldGlvbjogdHJ1ZSwKICAgICAgICAgIGVuYWJsZVNuaXBwZXRzOiB0cnVlLAogICAgICAgICAgc2hvd0d1dHRlcjogdHJ1ZSwKICAgICAgICAgIGhpZ2hsaWdodEFjdGl2ZUxpbmU6IHRydWUsCiAgICAgICAgICBkaXNwbGF5SW5kZW50R3VpZGVzOiB0cnVlLAogICAgICAgICAgc2hvd0ludmlzaWJsZXM6IHNob3dJbnZpc2libGVzLAogICAgICAgICAgYW5pbWF0ZWRTY3JvbGw6IGZhbHNlLAogICAgICAgICAgc2Nyb2xsUGFzdEVuZDogMAogICAgICAgIH0pOwoKICAgICAgICBlZGl0b3Iuc2V0VGhlbWUoYGFjZS90aGVtZS8ke3RoZW1lfWApOwoKICAgICAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgICAgIGlmIChpc01vdW50ZWQgJiYgZWRpdG9yKSB7CiAgICAgICAgICAgIGVkaXRvci5yZXNpemUodHJ1ZSk7CiAgICAgICAgICB9CiAgICAgICAgfSwgMzApOwoKICAgICAgICBpZiAoaXNNb3VudGVkKSBzZXRMb2FkaW5nKGZhbHNlKTsKICAgICAgfSBjYXRjaCAoZXJyOiBhbnkpIHsKICAgICAgICBpZiAoaXNNb3VudGVkKSB7CiAgICAgICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSk7CiAgICAgICAgICBzZXRMb2FkaW5nKGZhbHNlKTsKICAgICAgICB9CiAgICAgIH0KICAgIH07CgogICAgaW5pdEVkaXRvcigpOwoKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIGlzTW91bnRlZCA9IGZhbHNlOwogICAgICBpZiAoYWNlRWRpdG9yLmN1cnJlbnQpIHsKICAgICAgICBhY2VFZGl0b3IuY3VycmVudC5kZXN0cm95KCk7CiAgICAgICAgYWNlRWRpdG9yLmN1cnJlbnQgPSBudWxsOwogICAgICB9CiAgICB9OwogIH0sIFtdKTsgLy8g4oaQINCi0L7Qu9GM0LrQviDQv9GA0Lgg0LzQvtC90YLQuNGA0L7QstCw0L3QuNC4CgogIC8vINCe0LHQvdC+0LLQu9C10L3QuNC1INC60L7QvdGC0LXQvdGC0LAg0YDQtdC00LDQutGC0L7RgNCwINC/0YDQuCDQuNC30LzQtdC90LXQvdC40LggY3NzQ29udGVudAogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoYWNlRWRpdG9yLmN1cnJlbnQgJiYgIWxvYWRpbmcpIHsKICAgICAgY29uc3QgZWRpdG9yID0gYWNlRWRpdG9yLmN1cnJlbnQ7CiAgICAgIC8vINCh0L7RhdGA0LDQvdGP0LXQvCDRgdC60YDQvtC70Lsg0Lgg0LrRg9GA0YHQvtGACiAgICAgIGNvbnN0IHNjcm9sbFRvcCA9IGVkaXRvci5yZW5kZXJlci5zY3JvbGxUb3A7CiAgICAgIGNvbnN0IHNjcm9sbExlZnQgPSBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsTGVmdDsKICAgICAgY29uc3QgY3Vyc29yID0gZWRpdG9yLmdldEN1cnNvclBvc2l0aW9uKCk7CgogICAgICAvLyDQntCx0L3QvtCy0LvRj9C10Lwg0LfQvdCw0YfQtdC90LjQtQogICAgICBlZGl0b3Iuc2Vzc2lvbi5zZXRWYWx1ZShjc3NDb250ZW50KTsKCiAgICAgIC8vINCS0L7RgdGB0YLQsNC90LDQstC70LjQstCw0LXQvCDQv9C+0LfQuNGG0LjQuAogICAgICBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsVG9wID0gc2Nyb2xsVG9wOwogICAgICBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsTGVmdCA9IHNjcm9sbExlZnQ7CiAgICAgIGVkaXRvci5tb3ZlQ3Vyc29yVG9Qb3NpdGlvbihjdXJzb3IpOwoKICAgICAgLy8g0J7QsdC90L7QstC70Y/QtdC8IGxheW91dAogICAgICBlZGl0b3IucmVuZGVyZXIudXBkYXRlRnVsbCgpOwogICAgfQogIH0sIFtjc3NDb250ZW50LCBsb2FkaW5nXSk7CgogIC8vINCe0LHQvdC+0LLQu9C10L3QuNC1INGC0LXQvNGLICjQvtGC0LTQtdC70YzQvdC+KQogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoYWNlRWRpdG9yLmN1cnJlbnQpIHsKICAgICAgYWNlRWRpdG9yLmN1cnJlbnQuc2V0VGhlbWUoYGFjZS90aGVtZS8ke3RoZW1lfWApOwogICAgfQogIH0sIFt0aGVtZV0pOwoKICAvLyDQntCx0L3QvtCy0LvQtdC90LjQtSDRgNCw0LfQvNC10YDQsCDRiNGA0LjRhNGC0LAgKNC+0YLQtNC10LvRjNC90L4pCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmIChhY2VFZGl0b3IuY3VycmVudCkgewogICAgICBhY2VFZGl0b3IuY3VycmVudC5zZXRGb250U2l6ZShmb250U2l6ZSArICJweCIpOwogICAgfQogIH0sIFtmb250U2l6ZV0pOwoKICAvLyDQntCx0L3QvtCy0LvQtdC90LjQtSDQvdC10LLQuNC00LjQvNGL0YUg0YHQuNC80LLQvtC70L7QsiAo0L7RgtC00LXQu9GM0L3QvikKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKGFjZUVkaXRvci5jdXJyZW50KSB7CiAgICAgIGFjZUVkaXRvci5jdXJyZW50LnNldE9wdGlvbigic2hvd0ludmlzaWJsZXMiLCBzaG93SW52aXNpYmxlcyk7CiAgICB9CiAgfSwgW3Nob3dJbnZpc2libGVzXSk7CgogIC8vINCa0LDRgdGC0L7QvNC90YvQtSDRhNGD0L3QutGG0LjQuCDQtNC70Y8g0YHQstC+0YDQsNGH0LjQstCw0L3QuNGPINGC0L7Qu9GM0LrQviDRgNC10LPQuNC+0L3QvtCyCiAgY29uc3QgZm9sZE9ubHlSZWdpb25zID0gdXNlQ2FsbGJhY2soKCkgPT4gewogICAgY29uc3QgZWRpdG9yID0gYWNlRWRpdG9yLmN1cnJlbnQ7CiAgICBpZiAoIWVkaXRvcikgcmV0dXJuOwoKICAgIGNvbnN0IHNlc3Npb24gPSBlZGl0b3Iuc2Vzc2lvbjsKICAgIGNvbnN0IGxlbmd0aCA9IHNlc3Npb24uZ2V0TGVuZ3RoKCk7CgogICAgZm9yIChsZXQgcm93ID0gMDsgcm93IDwgbGVuZ3RoOyByb3crKykgewogICAgICBjb25zdCBsaW5lID0gc2Vzc2lvbi5nZXRMaW5lKHJvdyk7CiAgICAgIGlmICgvXlxzKlwvXCojcmVnaW9uXGIvLnRlc3QobGluZSkpIHsKICAgICAgICBjb25zdCBmb2xkV2lkZ2V0ID0gc2Vzc2lvbi5nZXRGb2xkV2lkZ2V0KHJvdyk7CiAgICAgICAgaWYgKGZvbGRXaWRnZXQgPT09ICJzdGFydCIgfHwgZm9sZFdpZGdldCA9PT0gIm1hcmtiZWdpbiIpIHsKICAgICAgICAgIGNvbnN0IHJhbmdlID0gc2Vzc2lvbi5nZXRGb2xkV2lkZ2V0UmFuZ2Uocm93KTsKICAgICAgICAgIGlmIChyYW5nZSAmJiAhc2Vzc2lvbi5nZXRGb2xkQXQocm93LCAwKSkgewogICAgICAgICAgICAvLyDQodC+0YXRgNCw0L3Rj9C10Lwg0YHQutGA0L7Qu9C7INC/0LXRgNC10LQg0YHQstC+0YDQsNGH0LjQstCw0L3QuNC10LwKICAgICAgICAgICAgY29uc3Qgc2Nyb2xsVG9wID0gZWRpdG9yLnJlbmRlcmVyLnNjcm9sbFRvcDsKICAgICAgICAgICAgZWRpdG9yLnNlc3Npb24uYWRkRm9sZCgiLi4uIiwgcmFuZ2UpOwogICAgICAgICAgICBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsVG9wID0gc2Nyb2xsVG9wOwogICAgICAgICAgfQogICAgICAgIH0KICAgICAgfQogICAgfQogIH0sIFtdKTsKCiAgY29uc3QgdW5mb2xkT25seVJlZ2lvbnMgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBjb25zdCBlZGl0b3IgPSBhY2VFZGl0b3IuY3VycmVudDsKICAgIGlmICghZWRpdG9yKSByZXR1cm47CgogICAgY29uc3Qgc2Vzc2lvbiA9IGVkaXRvci5zZXNzaW9uOwogICAgY29uc3QgZm9sZHMgPSBzZXNzaW9uLmdldEFsbEZvbGRzKCk7CiAgICBmb2xkcy5mb3JFYWNoKChmb2xkOiBhbnkpID0+IHsKICAgICAgY29uc3Qgc3RhcnRSb3cgPSBmb2xkLnN0YXJ0LnJvdzsKICAgICAgY29uc3QgbGluZSA9IHNlc3Npb24uZ2V0TGluZShzdGFydFJvdyk7CiAgICAgIGlmIChsaW5lICYmIC9eXHMqXC9cKiNyZWdpb25cYi8udGVzdChsaW5lKSkgewogICAgICAgIC8vINCh0L7RhdGA0LDQvdGP0LXQvCDRgdC60YDQvtC70Lsg0L/QtdGA0LXQtCDRgNCw0LfQstC+0YDQsNGH0LjQstCw0L3QuNC10LwKICAgICAgICBjb25zdCBzY3JvbGxUb3AgPSBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsVG9wOwogICAgICAgIHNlc3Npb24ucmVtb3ZlRm9sZChmb2xkKTsKICAgICAgICBlZGl0b3IucmVuZGVyZXIuc2Nyb2xsVG9wID0gc2Nyb2xsVG9wOwogICAgICB9CiAgICB9KTsKICB9LCBbXSk7CgogIGNvbnN0IGhhbmRsZVNhdmUgPSAoKSA9PiB7CiAgaWYgKGFjZUVkaXRvci5jdXJyZW50KSB7CiAgICBjb25zdCBjb250ZW50ID0gYWNlRWRpdG9yLmN1cnJlbnQuZ2V0VmFsdWUoKTsKICAgIGNvbXBvbmVudE1vZGVsLnNldFZhcmlhYmxlKCdzdHlsZXMnLCBbeyBzdHlsZXM6IGNvbnRlbnQgfV0pOwogIH0KfTsKCiAgY29uc3QgaGFuZGxlRmluZCA9IHVzZUNhbGxiYWNrKCgpID0+IHsKICAgIGFjZUVkaXRvci5jdXJyZW50Py5leGVjQ29tbWFuZCgiZmluZCIpOwogIH0sIFtdKTsKCiAgY29uc3QgaGFuZGxlUmVsb2FkID0gdXNlQ2FsbGJhY2soKCkgPT4gewogICAgY29uc3QgbG9hZENzcyA9IGFzeW5jICgpID0+IHsKICAgICAgdHJ5IHsKICAgICAgICBzZXRMb2FkaW5nKHRydWUpOwogICAgICAgIHNldEVycm9yKG51bGwpOwogICAgICAgIGlmICghY3NzVXJsKSB7CiAgICAgICAgICBzZXRDc3NDb250ZW50KCIvKiDQntCx0L3QvtCy0LjRgtGMINC10YHQu9C4INC/0YPRgdGC0L4gKi8iKTsKICAgICAgICB9IGVsc2UgewogICAgICAgICAgLy8g8J+UpSDQlNCe0JHQkNCS0JvQldCdIGNhY2hlOiAibm8tc3RvcmUiINC60LDQuiDQsiDQvtGB0L3QvtCy0L3QvtC8IHVzZUVmZmVjdAogICAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChjc3NVcmwsIHsKICAgICAgICAgICAgY2FjaGU6ICJuby1zdG9yZSIgLy8g4oaQINC+0YLQutC70Y7Rh9Cw0LXQvCDQutGN0YgKICAgICAgICAgIH0pOwogICAgICAgICAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKGBIVFRQICR7cmVzcG9uc2Uuc3RhdHVzfWApOwogICAgICAgICAgc2V0Q3NzQ29udGVudChhd2FpdCByZXNwb25zZS50ZXh0KCkpOwogICAgICAgIH0KICAgICAgfSBjYXRjaCAoZXJyOiBhbnkpIHsKICAgICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSk7CiAgICAgICAgc2V0Q3NzQ29udGVudChgLyogRXJyb3I6ICR7ZXJyLm1lc3NhZ2V9ICovYCk7CiAgICAgIH0gZmluYWxseSB7CiAgICAgICAgc2V0TG9hZGluZyhmYWxzZSk7CiAgICAgIH0KICAgIH07CgogICAgbG9hZENzcygpOwogIH0sIFtjc3NVcmxdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgc3R5bGU9e3sKICAgICAgaGVpZ2h0OiAiMTAwJSIsCiAgICAgIHdpZHRoOiAiMTAwJSIsCiAgICAgIGRpc3BsYXk6ICJmbGV4IiwKICAgICAgZmxleERpcmVjdGlvbjogImNvbHVtbiIsCiAgICAgIGJhY2tncm91bmRDb2xvcjogIndoaXRlIgogICAgfX0+CiAgICAgIDxkaXYgc3R5bGU9e3sKICAgICAgICBwYWRkaW5nOiAiOHB4IDEycHgiLAogICAgICAgIGRpc3BsYXk6ICJmbGV4IiwKICAgICAgICBqdXN0aWZ5Q29udGVudDogInNwYWNlLWJldHdlZW4iLAogICAgICAgIGFsaWduSXRlbXM6ICJjZW50ZXIiLAogICAgICAgIGZsZXhXcmFwOiAid3JhcCIsCiAgICAgICAgZ2FwOiAiOHB4IiwKICAgICAgICBmbGV4U2hyaW5rOiAwCiAgICAgIH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogImZsZXgiLCBhbGlnbkl0ZW1zOiAiY2VudGVyIiwgZ2FwOiAiMTJweCIsIGZsZXhXcmFwOiAid3JhcCIgfX0+CiAgICAgICAgICA8c3Ryb25nPgogICAgICAgICAgICB7bG9hZGluZyA/ICLij7MgTG9hZGluZy4uLiIgOiAKICAgICAgICAgICAgIGVycm9yID8gYOKdjCBFcnJvcmAgOiAKICAgICAgICAgICAgIGDwn5OdICR7Y3NzVXJsIHx8ICJMb2NhbCBDU1MifWB9CiAgICAgICAgICA8L3N0cm9uZz4KICAgICAgICA8L2Rpdj4KICAgICAgICAKICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICJmbGV4IiwgZ2FwOiAiNnB4IiwgZmxleFdyYXA6ICJ3cmFwIiB9fT4KICAgICAgICAgIDxzZWxlY3QgY2xhc3NOYW1lPXsnYWdnLWJ0biBzZWNvbmRhcnknfSAKICAgICAgICAgICAgdmFsdWU9e3RoZW1lfSAKICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRUaGVtZShlLnRhcmdldC52YWx1ZSl9IAogICAgICAgICAgPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJjaHJvbWUiPkNocm9tZTwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJtb25va2FpIj5Nb25va2FpPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9ImdpdGh1YiI+R2l0SHViPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InRvbW9ycm93Ij5Ub21vcnJvdzwvb3B0aW9uPgogICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgICAKICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBhdXhpbGlhcnknfSBvbkNsaWNrPXsoKSA9PiBzZXRGb250U2l6ZShwcmV2ID0+IE1hdGgubWF4KHByZXYgLSAxLCAxMCkpfT5BLTwvYnV0dG9uPgogICAgICAgICAgPHNwYW4gc3R5bGU9e3sgZm9udFNpemU6ICIxMnB4IiwgbGluZUhlaWdodDogIjMycHgiIH19Pntmb250U2l6ZX1weDwvc3Bhbj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBhdXhpbGlhcnknfSBvbkNsaWNrPXsoKSA9PiBzZXRGb250U2l6ZShwcmV2ID0+IE1hdGgubWluKHByZXYgKyAxLCAyNCkpfT5BKzwvYnV0dG9uPgogICAgICAgICAgCiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT17J2FnZy1idG4gc2Vjb25kYXJ5J30gCiAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFNob3dJbnZpc2libGVzKHByZXYgPT4gIXByZXYpfSAKICAgICAgICAgID4KICAgICAgICAgICAge3Nob3dJbnZpc2libGVzID8gIvCfmYgiIDogIvCfkYHvuI8ifQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAKICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBzZWNvbmRhcnknfSBvbkNsaWNrPXtmb2xkT25seVJlZ2lvbnN9PvCfk4Eg0KHQutGA0YvRgtGMIHJlZ2lvbnM8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBzZWNvbmRhcnknfSBvbkNsaWNrPXt1bmZvbGRPbmx5UmVnaW9uc30+8J+TgiDQoNCw0YHQutGA0YvRgtGMIHJlZ2lvbnM8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBkZWZhdWx0J30gb25DbGljaz17aGFuZGxlRmluZH0+8J+UjSDQndCw0LnRgtC4PC9idXR0b24+CiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT17J2FnZy1idG4gc2Vjb25kYXJ5J30gb25DbGljaz17aGFuZGxlUmVsb2FkfT7wn5SEINCe0LHQvdC+0LLQuNGC0Yw8L2J1dHRvbj4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPXsnYWdnLWJ0biBtYWluJ30gb25DbGljaz17aGFuZGxlU2F2ZX0+8J+SviDQodC+0YXRgNCw0L3QuNGC0Yw8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IHJlZj17ZWRpdG9yUmVmfSBzdHlsZT17eyBmbGV4OiAxLCBtaW5IZWlnaHQ6IDAgfX0gLz4KCiAgICAgIHtsb2FkaW5nICYmIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogIjEwcHgifX0+4o+zINCX0LDQs9GA0YPQt9C60LAuLi48L2Rpdj59CiAgICAgIHtlcnJvciAmJiA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICIxMHB4In19PuKdjCB7ZXJyb3J9PC9kaXY+fQogICAgPC9kaXY+CiAgKTsKfTsKCnJlZ2lzdGVyTXlTZWxmKCRDT01QT05FTlRfTkFNRSwgQ29tcG9uZW50LCBNb2RlbCk7</value>
+            <value name="compiledSource">import React,{useState,useEffect,useRef,useCallback}from&quot;react&quot;;import{AbstractWebComponent}from&quot;utils&quot;;class Model extends AbstractWebComponent{init(){}destroy(){}}const Component=({componentModel,cssUrl=&quot;&quot;,styles=&quot;&quot;})=&gt;{const editorRef=useRef(null),aceEditor=useRef(null),[loading,setLoading]=useState(!0),[error,setError]=useState(null),[cssContent,setCssContent]=useState(&quot;/* \u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C \u0435\u0441\u043B\u0438 \u043F\u0443\u0441\u0442\u043E */&quot;),[theme,setTheme]=useState(&quot;chrome&quot;),[fontSize,setFontSize]=useState(14),[showInvisibles,setShowInvisibles]=useState(!1),[savedStyles,setSavedStyles]=useState(&quot;&quot;);useEffect(()=&gt;{(async()=&gt;{try{if(setLoading(!0),setError(null),!cssUrl)setCssContent(&quot;/* \u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C \u0435\u0441\u043B\u0438 \u043F\u0443\u0441\u0442\u043E */&quot;);else{const response=await fetch(cssUrl,{cache:&quot;no-store&quot;});if(!response.ok)throw new Error(`HTTP ${response.status}`);setCssContent(await response.text())}}catch(err){setError(err.message),setCssContent(`/* Error: ${err.message} */`)}finally{setLoading(!1)}})()},[cssUrl]),useEffect(()=&gt;{let isMounted=!0;return(async()=&gt;{try{const win=window;if(!win.ace){setError(&quot;Ace not loaded&quot;),setLoading(!1);return}const editor=win.ace.edit(editorRef.current);aceEditor.current=editor,editor.setValue(cssContent,-1),editor.session.setMode(&quot;ace/mode/css&quot;),editor.setOptions({fontSize:fontSize+&quot;px&quot;,fontFamily:&quot;&apos;Monaco&apos;, &apos;Menlo&apos;, &apos;Ubuntu Mono&apos;, monospace&quot;,showLineNumbers:!0,useWorker:!0,enableBasicAutocompletion:!0,enableLiveAutocompletion:!0,enableSnippets:!0,showGutter:!0,highlightActiveLine:!0,displayIndentGuides:!0,showInvisibles,animatedScroll:!1,scrollPastEnd:0}),editor.setTheme(`ace/theme/${theme}`),setTimeout(()=&gt;{isMounted&amp;&amp;editor&amp;&amp;editor.resize(!0)},30),isMounted&amp;&amp;setLoading(!1)}catch(err){isMounted&amp;&amp;(setError(err.message),setLoading(!1))}})(),()=&gt;{isMounted=!1,aceEditor.current&amp;&amp;(aceEditor.current.destroy(),aceEditor.current=null)}},[]),useEffect(()=&gt;{if(aceEditor.current&amp;&amp;!loading){const editor=aceEditor.current,scrollTop=editor.renderer.scrollTop,scrollLeft=editor.renderer.scrollLeft,cursor=editor.getCursorPosition();editor.session.setValue(cssContent),editor.renderer.scrollTop=scrollTop,editor.renderer.scrollLeft=scrollLeft,editor.moveCursorToPosition(cursor),editor.renderer.updateFull()}},[cssContent,loading]),useEffect(()=&gt;{aceEditor.current&amp;&amp;aceEditor.current.setTheme(`ace/theme/${theme}`)},[theme]),useEffect(()=&gt;{aceEditor.current&amp;&amp;aceEditor.current.setFontSize(fontSize+&quot;px&quot;)},[fontSize]),useEffect(()=&gt;{aceEditor.current&amp;&amp;aceEditor.current.setOption(&quot;showInvisibles&quot;,showInvisibles)},[showInvisibles]);const foldOnlyRegions=useCallback(()=&gt;{const editor=aceEditor.current;if(!editor)return;const session=editor.session,length=session.getLength();for(let row=0;row&lt;length;row++){const line=session.getLine(row);if(/^\s*\/\*#region\b/.test(line)){const foldWidget=session.getFoldWidget(row);if(foldWidget===&quot;start&quot;||foldWidget===&quot;markbegin&quot;){const range=session.getFoldWidgetRange(row);if(range&amp;&amp;!session.getFoldAt(row,0)){const scrollTop=editor.renderer.scrollTop;editor.session.addFold(&quot;...&quot;,range),editor.renderer.scrollTop=scrollTop}}}}},[]),unfoldOnlyRegions=useCallback(()=&gt;{const editor=aceEditor.current;if(!editor)return;const session=editor.session;session.getAllFolds().forEach(fold=&gt;{const startRow=fold.start.row,line=session.getLine(startRow);if(line&amp;&amp;/^\s*\/\*#region\b/.test(line)){const scrollTop=editor.renderer.scrollTop;session.removeFold(fold),editor.renderer.scrollTop=scrollTop}})},[]),handleSave=()=&gt;{if(aceEditor.current){const content=aceEditor.current.getValue();componentModel.setVariable(&quot;styles&quot;,[{styles:content}])}},handleFind=useCallback(()=&gt;{aceEditor.current?.execCommand(&quot;find&quot;)},[]),handleReload=useCallback(()=&gt;{(async()=&gt;{try{if(setLoading(!0),setError(null),!cssUrl)setCssContent(&quot;/* \u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C \u0435\u0441\u043B\u0438 \u043F\u0443\u0441\u0442\u043E */&quot;);else{const response=await fetch(cssUrl,{cache:&quot;no-store&quot;});if(!response.ok)throw new Error(`HTTP ${response.status}`);setCssContent(await response.text())}}catch(err){setError(err.message),setCssContent(`/* Error: ${err.message} */`)}finally{setLoading(!1)}})()},[cssUrl]);return React.createElement(&quot;div&quot;,{style:{height:&quot;100%&quot;,width:&quot;100%&quot;,display:&quot;flex&quot;,flexDirection:&quot;column&quot;,backgroundColor:&quot;white&quot;}},React.createElement(&quot;div&quot;,{style:{padding:&quot;8px 12px&quot;,display:&quot;flex&quot;,justifyContent:&quot;space-between&quot;,alignItems:&quot;center&quot;,flexWrap:&quot;wrap&quot;,gap:&quot;8px&quot;,flexShrink:0}},React.createElement(&quot;div&quot;,{style:{display:&quot;flex&quot;,alignItems:&quot;center&quot;,gap:&quot;12px&quot;,flexWrap:&quot;wrap&quot;}},React.createElement(&quot;strong&quot;,null,loading?&quot;\u23F3 Loading...&quot;:error?&quot;\u274C Error&quot;:`\u{1F4DD} ${cssUrl||&quot;Local CSS&quot;}`)),React.createElement(&quot;div&quot;,{style:{display:&quot;flex&quot;,gap:&quot;6px&quot;,flexWrap:&quot;wrap&quot;}},React.createElement(&quot;select&quot;,{className:&quot;agg-btn secondary&quot;,value:theme,onChange:e=&gt;setTheme(e.target.value)},React.createElement(&quot;option&quot;,{value:&quot;chrome&quot;},&quot;Chrome&quot;),React.createElement(&quot;option&quot;,{value:&quot;monokai&quot;},&quot;Monokai&quot;),React.createElement(&quot;option&quot;,{value:&quot;github&quot;},&quot;GitHub&quot;),React.createElement(&quot;option&quot;,{value:&quot;tomorrow&quot;},&quot;Tomorrow&quot;)),React.createElement(&quot;button&quot;,{className:&quot;agg-btn auxiliary&quot;,onClick:()=&gt;setFontSize(prev=&gt;Math.max(prev-1,10))},&quot;A-&quot;),React.createElement(&quot;span&quot;,{style:{fontSize:&quot;12px&quot;,lineHeight:&quot;32px&quot;}},fontSize,&quot;px&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn auxiliary&quot;,onClick:()=&gt;setFontSize(prev=&gt;Math.min(prev+1,24))},&quot;A+&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn secondary&quot;,onClick:()=&gt;setShowInvisibles(prev=&gt;!prev)},showInvisibles?&quot;\u{1F648}&quot;:&quot;\u{1F441}\uFE0F&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn secondary&quot;,onClick:foldOnlyRegions},&quot;\u{1F4C1} \u0421\u043A\u0440\u044B\u0442\u044C regions&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn secondary&quot;,onClick:unfoldOnlyRegions},&quot;\u{1F4C2} \u0420\u0430\u0441\u043A\u0440\u044B\u0442\u044C regions&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn default&quot;,onClick:handleFind},&quot;\u{1F50D} \u041D\u0430\u0439\u0442\u0438&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn secondary&quot;,onClick:handleReload},&quot;\u{1F504} \u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C&quot;),React.createElement(&quot;button&quot;,{className:&quot;agg-btn main&quot;,onClick:handleSave},&quot;\u{1F4BE} \u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C&quot;))),React.createElement(&quot;div&quot;,{ref:editorRef,style:{flex:1,minHeight:0}}),loading&amp;&amp;React.createElement(&quot;div&quot;,{style:{padding:&quot;10px&quot;}},&quot;\u23F3 \u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...&quot;),error&amp;&amp;React.createElement(&quot;div&quot;,{style:{padding:&quot;10px&quot;}},&quot;\u274C &quot;,error))};registerMySelf($COMPONENT_NAME,Component,Model);
+</value>
+            <value name="sourceName">e8045489-9b76-4f68-9aa9-a07851f06c6b</value>
+          </record>
+        </records>
+      </table>
+    </entry>
+    <entry>
+      <string>componentVariables</string>
+      <table>
+        <format maxRecords="2147483647" reorderable="true">
+          <fields>
+            <field description="Имя" keyfield="true" name="name" type="S">
+              <validators contentType="base64">HEweMSA1MB0cUh5cdyteXtCY0LzRjyDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0LvQsNGC0LjQvdGB0LrQuNC1INCx0YPQutCy0YssINGG0LjRhNGA0Ysg0Lgg0YHQuNC80LLQvtC70Ysg0L/QvtC00YfQtdGA0LrQuNCy0LDQvdC40Y8d</validators>
+              <help>Данное поле определяет имя переменной.</help>
+              <defaultValue/>
+            </field>
+            <field description="Описание" name="description" nullable="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <help>Данное поле применяется для задания удобочитаемого для человека описания переменной.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Формат" name="format" type="T">
+              <help>Данное поле задает формат переменной.</help>
+              <defaultValue>
+                <table>
+                  <format maxRecords="1" minRecords="1">
+                    <fields>
+                      <field description="Минимальное количество записей" name="minRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <selectionValues>
+                          <option description="Не ограничено">2147483647</option>
+                        </selectionValues>
+                        <defaultValue>2147483647</defaultValue>
+                      </field>
+                      <field description="Поля" name="fields" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field hidden="true" name="oldname" type="S">
+                                  <defaultValue/>
+                                </field>
+                                <field description="Имя" keyfield="true" name="name" type="S">
+                                  <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Тип" name="type" type="S">
+                                  <selectionValues>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Булевский">B</option>
+                                    <option description="Длинный целочисленный">L</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Дата">D</option>
+                                    <option description="Табличный">T</option>
+                                    <option description="Цвет">C</option>
+                                    <option description="Бинарный блок">A</option>
+                                  </selectionValues>
+                                  <defaultValue>I</defaultValue>
+                                </field>
+                                <field description="Описание" name="description" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Неизменяемое" name="readonly" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Может быть NULL" name="nullable" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Ключевое" name="key" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Допустимые значения" name="selvals" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Описание" name="description" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                        <validators contentType="base64">HEseHQ==</validators>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Встроенное" name="inline" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                  <selectionValues>
+                                    <option description="По умолчанию">
+                                      <nullValue/>
+                                    </option>
+                                    <option description="Список">list</option>
+                                    <option description="Дата">date</option>
+                                    <option description="Время">time</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Формат значения">formatString</option>
+                                    <option description="Экземпляр класса">instance</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Шрифт">font</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Ссылка">reference</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Редактор кода">code</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Временной диапазон">dateRange</option>
+                                  </selectionValues>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Тип" name="validator" nullable="true" type="S">
+                                            <selectionValues>
+                                              <option description="По умолчанию">
+                                                <nullValue/>
+                                              </option>
+                                              <option description="Валидатор идентификаторов">I</option>
+                                              <option description="Валидатор лимитов">L</option>
+                                              <option description="Ненулевой Валидатор">N</option>
+                                              <option description="Валидатор регулярных выражений">R</option>
+                                              <option description="Валидатор выражений">E</option>
+                                            </selectionValues>
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Параметры" name="options" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Группа" name="group" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                              </fields>
+                              <bindings>
+                                <binding>
+                                  <reference>editorOptions</reference>
+                                  <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                                </binding>
+                                <binding>
+                                  <reference>editor#choices</reference>
+                                  <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                                </binding>
+                              </bindings>
+                              <validators contentType="base64">HEseHQ==</validators>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Сортировка разрешена" name="reorderable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Привязки" name="bindings" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field description="Цель" name="target" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Выражение" editor="expression" name="expression" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                              </fields>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                        <help>Закодированный формат таблицы</help>
+                        <defaultValue/>
+                      </field>
+                      <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                        <defaultValue>
+                          <nullValue/>
+                        </defaultValue>
+                      </field>
+                    </fields>
+                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                  </format>
+                  <records>
+                    <record/>
+                  </records>
+                </table>
+              </defaultValue>
+            </field>
+            <field description="Изменяемая" name="writable" type="B">
+              <help>Флаг, указывающий на то, что переменная перезаписываемая.</help>
+              <defaultValue>0</defaultValue>
+            </field>
+            <field description="Справка" name="help" nullable="true" type="S">
+              <help>Данное поле используется для задания подробного описания переменной.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Группа" name="group" nullable="true" type="S">
+              <help>Данное поле определяет к какой группе относится текущая переменная. Может быть NULL, если переменная не входит в какую-либо группу.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+          </fields>
+          <validators contentType="base64">HEseHQ==</validators>
+        </format>
+        <records>
+          <record>
+            <value name="name">cssUrl</value>
+            <value name="format">
+              <table>
+                <format maxRecords="1" minRecords="1">
+                  <fields>
+                    <field description="Минимальное количество записей" name="minRecords" type="I">
+                      <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                      <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                      <selectionValues>
+                        <option description="Не ограничено">2147483647</option>
+                      </selectionValues>
+                      <defaultValue>2147483647</defaultValue>
+                    </field>
+                    <field description="Поля" name="fields" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647" reorderable="true">
+                            <fields>
+                              <field hidden="true" name="oldname" type="S">
+                                <defaultValue/>
+                              </field>
+                              <field description="Имя" keyfield="true" name="name" type="S">
+                                <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                <defaultValue/>
+                              </field>
+                              <field description="Тип" name="type" type="S">
+                                <selectionValues>
+                                  <option description="Целочисленный">I</option>
+                                  <option description="Строковый">S</option>
+                                  <option description="Булевский">B</option>
+                                  <option description="Длинный целочисленный">L</option>
+                                  <option description="С плавающей запятой">F</option>
+                                  <option description="С плавающей запятой (64-бит)">E</option>
+                                  <option description="Дата">D</option>
+                                  <option description="Табличный">T</option>
+                                  <option description="Цвет">C</option>
+                                  <option description="Бинарный блок">A</option>
+                                </selectionValues>
+                                <defaultValue>I</defaultValue>
+                              </field>
+                              <field description="Описание" name="description" nullable="true" type="S">
+                                <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Неизменяемое" name="readonly" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Может быть NULL" name="nullable" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Ключевое" name="key" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Допустимые значения" name="selvals" type="T">
+                                <defaultValue>
+                                  <table>
+                                    <format maxRecords="2147483647" reorderable="true">
+                                      <fields>
+                                        <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                          <defaultValue>
+                                            <nullValue/>
+                                          </defaultValue>
+                                        </field>
+                                        <field description="Описание" name="description" type="S">
+                                          <defaultValue/>
+                                        </field>
+                                      </fields>
+                                      <validators contentType="base64">HEseHQ==</validators>
+                                    </format>
+                                  </table>
+                                </defaultValue>
+                              </field>
+                              <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Встроенное" name="inline" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                <selectionValues>
+                                  <option description="По умолчанию">
+                                    <nullValue/>
+                                  </option>
+                                  <option description="Список">list</option>
+                                  <option description="Дата">date</option>
+                                  <option description="Время">time</option>
+                                  <option description="Индикатор">bar</option>
+                                  <option description="Байты">bytes</option>
+                                  <option description="Формат значения">formatString</option>
+                                  <option description="Экземпляр класса">instance</option>
+                                  <option description="Период времени">period</option>
+                                  <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                  <option description="Выражение">expression</option>
+                                  <option description="Выбор функции">functionselector</option>
+                                  <option description="Пароль">password</option>
+                                  <option description="Текстовый редактор">text</option>
+                                  <option description="HTML">html</option>
+                                  <option description="Текстовая область">textarea</option>
+                                  <option description="Встроенная текстовая область">etextarea</option>
+                                  <option description="Контекст">context</option>
+                                  <option description="Маска контекстов">contextmask</option>
+                                  <option description="Шрифт">font</option>
+                                  <option description="IP адрес">ip</option>
+                                  <option description="Бокс">box</option>
+                                  <option description="Изображение">image</option>
+                                  <option description="Звук">sound</option>
+                                  <option description="Hex">hex</option>
+                                  <option description="Ссылка">reference</option>
+                                  <option description="Активатор">activator</option>
+                                  <option description="Редактор кода">code</option>
+                                  <option description="Счетчик">spinner</option>
+                                  <option description="Уровень события">eventLevel</option>
+                                  <option description="Временной диапазон">dateRange</option>
+                                </selectionValues>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                <defaultValue>
+                                  <table>
+                                    <format maxRecords="2147483647" reorderable="true">
+                                      <fields>
+                                        <field description="Тип" name="validator" nullable="true" type="S">
+                                          <selectionValues>
+                                            <option description="По умолчанию">
+                                              <nullValue/>
+                                            </option>
+                                            <option description="Валидатор идентификаторов">I</option>
+                                            <option description="Валидатор лимитов">L</option>
+                                            <option description="Ненулевой Валидатор">N</option>
+                                            <option description="Валидатор регулярных выражений">R</option>
+                                            <option description="Валидатор выражений">E</option>
+                                          </selectionValues>
+                                          <defaultValue>
+                                            <nullValue/>
+                                          </defaultValue>
+                                        </field>
+                                        <field description="Параметры" name="options" type="S">
+                                          <defaultValue/>
+                                        </field>
+                                      </fields>
+                                    </format>
+                                  </table>
+                                </defaultValue>
+                              </field>
+                              <field description="Группа" name="group" nullable="true" type="S">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                            </fields>
+                            <bindings>
+                              <binding>
+                                <reference>editorOptions</reference>
+                                <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                              </binding>
+                              <binding>
+                                <reference>editor#choices</reference>
+                                <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                              </binding>
+                            </bindings>
+                            <validators contentType="base64">HEseHQ==</validators>
+                          </format>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Сортировка разрешена" name="reorderable" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Привязки" name="bindings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647" reorderable="true">
+                            <fields>
+                              <field description="Цель" name="target" type="S">
+                                <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                <defaultValue/>
+                              </field>
+                              <field description="Выражение" editor="expression" name="expression" type="S">
+                                <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                <defaultValue/>
+                              </field>
+                            </fields>
+                          </format>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                      <help>Закодированный формат таблицы</help>
+                      <defaultValue/>
+                    </field>
+                    <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                  </fields>
+                  <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                </format>
+                <records>
+                  <record>
+                    <value name="minRecords">1</value>
+                    <value name="maxRecords">1</value>
+                    <value name="fields">
+                      <table>
+                        <format maxRecords="2147483647" reorderable="true">
+                          <fields>
+                            <field hidden="true" name="oldname" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Имя" keyfield="true" name="name" type="S">
+                              <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                              <defaultValue/>
+                            </field>
+                            <field description="Тип" name="type" type="S">
+                              <selectionValues>
+                                <option description="Целочисленный">I</option>
+                                <option description="Строковый">S</option>
+                                <option description="Булевский">B</option>
+                                <option description="Длинный целочисленный">L</option>
+                                <option description="С плавающей запятой">F</option>
+                                <option description="С плавающей запятой (64-бит)">E</option>
+                                <option description="Дата">D</option>
+                                <option description="Табличный">T</option>
+                                <option description="Цвет">C</option>
+                                <option description="Бинарный блок">A</option>
+                              </selectionValues>
+                              <defaultValue>I</defaultValue>
+                            </field>
+                            <field description="Описание" name="description" nullable="true" type="S">
+                              <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Неизменяемое" name="readonly" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Может быть NULL" name="nullable" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Ключевое" name="key" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Допустимые значения" name="selvals" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Описание" name="description" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                    </fields>
+                                    <validators contentType="base64">HEseHQ==</validators>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Скрытый" name="hidden" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Встроенное" name="inline" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                              <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                              <selectionValues>
+                                <option description="По умолчанию">
+                                  <nullValue/>
+                                </option>
+                                <option description="Список">list</option>
+                                <option description="Дата">date</option>
+                                <option description="Время">time</option>
+                                <option description="Индикатор">bar</option>
+                                <option description="Байты">bytes</option>
+                                <option description="Формат значения">formatString</option>
+                                <option description="Экземпляр класса">instance</option>
+                                <option description="Период времени">period</option>
+                                <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                <option description="Выражение">expression</option>
+                                <option description="Выбор функции">functionselector</option>
+                                <option description="Пароль">password</option>
+                                <option description="Текстовый редактор">text</option>
+                                <option description="HTML">html</option>
+                                <option description="Текстовая область">textarea</option>
+                                <option description="Встроенная текстовая область">etextarea</option>
+                                <option description="Контекст">context</option>
+                                <option description="Маска контекстов">contextmask</option>
+                                <option description="Шрифт">font</option>
+                                <option description="IP адрес">ip</option>
+                                <option description="Бокс">box</option>
+                                <option description="Изображение">image</option>
+                                <option description="Звук">sound</option>
+                                <option description="Hex">hex</option>
+                                <option description="Ссылка">reference</option>
+                                <option description="Активатор">activator</option>
+                                <option description="Редактор кода">code</option>
+                                <option description="Счетчик">spinner</option>
+                                <option description="Уровень события">eventLevel</option>
+                                <option description="Временной диапазон">dateRange</option>
+                              </selectionValues>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Валидаторы" name="validators" nullable="true" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field description="Тип" name="validator" nullable="true" type="S">
+                                        <selectionValues>
+                                          <option description="По умолчанию">
+                                            <nullValue/>
+                                          </option>
+                                          <option description="Валидатор идентификаторов">I</option>
+                                          <option description="Валидатор лимитов">L</option>
+                                          <option description="Ненулевой Валидатор">N</option>
+                                          <option description="Валидатор регулярных выражений">R</option>
+                                          <option description="Валидатор выражений">E</option>
+                                        </selectionValues>
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Параметры" name="options" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                    </fields>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Группа" name="group" nullable="true" type="S">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                          </fields>
+                          <bindings>
+                            <binding>
+                              <reference>editorOptions</reference>
+                              <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                            </binding>
+                            <binding>
+                              <reference>editor#choices</reference>
+                              <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                            </binding>
+                          </bindings>
+                          <validators contentType="base64">HEseHQ==</validators>
+                        </format>
+                        <records>
+                          <record>
+                            <value name="name">cssUrl</value>
+                            <value name="type">S</value>
+                            <value name="editorOptions">
+                              <table>
+                                <format maxRecords="1" minRecords="1">
+                                  <fields>
+                                    <field description="Опции редактора" name="options" type="S">
+                                      <defaultValue/>
+                                    </field>
+                                  </fields>
+                                </format>
+                                <records>
+                                  <record/>
+                                </records>
+                              </table>
+                            </value>
+                          </record>
+                        </records>
+                      </table>
+                    </value>
+                  </record>
+                </records>
+              </table>
+            </value>
+            <value name="writable">1</value>
+          </record>
+          <record>
+            <value name="name">styles</value>
+            <value name="format">
+              <table>
+                <format maxRecords="1" minRecords="1">
+                  <fields>
+                    <field description="Минимальное количество записей" name="minRecords" type="I">
+                      <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                      <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                      <selectionValues>
+                        <option description="Не ограничено">2147483647</option>
+                      </selectionValues>
+                      <defaultValue>2147483647</defaultValue>
+                    </field>
+                    <field description="Поля" name="fields" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647" reorderable="true">
+                            <fields>
+                              <field hidden="true" name="oldname" type="S">
+                                <defaultValue/>
+                              </field>
+                              <field description="Имя" keyfield="true" name="name" type="S">
+                                <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                <defaultValue/>
+                              </field>
+                              <field description="Тип" name="type" type="S">
+                                <selectionValues>
+                                  <option description="Целочисленный">I</option>
+                                  <option description="Строковый">S</option>
+                                  <option description="Булевский">B</option>
+                                  <option description="Длинный целочисленный">L</option>
+                                  <option description="С плавающей запятой">F</option>
+                                  <option description="С плавающей запятой (64-бит)">E</option>
+                                  <option description="Дата">D</option>
+                                  <option description="Табличный">T</option>
+                                  <option description="Цвет">C</option>
+                                  <option description="Бинарный блок">A</option>
+                                </selectionValues>
+                                <defaultValue>I</defaultValue>
+                              </field>
+                              <field description="Описание" name="description" nullable="true" type="S">
+                                <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Неизменяемое" name="readonly" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Может быть NULL" name="nullable" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Ключевое" name="key" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Допустимые значения" name="selvals" type="T">
+                                <defaultValue>
+                                  <table>
+                                    <format maxRecords="2147483647" reorderable="true">
+                                      <fields>
+                                        <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                          <defaultValue>
+                                            <nullValue/>
+                                          </defaultValue>
+                                        </field>
+                                        <field description="Описание" name="description" type="S">
+                                          <defaultValue/>
+                                        </field>
+                                      </fields>
+                                      <validators contentType="base64">HEseHQ==</validators>
+                                    </format>
+                                  </table>
+                                </defaultValue>
+                              </field>
+                              <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Встроенное" name="inline" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                <defaultValue>0</defaultValue>
+                              </field>
+                              <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                <selectionValues>
+                                  <option description="По умолчанию">
+                                    <nullValue/>
+                                  </option>
+                                  <option description="Список">list</option>
+                                  <option description="Дата">date</option>
+                                  <option description="Время">time</option>
+                                  <option description="Индикатор">bar</option>
+                                  <option description="Байты">bytes</option>
+                                  <option description="Формат значения">formatString</option>
+                                  <option description="Экземпляр класса">instance</option>
+                                  <option description="Период времени">period</option>
+                                  <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                  <option description="Выражение">expression</option>
+                                  <option description="Выбор функции">functionselector</option>
+                                  <option description="Пароль">password</option>
+                                  <option description="Текстовый редактор">text</option>
+                                  <option description="HTML">html</option>
+                                  <option description="Текстовая область">textarea</option>
+                                  <option description="Встроенная текстовая область">etextarea</option>
+                                  <option description="Контекст">context</option>
+                                  <option description="Маска контекстов">contextmask</option>
+                                  <option description="Шрифт">font</option>
+                                  <option description="IP адрес">ip</option>
+                                  <option description="Бокс">box</option>
+                                  <option description="Изображение">image</option>
+                                  <option description="Звук">sound</option>
+                                  <option description="Hex">hex</option>
+                                  <option description="Ссылка">reference</option>
+                                  <option description="Активатор">activator</option>
+                                  <option description="Редактор кода">code</option>
+                                  <option description="Счетчик">spinner</option>
+                                  <option description="Уровень события">eventLevel</option>
+                                  <option description="Временной диапазон">dateRange</option>
+                                </selectionValues>
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                              <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                <defaultValue>
+                                  <table>
+                                    <format maxRecords="2147483647" reorderable="true">
+                                      <fields>
+                                        <field description="Тип" name="validator" nullable="true" type="S">
+                                          <selectionValues>
+                                            <option description="По умолчанию">
+                                              <nullValue/>
+                                            </option>
+                                            <option description="Валидатор идентификаторов">I</option>
+                                            <option description="Валидатор лимитов">L</option>
+                                            <option description="Ненулевой Валидатор">N</option>
+                                            <option description="Валидатор регулярных выражений">R</option>
+                                            <option description="Валидатор выражений">E</option>
+                                          </selectionValues>
+                                          <defaultValue>
+                                            <nullValue/>
+                                          </defaultValue>
+                                        </field>
+                                        <field description="Параметры" name="options" type="S">
+                                          <defaultValue/>
+                                        </field>
+                                      </fields>
+                                    </format>
+                                  </table>
+                                </defaultValue>
+                              </field>
+                              <field description="Группа" name="group" nullable="true" type="S">
+                                <defaultValue>
+                                  <nullValue/>
+                                </defaultValue>
+                              </field>
+                            </fields>
+                            <bindings>
+                              <binding>
+                                <reference>editorOptions</reference>
+                                <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                              </binding>
+                              <binding>
+                                <reference>editor#choices</reference>
+                                <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                              </binding>
+                            </bindings>
+                            <validators contentType="base64">HEseHQ==</validators>
+                          </format>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Сортировка разрешена" name="reorderable" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Привязки" name="bindings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647" reorderable="true">
+                            <fields>
+                              <field description="Цель" name="target" type="S">
+                                <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                <defaultValue/>
+                              </field>
+                              <field description="Выражение" editor="expression" name="expression" type="S">
+                                <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                <defaultValue/>
+                              </field>
+                            </fields>
+                          </format>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                      <help>Закодированный формат таблицы</help>
+                      <defaultValue/>
+                    </field>
+                    <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                  </fields>
+                  <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                </format>
+                <records>
+                  <record>
+                    <value name="minRecords">1</value>
+                    <value name="maxRecords">1</value>
+                    <value name="fields">
+                      <table>
+                        <format maxRecords="2147483647" reorderable="true">
+                          <fields>
+                            <field hidden="true" name="oldname" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Имя" keyfield="true" name="name" type="S">
+                              <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                              <defaultValue/>
+                            </field>
+                            <field description="Тип" name="type" type="S">
+                              <selectionValues>
+                                <option description="Целочисленный">I</option>
+                                <option description="Строковый">S</option>
+                                <option description="Булевский">B</option>
+                                <option description="Длинный целочисленный">L</option>
+                                <option description="С плавающей запятой">F</option>
+                                <option description="С плавающей запятой (64-бит)">E</option>
+                                <option description="Дата">D</option>
+                                <option description="Табличный">T</option>
+                                <option description="Цвет">C</option>
+                                <option description="Бинарный блок">A</option>
+                              </selectionValues>
+                              <defaultValue>I</defaultValue>
+                            </field>
+                            <field description="Описание" name="description" nullable="true" type="S">
+                              <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Неизменяемое" name="readonly" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Может быть NULL" name="nullable" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Ключевое" name="key" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Допустимые значения" name="selvals" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Описание" name="description" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                    </fields>
+                                    <validators contentType="base64">HEseHQ==</validators>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Скрытый" name="hidden" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Встроенное" name="inline" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                              <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                              <selectionValues>
+                                <option description="По умолчанию">
+                                  <nullValue/>
+                                </option>
+                                <option description="Список">list</option>
+                                <option description="Дата">date</option>
+                                <option description="Время">time</option>
+                                <option description="Индикатор">bar</option>
+                                <option description="Байты">bytes</option>
+                                <option description="Формат значения">formatString</option>
+                                <option description="Экземпляр класса">instance</option>
+                                <option description="Период времени">period</option>
+                                <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                <option description="Выражение">expression</option>
+                                <option description="Выбор функции">functionselector</option>
+                                <option description="Пароль">password</option>
+                                <option description="Текстовый редактор">text</option>
+                                <option description="HTML">html</option>
+                                <option description="Текстовая область">textarea</option>
+                                <option description="Встроенная текстовая область">etextarea</option>
+                                <option description="Контекст">context</option>
+                                <option description="Маска контекстов">contextmask</option>
+                                <option description="Шрифт">font</option>
+                                <option description="IP адрес">ip</option>
+                                <option description="Бокс">box</option>
+                                <option description="Изображение">image</option>
+                                <option description="Звук">sound</option>
+                                <option description="Hex">hex</option>
+                                <option description="Ссылка">reference</option>
+                                <option description="Активатор">activator</option>
+                                <option description="Редактор кода">code</option>
+                                <option description="Счетчик">spinner</option>
+                                <option description="Уровень события">eventLevel</option>
+                                <option description="Временной диапазон">dateRange</option>
+                              </selectionValues>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Валидаторы" name="validators" nullable="true" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field description="Тип" name="validator" nullable="true" type="S">
+                                        <selectionValues>
+                                          <option description="По умолчанию">
+                                            <nullValue/>
+                                          </option>
+                                          <option description="Валидатор идентификаторов">I</option>
+                                          <option description="Валидатор лимитов">L</option>
+                                          <option description="Ненулевой Валидатор">N</option>
+                                          <option description="Валидатор регулярных выражений">R</option>
+                                          <option description="Валидатор выражений">E</option>
+                                        </selectionValues>
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Параметры" name="options" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                    </fields>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Группа" name="group" nullable="true" type="S">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                          </fields>
+                          <bindings>
+                            <binding>
+                              <reference>editorOptions</reference>
+                              <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                            </binding>
+                            <binding>
+                              <reference>editor#choices</reference>
+                              <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                            </binding>
+                          </bindings>
+                          <validators contentType="base64">HEseHQ==</validators>
+                        </format>
+                        <records>
+                          <record>
+                            <value name="name">styles</value>
+                            <value name="type">S</value>
+                            <value name="editorOptions">
+                              <table>
+                                <format maxRecords="1" minRecords="1">
+                                  <fields>
+                                    <field description="Опции редактора" name="options" type="S">
+                                      <defaultValue/>
+                                    </field>
+                                  </fields>
+                                </format>
+                                <records>
+                                  <record/>
+                                </records>
+                              </table>
+                            </value>
+                          </record>
+                        </records>
+                      </table>
+                    </value>
+                  </record>
+                </records>
+              </table>
+            </value>
+            <value name="writable">1</value>
+          </record>
+        </records>
+      </table>
+    </entry>
+    <entry>
+      <string>componentFunctions</string>
+      <table>
+        <format maxRecords="2147483647" reorderable="true">
+          <fields>
+            <field description="Имя" keyfield="true" name="name" type="S">
+              <validators contentType="base64">HEweMSA1MB0cUh5cdyteXtCY0LzRjyDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0LvQsNGC0LjQvdGB0LrQuNC1INCx0YPQutCy0YssINGG0LjRhNGA0Ysg0Lgg0YHQuNC80LLQvtC70Ysg0L/QvtC00YfQtdGA0LrQuNCy0LDQvdC40Y8d</validators>
+              <help>Данное поле определяет имя функции.</help>
+              <defaultValue/>
+            </field>
+            <field description="Описание" name="description" nullable="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <help>Данное поле применяется для задания удобочитаемого для человека описания функции.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Входной формат" name="inputformat" type="T">
+              <help>Данное поле используется для определения формата ввода функции.</help>
+              <defaultValue>
+                <table>
+                  <format maxRecords="1" minRecords="1">
+                    <fields>
+                      <field description="Минимальное количество записей" name="minRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <selectionValues>
+                          <option description="Не ограничено">2147483647</option>
+                        </selectionValues>
+                        <defaultValue>2147483647</defaultValue>
+                      </field>
+                      <field description="Поля" name="fields" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field hidden="true" name="oldname" type="S">
+                                  <defaultValue/>
+                                </field>
+                                <field description="Имя" keyfield="true" name="name" type="S">
+                                  <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Тип" name="type" type="S">
+                                  <selectionValues>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Булевский">B</option>
+                                    <option description="Длинный целочисленный">L</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Дата">D</option>
+                                    <option description="Табличный">T</option>
+                                    <option description="Цвет">C</option>
+                                    <option description="Бинарный блок">A</option>
+                                  </selectionValues>
+                                  <defaultValue>I</defaultValue>
+                                </field>
+                                <field description="Описание" name="description" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Неизменяемое" name="readonly" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Может быть NULL" name="nullable" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Ключевое" name="key" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Допустимые значения" name="selvals" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Описание" name="description" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                        <validators contentType="base64">HEseHQ==</validators>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Встроенное" name="inline" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                  <selectionValues>
+                                    <option description="По умолчанию">
+                                      <nullValue/>
+                                    </option>
+                                    <option description="Список">list</option>
+                                    <option description="Дата">date</option>
+                                    <option description="Время">time</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Формат значения">formatString</option>
+                                    <option description="Экземпляр класса">instance</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Шрифт">font</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Ссылка">reference</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Редактор кода">code</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Временной диапазон">dateRange</option>
+                                  </selectionValues>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Тип" name="validator" nullable="true" type="S">
+                                            <selectionValues>
+                                              <option description="По умолчанию">
+                                                <nullValue/>
+                                              </option>
+                                              <option description="Валидатор идентификаторов">I</option>
+                                              <option description="Валидатор лимитов">L</option>
+                                              <option description="Ненулевой Валидатор">N</option>
+                                              <option description="Валидатор регулярных выражений">R</option>
+                                              <option description="Валидатор выражений">E</option>
+                                            </selectionValues>
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Параметры" name="options" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Группа" name="group" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                              </fields>
+                              <bindings>
+                                <binding>
+                                  <reference>editorOptions</reference>
+                                  <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                                </binding>
+                                <binding>
+                                  <reference>editor#choices</reference>
+                                  <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                                </binding>
+                              </bindings>
+                              <validators contentType="base64">HEseHQ==</validators>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Сортировка разрешена" name="reorderable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Привязки" name="bindings" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field description="Цель" name="target" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Выражение" editor="expression" name="expression" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                              </fields>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                        <help>Закодированный формат таблицы</help>
+                        <defaultValue/>
+                      </field>
+                      <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                        <defaultValue>
+                          <nullValue/>
+                        </defaultValue>
+                      </field>
+                    </fields>
+                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                  </format>
+                  <records>
+                    <record/>
+                  </records>
+                </table>
+              </defaultValue>
+            </field>
+            <field description="Выходной формат" name="outputformat" type="T">
+              <help>Данное поле используется для определения формата вывода функции.</help>
+              <defaultValue>
+                <table>
+                  <format maxRecords="1" minRecords="1">
+                    <fields>
+                      <field description="Минимальное количество записей" name="minRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <selectionValues>
+                          <option description="Не ограничено">2147483647</option>
+                        </selectionValues>
+                        <defaultValue>2147483647</defaultValue>
+                      </field>
+                      <field description="Поля" name="fields" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field hidden="true" name="oldname" type="S">
+                                  <defaultValue/>
+                                </field>
+                                <field description="Имя" keyfield="true" name="name" type="S">
+                                  <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Тип" name="type" type="S">
+                                  <selectionValues>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Булевский">B</option>
+                                    <option description="Длинный целочисленный">L</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Дата">D</option>
+                                    <option description="Табличный">T</option>
+                                    <option description="Цвет">C</option>
+                                    <option description="Бинарный блок">A</option>
+                                  </selectionValues>
+                                  <defaultValue>I</defaultValue>
+                                </field>
+                                <field description="Описание" name="description" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Неизменяемое" name="readonly" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Может быть NULL" name="nullable" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Ключевое" name="key" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Допустимые значения" name="selvals" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Описание" name="description" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                        <validators contentType="base64">HEseHQ==</validators>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Встроенное" name="inline" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                  <selectionValues>
+                                    <option description="По умолчанию">
+                                      <nullValue/>
+                                    </option>
+                                    <option description="Список">list</option>
+                                    <option description="Дата">date</option>
+                                    <option description="Время">time</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Формат значения">formatString</option>
+                                    <option description="Экземпляр класса">instance</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Шрифт">font</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Ссылка">reference</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Редактор кода">code</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Временной диапазон">dateRange</option>
+                                  </selectionValues>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Тип" name="validator" nullable="true" type="S">
+                                            <selectionValues>
+                                              <option description="По умолчанию">
+                                                <nullValue/>
+                                              </option>
+                                              <option description="Валидатор идентификаторов">I</option>
+                                              <option description="Валидатор лимитов">L</option>
+                                              <option description="Ненулевой Валидатор">N</option>
+                                              <option description="Валидатор регулярных выражений">R</option>
+                                              <option description="Валидатор выражений">E</option>
+                                            </selectionValues>
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Параметры" name="options" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Группа" name="group" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                              </fields>
+                              <bindings>
+                                <binding>
+                                  <reference>editorOptions</reference>
+                                  <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                                </binding>
+                                <binding>
+                                  <reference>editor#choices</reference>
+                                  <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                                </binding>
+                              </bindings>
+                              <validators contentType="base64">HEseHQ==</validators>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Сортировка разрешена" name="reorderable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Привязки" name="bindings" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field description="Цель" name="target" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Выражение" editor="expression" name="expression" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                              </fields>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                        <help>Закодированный формат таблицы</help>
+                        <defaultValue/>
+                      </field>
+                      <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                        <defaultValue>
+                          <nullValue/>
+                        </defaultValue>
+                      </field>
+                    </fields>
+                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                  </format>
+                  <records>
+                    <record/>
+                  </records>
+                </table>
+              </defaultValue>
+            </field>
+            <field description="Справка" name="help" nullable="true" type="S">
+              <help>Данное поле используется для задания подробного описания функции.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Группа" name="group" nullable="true" type="S">
+              <help>Данное поле определяет к какой группе относится текущая функция. Может быть NULL, если функция не входит в какую-либо группу.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Тип" name="type" type="I">
+              <selectionValues>
+                <option description="Код на Java">0</option>
+                <option description="Выражение">1</option>
+              </selectionValues>
+              <help>Данное поле определяет тип реализации функции.</help>
+              <defaultValue>1</defaultValue>
+            </field>
+            <field description="Реализация" editor="code" name="implementation" type="S">
+              <editorOptions>java</editorOptions>
+              <help>Данное поле доступно, если в поле &apos;Тип&apos; выбрано &apos;Код Java&apos;. Исходный код Java класса реализует тело функции, т.е. делает то, что должна делать функция.</help>
+              <defaultValue>import com.tibbo.aggregate.common.context.*;
+import com.tibbo.aggregate.common.datatable.*;
+import com.tibbo.aggregate.common.server.*;
+
+import com.tibbo.linkserver.*;
+import com.tibbo.linkserver.context.*;
+
+public class %ScriptClassNamePattern% implements FunctionImplementation
+{
+  public DataTable execute(Context con, FunctionDefinition def, CallerController caller, RequestController request, DataTable parameters) throws ContextException
+  {
+    return null;
+  }
+}
+</defaultValue>
+            </field>
+            <field description="Выражение" editor="expression" name="expression" type="S">
+              <help>Данное поле доступно, если в поле &apos;Тип&apos; выбрано &apos;Выражение&apos;. Выражение будет вычислено в процессе исполнения функции.</help>
+              <defaultValue/>
+            </field>
+            <field advanced="true" description="Многопоточный" name="concurrent" type="B">
+              <help>Определяет возможность одновременного выполнения нескольких вызовов этой функции.</help>
+              <defaultValue>1</defaultValue>
+            </field>
+          </fields>
+          <bindings>
+            <binding>
+              <reference>implementation#enabled</reference>
+              <expression>{type} == 0</expression>
+            </binding>
+            <binding>
+              <reference>expression#enabled</reference>
+              <expression>{type} == 1</expression>
+            </binding>
+          </bindings>
+          <validators contentType="base64">HEseHQ==</validators>
+        </format>
+      </table>
+    </entry>
+    <entry>
+      <string>componentEvents</string>
+      <table>
+        <format maxRecords="2147483647" reorderable="true">
+          <fields>
+            <field description="Имя" keyfield="true" name="name" type="S">
+              <validators contentType="base64">HEweMSA1MB0cUh5cdyteXtCY0LzRjyDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0LvQsNGC0LjQvdGB0LrQuNC1INCx0YPQutCy0YssINGG0LjRhNGA0Ysg0Lgg0YHQuNC80LLQvtC70Ysg0L/QvtC00YfQtdGA0LrQuNCy0LDQvdC40Y8d</validators>
+              <help>Данное поле определяет имя события.</help>
+              <defaultValue/>
+            </field>
+            <field description="Описание" name="description" nullable="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <help>Данное поле применяется для задания удобочитаемого для человека описания события.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Формат" name="format" type="T">
+              <help>Данное поле используется для определения формата данных события.</help>
+              <defaultValue>
+                <table>
+                  <format maxRecords="1" minRecords="1">
+                    <fields>
+                      <field description="Минимальное количество записей" name="minRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                        <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                        <selectionValues>
+                          <option description="Не ограничено">2147483647</option>
+                        </selectionValues>
+                        <defaultValue>2147483647</defaultValue>
+                      </field>
+                      <field description="Поля" name="fields" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field hidden="true" name="oldname" type="S">
+                                  <defaultValue/>
+                                </field>
+                                <field description="Имя" keyfield="true" name="name" type="S">
+                                  <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Тип" name="type" type="S">
+                                  <selectionValues>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Булевский">B</option>
+                                    <option description="Длинный целочисленный">L</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Дата">D</option>
+                                    <option description="Табличный">T</option>
+                                    <option description="Цвет">C</option>
+                                    <option description="Бинарный блок">A</option>
+                                  </selectionValues>
+                                  <defaultValue>I</defaultValue>
+                                </field>
+                                <field description="Описание" name="description" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Неизменяемое" name="readonly" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Может быть NULL" name="nullable" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Ключевое" name="key" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Допустимые значения" name="selvals" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Описание" name="description" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                        <validators contentType="base64">HEseHQ==</validators>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Встроенное" name="inline" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                  <defaultValue>0</defaultValue>
+                                </field>
+                                <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                  <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                  <selectionValues>
+                                    <option description="По умолчанию">
+                                      <nullValue/>
+                                    </option>
+                                    <option description="Список">list</option>
+                                    <option description="Дата">date</option>
+                                    <option description="Время">time</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Формат значения">formatString</option>
+                                    <option description="Экземпляр класса">instance</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Шрифт">font</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Ссылка">reference</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Редактор кода">code</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Временной диапазон">dateRange</option>
+                                  </selectionValues>
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                                <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                  <defaultValue>
+                                    <table>
+                                      <format maxRecords="2147483647" reorderable="true">
+                                        <fields>
+                                          <field description="Тип" name="validator" nullable="true" type="S">
+                                            <selectionValues>
+                                              <option description="По умолчанию">
+                                                <nullValue/>
+                                              </option>
+                                              <option description="Валидатор идентификаторов">I</option>
+                                              <option description="Валидатор лимитов">L</option>
+                                              <option description="Ненулевой Валидатор">N</option>
+                                              <option description="Валидатор регулярных выражений">R</option>
+                                              <option description="Валидатор выражений">E</option>
+                                            </selectionValues>
+                                            <defaultValue>
+                                              <nullValue/>
+                                            </defaultValue>
+                                          </field>
+                                          <field description="Параметры" name="options" type="S">
+                                            <defaultValue/>
+                                          </field>
+                                        </fields>
+                                      </format>
+                                    </table>
+                                  </defaultValue>
+                                </field>
+                                <field description="Группа" name="group" nullable="true" type="S">
+                                  <defaultValue>
+                                    <nullValue/>
+                                  </defaultValue>
+                                </field>
+                              </fields>
+                              <bindings>
+                                <binding>
+                                  <reference>editorOptions</reference>
+                                  <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                                </binding>
+                                <binding>
+                                  <reference>editor#choices</reference>
+                                  <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                                </binding>
+                              </bindings>
+                              <validators contentType="base64">HEseHQ==</validators>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Сортировка разрешена" name="reorderable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                        <defaultValue>0</defaultValue>
+                      </field>
+                      <field description="Привязки" name="bindings" type="T">
+                        <defaultValue>
+                          <table>
+                            <format maxRecords="2147483647" reorderable="true">
+                              <fields>
+                                <field description="Цель" name="target" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                                <field description="Выражение" editor="expression" name="expression" type="S">
+                                  <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                  <defaultValue/>
+                                </field>
+                              </fields>
+                            </format>
+                          </table>
+                        </defaultValue>
+                      </field>
+                      <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                        <help>Закодированный формат таблицы</help>
+                        <defaultValue/>
+                      </field>
+                      <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                        <defaultValue>
+                          <nullValue/>
+                        </defaultValue>
+                      </field>
+                    </fields>
+                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                  </format>
+                  <records>
+                    <record/>
+                  </records>
+                </table>
+              </defaultValue>
+            </field>
+            <field description="Справка" name="help" nullable="true" type="S">
+              <help>Данное поле используется для задания подробного описания события.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+            <field description="Уровень" name="level" type="I">
+              <selectionValues>
+                <option description="Отсутствует">0</option>
+                <option description="Уведомление">1</option>
+                <option description="Информация">2</option>
+                <option description="Предупреждение">3</option>
+                <option description="Ошибка">4</option>
+                <option description="Критическая ошибка">5</option>
+              </selectionValues>
+              <help>Данное поле определяет уровень события по умолчанию.</help>
+              <defaultValue>0</defaultValue>
+            </field>
+            <field description="Группа" name="group" nullable="true" type="S">
+              <help>Данное поле определяет к какой группе относится текущее событие. Может быть NULL, если событие не входит в какую-либо группу.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
+            </field>
+          </fields>
+          <validators contentType="base64">HEseHQ==</validators>
+        </format>
+      </table>
+    </entry>
+  </properties>
+</properties>
