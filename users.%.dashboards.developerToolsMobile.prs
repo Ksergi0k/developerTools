@@ -242,7 +242,6 @@
         <records>
           <record>
             <value name="name">developerToolsMobile</value>
-            <value name="description">SberMobile Developer Tools (developerToolsMobile)</value>
             <value name="layout">4</value>
           </record>
         </records>
@@ -426,26 +425,20 @@
                     <value name="size">280</value>
                   </record>
                   <record>
-                    <value name="id">+1028</value>
-                    <value name="parentId">+975</value>
-                    <value name="orderId">2</value>
-                    <value name="size">280</value>
-                  </record>
-                  <record>
                     <value name="id">+950</value>
-                    <value name="orderId">3</value>
+                    <value name="orderId">2</value>
                     <value name="mode">float</value>
                     <value name="size">200</value>
                   </record>
                   <record>
                     <value name="id">+951</value>
-                    <value name="orderId">4</value>
+                    <value name="orderId">3</value>
                     <value name="mode">window</value>
                     <value name="size">200</value>
                   </record>
                   <record>
                     <value name="id">+952</value>
-                    <value name="orderId">5</value>
+                    <value name="orderId">4</value>
                     <value name="mode">maximize</value>
                     <value name="size">200</value>
                   </record>
@@ -478,12 +471,6 @@
                     <value name="componentId">systemTree</value>
                     <value name="tabId">systemTree</value>
                     <value name="panelId">+949</value>
-                    <value name="active">1</value>
-                  </record>
-                  <record>
-                    <value name="componentId">buttonAi</value>
-                    <value name="tabId">buttonAi</value>
-                    <value name="panelId">+1028</value>
                     <value name="active">1</value>
                   </record>
                 </records>
@@ -682,8 +669,8 @@
                     <field description="Расположение вкладок" name="dockTabPosition" type="S">
                       <selectionValues>
                         <option description="Вверху">top</option>
-                        <option description="Слева">left</option>
                         <option description="Внизу">bottom</option>
+                        <option description="Слева">left</option>
                         <option description="Справа">right</option>
                       </selectionValues>
                       <defaultValue>top</defaultValue>
@@ -855,17 +842,17 @@
                     </field>
                     <field description="Тип сетки" name="gridType" type="S">
                       <selectionValues>
-                        <option description="Без прокрутки">dockable</option>
                         <option description="С прокруткой">scrollable</option>
+                        <option description="Без прокрутки">dockable</option>
                       </selectionValues>
                       <defaultValue>scrollable</defaultValue>
                     </field>
                     <field description="Показывать фон сетки" name="showGridBackground" type="S">
                       <selectionValues>
-                        <option description="Строки и столбцы">rowsAndColumns</option>
-                        <option description="Колонки">columns</option>
                         <option description="Отсутствует">none</option>
                         <option description="Строки">rows</option>
+                        <option description="Колонки">columns</option>
+                        <option description="Строки и столбцы">rowsAndColumns</option>
                       </selectionValues>
                       <defaultValue>rowsAndColumns</defaultValue>
                     </field>
@@ -882,8 +869,8 @@
                     <field description="Хранение расположения" name="layoutStorage" type="S">
                       <selectionValues>
                         <option description="Общее">shared</option>
-                        <option description="Для каждого логина">forEveryLogin</option>
                         <option description="Для каждого пользователя">forEveryUser</option>
+                        <option description="Для каждого логина">forEveryLogin</option>
                         <option description="Не сохранять">doNotStore</option>
                       </selectionValues>
                       <defaultValue>doNotStore</defaultValue>
@@ -922,10 +909,10 @@
                     </field>
                     <field description="state" name="state" type="S">
                       <selectionValues>
-                        <option description="PAUSED">PAUSED</option>
                         <option description="CREATED">CREATED</option>
                         <option description="STARTING">STARTING</option>
                         <option description="RUNNING">RUNNING</option>
+                        <option description="PAUSED">PAUSED</option>
                         <option description="STOPPED">STOPPED</option>
                       </selectionValues>
                       <defaultValue>CREATED</defaultValue>
@@ -1005,59 +992,6 @@
                             </binding>
                           </bindings>
                         </format>
-                        <records>
-                          <record>
-                            <value name="bindingId">8489695098530220032</value>
-                            <value name="expression">callFunctionEx(
-    &quot;&quot;
-    ,&quot;executeAction&quot;
-    ,table(
-      &quot;&lt;&lt;context&gt;&lt;S&gt;&gt;&lt;&lt;action&gt;&lt;S&gt;&gt;&lt;&lt;properties&gt;&lt;T&gt;&gt;&quot;
-      ,&quot;users.gigachat.dashboards.chat&quot;
-      ,&quot;open&quot;
-      ,table(&quot;&lt;&lt;componentLocation&gt;&lt;T&gt;&gt;&quot;
-        ,callFunction(
-            &quot;utilities&quot;
-            ,&quot;componentLocationForDockable&quot;
-          
-            ,&quot;&quot;  //Путь
-            ,&quot;tab&quot; //Позиция
-            ,&quot;&quot; //Атрибут позиции
-            ,&quot;systemTree&quot; //Id назначения
-            ,integer(random()*(1000)) //Индекс вкладки
-            ,&quot;top&quot; //Позиция вкладки
-            ,null //Предпочтительная ширина
-            ,null //Предпочтительная высота
-            ,null //Минимальная ширина
-            ,null //Минимальная высота
-            ,null //X
-            ,null //Y
-            ,null //Ширина
-            ,null //Высота
-            ,true //Перемещаемый
-            ,true //Закрываемый
-            ,true //Изменяемый
-            ,true //Сворачиваемый
-            ,true //Максимизируемый
-            ,true //Плавающий
-            ,false //Свернутый
-            ,true //Показывать заголовок
-            ,&apos;AI Agent&apos; //Описание
-          )
-        )
-      )
-    ,&quot;form&quot;
-)</value>
-                            <value name="activator">form/buttonAi:mouseClicked@</value>
-                            <value name="onevent">1</value>
-                          </record>
-                          <record>
-                            <value name="bindingId">6244864099278848</value>
-                            <value name="target">form/buttonAi:visible</value>
-                            <value name="expression">aggregate(&quot;users.*.dashboards.chat&quot;,&quot;dc()&quot;, null) != null</value>
-                            <value name="onevent">1</value>
-                          </record>
-                        </records>
                       </table>
                     </value>
                     <value name="layoutWidth">800</value>
@@ -1100,8 +1034,8 @@
                             <field description="Тип хранения" name="layoutStorage" type="S">
                               <selectionValues>
                                 <option description="Общее">shared</option>
-                                <option description="Для каждого логина">forEveryLogin</option>
                                 <option description="Для каждого пользователя">forEveryUser</option>
+                                <option description="Для каждого логина">forEveryLogin</option>
                               </selectionValues>
                               <defaultValue>shared</defaultValue>
                             </field>
@@ -1188,9 +1122,6 @@
                         </format>
                         <records>
                           <record>
-                            <value name="path">buttonAi</value>
-                          </record>
-                          <record>
                             <value name="path">systemTree</value>
                           </record>
                         </records>
@@ -1238,9 +1169,6 @@
                           <record>
                             <value name="childContexts">systemTree</value>
                           </record>
-                          <record>
-                            <value name="childContexts">buttonAi</value>
-                          </record>
                         </records>
                       </table>
                     </value>
@@ -1273,16 +1201,16 @@
                                       </field>
                                       <field description="Тип" name="type" type="S">
                                         <selectionValues>
-                                          <option description="Бинарный блок">A</option>
-                                          <option description="Булевский">B</option>
+                                          <option description="Целочисленный">I</option>
                                           <option description="Строковый">S</option>
-                                          <option description="Цвет">C</option>
+                                          <option description="Булевский">B</option>
+                                          <option description="Длинный целочисленный">L</option>
+                                          <option description="С плавающей запятой">F</option>
+                                          <option description="С плавающей запятой (64-бит)">E</option>
                                           <option description="Дата">D</option>
                                           <option description="Табличный">T</option>
-                                          <option description="С плавающей запятой (64-бит)">E</option>
-                                          <option description="С плавающей запятой">F</option>
-                                          <option description="Целочисленный">I</option>
-                                          <option description="Длинный целочисленный">L</option>
+                                          <option description="Цвет">C</option>
+                                          <option description="Бинарный блок">A</option>
                                         </selectionValues>
                                         <defaultValue>I</defaultValue>
                                       </field>
@@ -1348,36 +1276,36 @@
                                           <option description="По умолчанию">
                                             <nullValue/>
                                           </option>
+                                          <option description="Список">list</option>
                                           <option description="Дата">date</option>
+                                          <option description="Время">time</option>
+                                          <option description="Индикатор">bar</option>
+                                          <option description="Байты">bytes</option>
                                           <option description="Формат значения">formatString</option>
                                           <option description="Экземпляр класса">instance</option>
-                                          <option description="Редактор кода">code</option>
-                                          <option description="Временной диапазон">dateRange</option>
-                                          <option description="Выбор функции">functionselector</option>
-                                          <option description="Звук">sound</option>
-                                          <option description="Текстовая область">textarea</option>
-                                          <option description="Бокс">box</option>
-                                          <option description="Ссылка">reference</option>
-                                          <option description="Индикатор">bar</option>
-                                          <option description="Пароль">password</option>
-                                          <option description="Уровень события">eventLevel</option>
-                                          <option description="Контекст">context</option>
-                                          <option description="HTML">html</option>
-                                          <option description="Hex">hex</option>
-                                          <option description="Текстовый редактор">text</option>
-                                          <option description="Счетчик">spinner</option>
-                                          <option description="Изображение">image</option>
                                           <option description="Период времени">period</option>
-                                          <option description="Выражение">expression</option>
-                                          <option description="IP адрес">ip</option>
-                                          <option description="Список">list</option>
-                                          <option description="Встроенная текстовая область">etextarea</option>
                                           <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                          <option description="Выражение">expression</option>
+                                          <option description="Выбор функции">functionselector</option>
+                                          <option description="Пароль">password</option>
+                                          <option description="Текстовый редактор">text</option>
+                                          <option description="HTML">html</option>
+                                          <option description="Текстовая область">textarea</option>
+                                          <option description="Встроенная текстовая область">etextarea</option>
+                                          <option description="Контекст">context</option>
                                           <option description="Маска контекстов">contextmask</option>
-                                          <option description="Байты">bytes</option>
-                                          <option description="Время">time</option>
-                                          <option description="Активатор">activator</option>
                                           <option description="Шрифт">font</option>
+                                          <option description="IP адрес">ip</option>
+                                          <option description="Бокс">box</option>
+                                          <option description="Изображение">image</option>
+                                          <option description="Звук">sound</option>
+                                          <option description="Hex">hex</option>
+                                          <option description="Ссылка">reference</option>
+                                          <option description="Активатор">activator</option>
+                                          <option description="Редактор кода">code</option>
+                                          <option description="Счетчик">spinner</option>
+                                          <option description="Уровень события">eventLevel</option>
+                                          <option description="Временной диапазон">dateRange</option>
                                         </selectionValues>
                                         <defaultValue>
                                           <nullValue/>
@@ -1398,11 +1326,11 @@
                                                     <option description="По умолчанию">
                                                       <nullValue/>
                                                     </option>
-                                                    <option description="Валидатор регулярных выражений">R</option>
-                                                    <option description="Валидатор выражений">E</option>
                                                     <option description="Валидатор идентификаторов">I</option>
                                                     <option description="Валидатор лимитов">L</option>
                                                     <option description="Ненулевой Валидатор">N</option>
+                                                    <option description="Валидатор регулярных выражений">R</option>
+                                                    <option description="Валидатор выражений">E</option>
                                                   </selectionValues>
                                                   <defaultValue>
                                                     <nullValue/>
@@ -1471,7 +1399,7 @@
                               </defaultValue>
                             </field>
                           </fields>
-                          <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbjBKelFzTkM2MFlIUXVOQzgwTERRdTlHTTBMM1F2dEMxSU5DNjBMN1F1OUM0MFlmUXRkR0IwWUxRc3RDK0lOQzMwTERRdjlDNDBZSFF0ZEM1SU5DOTBMVWcwTHpRdnRDMjBMWFJnaURRc2RHTDBZTFJqQ0RRdk5DMTBMM1JqTkdJMExVc0lOR0gwTFhRdkNEUXZOQzQwTDNRdU5DODBMRFF1OUdNMEwzUXZ0QzFKdz09HQ==</validators>
+                          <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
                         </format>
                         <records>
                           <record/>
@@ -1611,26 +1539,20 @@
                             <value name="size">280</value>
                           </record>
                           <record>
-                            <value name="id">+1028</value>
-                            <value name="parentId">+975</value>
-                            <value name="orderId">2</value>
-                            <value name="size">280</value>
-                          </record>
-                          <record>
                             <value name="id">+950</value>
-                            <value name="orderId">3</value>
+                            <value name="orderId">2</value>
                             <value name="mode">float</value>
                             <value name="size">200</value>
                           </record>
                           <record>
                             <value name="id">+951</value>
-                            <value name="orderId">4</value>
+                            <value name="orderId">3</value>
                             <value name="mode">window</value>
                             <value name="size">200</value>
                           </record>
                           <record>
                             <value name="id">+952</value>
-                            <value name="orderId">5</value>
+                            <value name="orderId">4</value>
                             <value name="mode">maximize</value>
                             <value name="size">200</value>
                           </record>
@@ -1653,13 +1575,13 @@
                             </field>
                             <field description="Значение" extendableSelectionValues="true" name="value" type="S">
                               <selectionValues>
-                                <option description="None">0</option>
                                 <option description="Mobile">320</option>
-                                <option description="Full HD">1920</option>
-                                <option description="Laptop">1366</option>
                                 <option description="Tablet">800</option>
-                                <option description="Ultra HD">3840</option>
+                                <option description="Laptop">1366</option>
+                                <option description="Full HD">1920</option>
                                 <option description="QHD">2560</option>
+                                <option description="Ultra HD">3840</option>
+                                <option description="None">0</option>
                               </selectionValues>
                               <defaultValue>320</defaultValue>
                             </field>
@@ -1690,13 +1612,13 @@
                             </field>
                             <field description="Значение" extendableSelectionValues="true" name="value" type="S">
                               <selectionValues>
-                                <option description="None">0</option>
                                 <option description="Mobile">320</option>
-                                <option description="Full HD">1920</option>
-                                <option description="Laptop">1366</option>
                                 <option description="Tablet">800</option>
-                                <option description="Ultra HD">3840</option>
+                                <option description="Laptop">1366</option>
+                                <option description="Full HD">1920</option>
                                 <option description="QHD">2560</option>
+                                <option description="Ultra HD">3840</option>
+                                <option description="None">0</option>
                               </selectionValues>
                               <defaultValue>320</defaultValue>
                             </field>
@@ -1753,16 +1675,16 @@
                                                 </field>
                                                 <field description="Тип" name="type" type="S">
                                                   <selectionValues>
-                                                    <option description="Бинарный блок">A</option>
-                                                    <option description="Булевский">B</option>
+                                                    <option description="Целочисленный">I</option>
                                                     <option description="Строковый">S</option>
-                                                    <option description="Цвет">C</option>
+                                                    <option description="Булевский">B</option>
+                                                    <option description="Длинный целочисленный">L</option>
+                                                    <option description="С плавающей запятой">F</option>
+                                                    <option description="С плавающей запятой (64-бит)">E</option>
                                                     <option description="Дата">D</option>
                                                     <option description="Табличный">T</option>
-                                                    <option description="С плавающей запятой (64-бит)">E</option>
-                                                    <option description="С плавающей запятой">F</option>
-                                                    <option description="Целочисленный">I</option>
-                                                    <option description="Длинный целочисленный">L</option>
+                                                    <option description="Цвет">C</option>
+                                                    <option description="Бинарный блок">A</option>
                                                   </selectionValues>
                                                   <defaultValue>I</defaultValue>
                                                 </field>
@@ -1828,36 +1750,36 @@
                                                     <option description="По умолчанию">
                                                       <nullValue/>
                                                     </option>
+                                                    <option description="Список">list</option>
                                                     <option description="Дата">date</option>
+                                                    <option description="Время">time</option>
+                                                    <option description="Индикатор">bar</option>
+                                                    <option description="Байты">bytes</option>
                                                     <option description="Формат значения">formatString</option>
                                                     <option description="Экземпляр класса">instance</option>
-                                                    <option description="Редактор кода">code</option>
-                                                    <option description="Временной диапазон">dateRange</option>
-                                                    <option description="Выбор функции">functionselector</option>
-                                                    <option description="Звук">sound</option>
-                                                    <option description="Текстовая область">textarea</option>
-                                                    <option description="Бокс">box</option>
-                                                    <option description="Ссылка">reference</option>
-                                                    <option description="Индикатор">bar</option>
-                                                    <option description="Пароль">password</option>
-                                                    <option description="Уровень события">eventLevel</option>
-                                                    <option description="Контекст">context</option>
-                                                    <option description="HTML">html</option>
-                                                    <option description="Hex">hex</option>
-                                                    <option description="Текстовый редактор">text</option>
-                                                    <option description="Счетчик">spinner</option>
-                                                    <option description="Изображение">image</option>
                                                     <option description="Период времени">period</option>
-                                                    <option description="Выражение">expression</option>
-                                                    <option description="IP адрес">ip</option>
-                                                    <option description="Список">list</option>
-                                                    <option description="Встроенная текстовая область">etextarea</option>
                                                     <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                                    <option description="Выражение">expression</option>
+                                                    <option description="Выбор функции">functionselector</option>
+                                                    <option description="Пароль">password</option>
+                                                    <option description="Текстовый редактор">text</option>
+                                                    <option description="HTML">html</option>
+                                                    <option description="Текстовая область">textarea</option>
+                                                    <option description="Встроенная текстовая область">etextarea</option>
+                                                    <option description="Контекст">context</option>
                                                     <option description="Маска контекстов">contextmask</option>
-                                                    <option description="Байты">bytes</option>
-                                                    <option description="Время">time</option>
-                                                    <option description="Активатор">activator</option>
                                                     <option description="Шрифт">font</option>
+                                                    <option description="IP адрес">ip</option>
+                                                    <option description="Бокс">box</option>
+                                                    <option description="Изображение">image</option>
+                                                    <option description="Звук">sound</option>
+                                                    <option description="Hex">hex</option>
+                                                    <option description="Ссылка">reference</option>
+                                                    <option description="Активатор">activator</option>
+                                                    <option description="Редактор кода">code</option>
+                                                    <option description="Счетчик">spinner</option>
+                                                    <option description="Уровень события">eventLevel</option>
+                                                    <option description="Временной диапазон">dateRange</option>
                                                   </selectionValues>
                                                   <defaultValue>
                                                     <nullValue/>
@@ -1878,11 +1800,11 @@
                                                               <option description="По умолчанию">
                                                                 <nullValue/>
                                                               </option>
-                                                              <option description="Валидатор регулярных выражений">R</option>
-                                                              <option description="Валидатор выражений">E</option>
                                                               <option description="Валидатор идентификаторов">I</option>
                                                               <option description="Валидатор лимитов">L</option>
                                                               <option description="Ненулевой Валидатор">N</option>
+                                                              <option description="Валидатор регулярных выражений">R</option>
+                                                              <option description="Валидатор выражений">E</option>
                                                             </selectionValues>
                                                             <defaultValue>
                                                               <nullValue/>
@@ -1951,7 +1873,7 @@
                                         </defaultValue>
                                       </field>
                                     </fields>
-                                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbjBKelFzTkM2MFlIUXVOQzgwTERRdTlHTTBMM1F2dEMxSU5DNjBMN1F1OUM0MFlmUXRkR0IwWUxRc3RDK0lOQzMwTERRdjlDNDBZSFF0ZEM1SU5DOTBMVWcwTHpRdnRDMjBMWFJnaURRc2RHTDBZTFJqQ0RRdk5DMTBMM1JqTkdJMExVc0lOR0gwTFhRdkNEUXZOQzQwTDNRdU5DODBMRFF1OUdNMEwzUXZ0QzFKdz09HQ==</validators>
+                                    <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
                                   </format>
                                   <records>
                                     <record/>
@@ -2041,8 +1963,8 @@
                     <field description="Расположение вкладок" name="dockTabPosition" type="S">
                       <selectionValues>
                         <option description="Вверху">top</option>
-                        <option description="Слева">left</option>
                         <option description="Внизу">bottom</option>
+                        <option description="Слева">left</option>
                         <option description="Справа">right</option>
                       </selectionValues>
                       <defaultValue>top</defaultValue>
@@ -2088,10 +2010,10 @@
                     <field description="Выход за пределы контента" name="overflow" type="S">
                       <selectionValues>
                         <option description="Авто">auto</option>
-                        <option description="Видимый">visible</option>
                         <option description="Скрытый">hidden</option>
                         <option description="Прокрутка">scroll</option>
                         <option description="Не установлено">unset</option>
+                        <option description="Видимый">visible</option>
                       </selectionValues>
                       <defaultValue>auto</defaultValue>
                     </field>
@@ -2209,8 +2131,8 @@
                             <field description="Тип хранения" name="layoutStorage" type="S">
                               <selectionValues>
                                 <option description="Общее">shared</option>
-                                <option description="Для каждого логина">forEveryLogin</option>
                                 <option description="Для каждого пользователя">forEveryUser</option>
+                                <option description="Для каждого логина">forEveryLogin</option>
                               </selectionValues>
                               <defaultValue>shared</defaultValue>
                             </field>
@@ -2233,21 +2155,16 @@
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль контейнера" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
                             <value name="containerStyle">show-header:true*~*description:Дерево*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:systemTree*~*panel-id:+949*~*order-id:0*~*active:true*~*gridx:1*~*gridy:1*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*container-style:.context-tree-external-buttons{
   visibility: visible;
   width:28px;
@@ -2467,28 +2384,28 @@ svg{
                                       </field>
                                       <field description="Позиция" name="position" type="S">
                                         <selectionValues>
-                                          <option description="top">top</option>
-                                          <option description="tab">tab</option>
                                           <option description="left">left</option>
-                                          <option description="bottom">bottom</option>
                                           <option description="right">right</option>
+                                          <option description="top">top</option>
+                                          <option description="bottom">bottom</option>
+                                          <option description="tab">tab</option>
                                           <option description="float">float</option>
                                         </selectionValues>
                                         <defaultValue>float</defaultValue>
                                       </field>
                                       <field description="Атрибут позиции" name="positionAttribute" type="S">
                                         <selectionValues>
-                                          <option description="outer">outer</option>
                                           <option description="inner">inner</option>
+                                          <option description="outer">outer</option>
                                         </selectionValues>
                                         <defaultValue>inner</defaultValue>
                                       </field>
                                       <field description="Позиция вкладки" name="tabPosition" nullable="true" type="S">
                                         <selectionValues>
-                                          <option description="top">top</option>
                                           <option description="left">left</option>
-                                          <option description="bottom">bottom</option>
                                           <option description="right">right</option>
+                                          <option description="top">top</option>
+                                          <option description="bottom">bottom</option>
                                         </selectionValues>
                                         <defaultValue>top</defaultValue>
                                       </field>
@@ -2828,451 +2745,6 @@ svg{
                       </table>
                     </value>
                     <value name="showContextMenuShortcut">1</value>
-                  </record>
-                </records>
-              </table>
-            </value>
-          </record>
-          <record>
-            <value name="name">buttonAi</value>
-            <value name="type">button</value>
-            <value name="parameters">
-              <table>
-                <format maxRecords="1" minRecords="1">
-                  <fields>
-                    <field description="Имя" name="name" nullable="true" type="S">
-                      <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                    <field description="Видимый" name="visible" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Хранилище переменных" name="variablesStorage" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Точки останова" name="gridBreakpoints" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Показать заголовок" name="showHeader" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Описание" name="description" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Пиктограмма" name="icon" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Максимизируемый" name="maximizable" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Сворачиваемый" name="collapsible" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Подвижный" name="dockMovable" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Свернутый" name="dockCollapsed" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Плавающий" name="dockFloatable" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Изменяемый" name="dockResizable" type="B">
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Расположение вкладок" name="dockTabPosition" type="S">
-                      <selectionValues>
-                        <option description="Вверху">top</option>
-                        <option description="Слева">left</option>
-                        <option description="Внизу">bottom</option>
-                        <option description="Справа">right</option>
-                      </selectionValues>
-                      <defaultValue>top</defaultValue>
-                    </field>
-                    <field description="Предпочитаемая ширина" name="dockPreferredWidth" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Предпочитаемая высота" name="dockPreferredHeight" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Минимальная ширина" name="dockMinimumWidth" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Минимальная высота" name="dockMinimumHeight" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="ID вкладки" name="tabId" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="ID Панели" name="panelId" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Order ID" name="orderId" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Активный" name="active" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Горизонтальное Положение" name="gridx" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Вертикальное Положение" name="gridy" type="I">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Ширина контейнера" name="gridWidth" type="I">
-                      <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Высота контейнера" name="gridHeight" type="I">
-                      <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-                      <defaultValue>1</defaultValue>
-                    </field>
-                    <field description="Выход за пределы контента" name="overflow" type="S">
-                      <selectionValues>
-                        <option description="Авто">auto</option>
-                        <option description="Видимый">visible</option>
-                        <option description="Скрытый">hidden</option>
-                        <option description="Прокрутка">scroll</option>
-                        <option description="Не установлено">unset</option>
-                      </selectionValues>
-                      <defaultValue>auto</defaultValue>
-                    </field>
-                    <field description="Пользовательские классы" name="customClasses" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Стиль CSS элемента" editor="code" name="style" nullable="true" type="S">
-                      <editorOptions>scss</editorOptions>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                    <field description="Видимые дети" name="visibleChildren" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Стиль контейнера" editor="code" name="containerStyle" nullable="true" type="S">
-                      <editorOptions>scss</editorOptions>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                    <field description="Имя класса" name="preloaderClass" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Текст" name="preloaderText" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Видимый" name="preloaderVisible" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Пиктограмма" name="preloaderIcon" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Щелчок мыши&quot;" name="generateMouseClicked" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Двойной щелчок мыши&quot;" name="generateMouseDoubleClicked" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Кнопка мыши нажата&quot;" name="generateMousePressed" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Кнопка мыши отпущена&quot;" name="generateMouseReleased" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Наведение указателя мыши&quot;" name="generateMouseEntered" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Вывод указателя мыши&quot;" name="generateMouseExited" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Кнопка нажата&quot;" name="generateKeyPressed" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Генерировать события &quot;Кнопка отпущена&quot;" name="generateKeyReleased" type="B">
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Привязки компонента" name="componentBindings" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Метка" name="label" type="S">
-                      <group>default</group>
-                      <defaultValue>button</defaultValue>
-                    </field>
-                    <field description="Изображение" name="image" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
-                    <field description="Расширение файла" hidden="true" name="fileExtension" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Неактивный" name="disabled" type="B">
-                      <group>default</group>
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Тип темы" name="buttonTheme" type="S">
-                      <selectionValues>
-                        <option description="Вторичный">secondary</option>
-                        <option description="По умолчанию">default</option>
-                        <option description="Вспомогательный">auxiliary</option>
-                        <option description="Основной">main</option>
-                        <option description="Простой">simple</option>
-                      </selectionValues>
-                      <defaultValue>main</defaultValue>
-                    </field>
-                    <field description="Стиль текста" editor="code" name="textButtonContainerStyle" nullable="true" type="S">
-                      <editorOptions>scss</editorOptions>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                    <field description="Контейнер изображения" editor="code" name="imageButtonContainerStyle" nullable="true" type="S">
-                      <editorOptions>scss</editorOptions>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                    <field description="Содержимое" editor="html" name="tooltipContent" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Размещение" name="tooltipPlacement" type="S">
-                      <selectionValues>
-                        <option description="Внизу Слева">bottomLeft</option>
-                        <option description="Слева сверху">leftTop</option>
-                        <option description="Вверху">top</option>
-                        <option description="Слева">left</option>
-                        <option description="Внизу">bottom</option>
-                        <option description="Внизу Справа">bottomRight</option>
-                        <option description="Сверху Слева">topLeft</option>
-                        <option description="Сверху Справа">topRight</option>
-                        <option description="Справа снизу">rightBottom</option>
-                        <option description="Слева снизу">leftBottom</option>
-                        <option description="Справа">right</option>
-                        <option description="Справа сверху">rightTop</option>
-                      </selectionValues>
-                      <defaultValue>topLeft</defaultValue>
-                    </field>
-                    <field description="Цвет" name="tooltipColor" type="C">
-                      <defaultValue>#404040FF</defaultValue>
-                    </field>
-                    <field description="Задержка при наведении мыши" editor="period" name="tooltipMouseEnterDelay" type="L">
-                      <editorOptions>0 1</editorOptions>
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Задержка при выходе мыши" editor="period" name="tooltipMouseLeaveDelay" type="L">
-                      <editorOptions>0 1</editorOptions>
-                      <defaultValue>0</defaultValue>
-                    </field>
-                    <field description="Имя класса" name="tooltipClassName" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field description="Стиль" editor="code" name="tooltipContentStyle" nullable="true" type="S">
-                      <editorOptions>scss</editorOptions>
-                      <defaultValue>
-                        <nullValue/>
-                      </defaultValue>
-                    </field>
-                  </fields>
-                </format>
-                <records>
-                  <record>
-                    <value name="name">buttonAi</value>
-                    <value name="variablesStorage">
-                      <table>
-                        <format maxRecords="2147483647">
-                          <fields>
-                            <field description="Переменная" keyfield="true" name="variable" type="S">
-                              <defaultValue/>
-                            </field>
-                            <field description="Тип хранения" name="layoutStorage" type="S">
-                              <selectionValues>
-                                <option description="Общее">shared</option>
-                                <option description="Для каждого логина">forEveryLogin</option>
-                                <option description="Для каждого пользователя">forEveryUser</option>
-                              </selectionValues>
-                              <defaultValue>shared</defaultValue>
-                            </field>
-                          </fields>
-                          <bindings>
-                            <binding>
-                              <reference>variable#choices</reference>
-                              <expression>{.:variableSelection()}</expression>
-                            </binding>
-                          </bindings>
-                          <validators contentType="base64">HEseHQ==</validators>
-                        </format>
-                      </table>
-                    </value>
-                    <value name="gridBreakpoints">
-                      <table>
-                        <format maxRecords="2147483647">
-                          <fields>
-                            <field description="Точка остановы" name="breakpoint" nullable="true" type="S">
-                              <defaultValue>default</defaultValue>
-                            </field>
-                            <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
-                            </field>
-                            <field description="Стиль контейнера" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
-                            </field>
-                          </fields>
-                        </format>
-                        <records>
-                          <record>
-                            <value name="breakpoint">none</value>
-                            <value name="style"/>
-                            <value name="containerStyle">show-header:false*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:35*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:buttonAi*~*panel-id:+1028*~*order-id:0*~*active:true*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
-                          </record>
-                        </records>
-                      </table>
-                    </value>
-                    <value name="showHeader">0</value>
-                    <value name="icon">
-                      <table>
-                        <format maxRecords="1" minRecords="1">
-                          <fields>
-                            <field description="Тип" name="imageType" type="I">
-                              <selectionValues>
-                                <option description="Бинарный блок">0</option>
-                                <option description="URL">1</option>
-                              </selectionValues>
-                              <defaultValue>0</defaultValue>
-                            </field>
-                            <field description="Данные изображения" name="imageData" type="A">
-                              <defaultValue>
-                                <data>
-                                  <nullValue/>
-                                </data>
-                              </defaultValue>
-                            </field>
-                            <field description="Ссылка на изображение" name="imageUrl" type="S">
-                              <defaultValue/>
-                            </field>
-                          </fields>
-                        </format>
-                        <records>
-                          <record/>
-                        </records>
-                      </table>
-                    </value>
-                    <value name="dockPreferredHeight">35</value>
-                    <value name="tabId">buttonAi</value>
-                    <value name="panelId">+1028</value>
-                    <value name="active">1</value>
-                    <value name="style"/>
-                    <value name="visibleChildren">
-                      <table>
-                        <format maxRecords="2147483647">
-                          <fields>
-                            <field name="path" type="S">
-                              <defaultValue/>
-                            </field>
-                          </fields>
-                        </format>
-                      </table>
-                    </value>
-                    <value name="containerStyle"/>
-                    <value name="preloaderIcon">
-                      <table>
-                        <format maxRecords="1" minRecords="1">
-                          <fields>
-                            <field description="Тип" name="imageType" type="I">
-                              <selectionValues>
-                                <option description="Бинарный блок">0</option>
-                                <option description="URL">1</option>
-                              </selectionValues>
-                              <defaultValue>0</defaultValue>
-                            </field>
-                            <field description="Данные изображения" name="imageData" type="A">
-                              <defaultValue>
-                                <data>
-                                  <nullValue/>
-                                </data>
-                              </defaultValue>
-                            </field>
-                            <field description="Ссылка на изображение" name="imageUrl" type="S">
-                              <defaultValue/>
-                            </field>
-                          </fields>
-                        </format>
-                        <records>
-                          <record/>
-                        </records>
-                      </table>
-                    </value>
-                    <value name="generateMouseClicked">1</value>
-                    <value name="label">AI</value>
-                    <value name="image">
-                      <table>
-                        <format maxRecords="1" minRecords="1">
-                          <fields>
-                            <field description="Тип" name="imageType" type="I">
-                              <selectionValues>
-                                <option description="Бинарный блок">0</option>
-                                <option description="URL">1</option>
-                              </selectionValues>
-                              <defaultValue>0</defaultValue>
-                            </field>
-                            <field description="Данные изображения" name="imageData" type="A">
-                              <defaultValue>
-                                <data>
-                                  <nullValue/>
-                                </data>
-                              </defaultValue>
-                            </field>
-                            <field description="Ссылка на изображение" name="imageUrl" type="S">
-                              <defaultValue/>
-                            </field>
-                            <field description="Встроить SVG в DOM" name="embedSVGToDOM" type="B">
-                              <defaultValue>0</defaultValue>
-                            </field>
-                          </fields>
-                        </format>
-                        <records>
-                          <record/>
-                        </records>
-                      </table>
-                    </value>
-                    <value name="buttonTheme">simple</value>
-                    <value name="textButtonContainerStyle"/>
-                    <value name="imageButtonContainerStyle"/>
-                    <value name="tooltipPlacement">top</value>
-                    <value name="tooltipMouseEnterDelay">100</value>
-                    <value name="tooltipMouseLeaveDelay">100</value>
-                    <value name="tooltipContentStyle"/>
                   </record>
                 </records>
               </table>

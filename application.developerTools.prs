@@ -93,7 +93,7 @@
         <records>
           <record>
             <value name="name">developerTools</value>
-            <value name="applicationFolderPath">C:\Program Files\AggreGate\applications\developerTools</value>
+            <value name="applicationFolderPath">.\apps\developerTools</value>
           </record>
         </records>
       </table>
