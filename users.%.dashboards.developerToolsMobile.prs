@@ -1963,8 +1963,8 @@
                     <field description="Расположение вкладок" name="dockTabPosition" type="S">
                       <selectionValues>
                         <option description="Вверху">top</option>
-                        <option description="Внизу">bottom</option>
                         <option description="Слева">left</option>
+                        <option description="Внизу">bottom</option>
                         <option description="Справа">right</option>
                       </selectionValues>
                       <defaultValue>top</defaultValue>
@@ -2010,10 +2010,10 @@
                     <field description="Выход за пределы контента" name="overflow" type="S">
                       <selectionValues>
                         <option description="Авто">auto</option>
+                        <option description="Видимый">visible</option>
                         <option description="Скрытый">hidden</option>
                         <option description="Прокрутка">scroll</option>
                         <option description="Не установлено">unset</option>
-                        <option description="Видимый">visible</option>
                       </selectionValues>
                       <defaultValue>auto</defaultValue>
                     </field>
@@ -2155,16 +2155,21 @@
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue/>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
                             </field>
                             <field description="Стиль контейнера" name="containerStyle" nullable="true" type="S">
-                              <defaultValue/>
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
+                            <value name="style"/>
                             <value name="containerStyle">show-header:true*~*description:Дерево*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:systemTree*~*panel-id:+949*~*order-id:0*~*active:true*~*gridx:1*~*gridy:1*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*container-style:.context-tree-external-buttons{
   visibility: visible;
   width:28px;
