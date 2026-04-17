@@ -513,30 +513,6 @@
             <value name="type">dashboard</value>
           </record>
           <record>
-            <value name="resource">users.%.models.bff</value>
-            <value name="type">model</value>
-            <value name="dependentResources">
-              <table>
-                <format maxRecords="2147483647">
-                  <fields>
-                    <field name="dependentResource" type="S">
-                      <defaultValue/>
-                    </field>
-                    <field name="dependentResourceType" type="S">
-                      <defaultValue/>
-                    </field>
-                  </fields>
-                </format>
-                <records>
-                  <record>
-                    <value name="dependentResource">users.admin.models.bff</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                </records>
-              </table>
-            </value>
-          </record>
-          <record>
             <value name="resource">users.%.models.modelTools</value>
             <value name="type">model</value>
             <value name="dependentResources">
