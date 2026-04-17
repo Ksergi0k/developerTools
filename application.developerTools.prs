@@ -537,8 +537,140 @@
             </value>
           </record>
           <record>
-            <value name="resource">uiComponents.css_editor</value>
-            <value name="type">uiComponent</value>
+            <value name="resource">users.%.models.modelTools</value>
+            <value name="type">model</value>
+            <value name="dependentResources">
+              <table>
+                <format maxRecords="2147483647">
+                  <fields>
+                    <field name="dependentResource" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field name="dependentResourceType" type="S">
+                      <defaultValue/>
+                    </field>
+                  </fields>
+                </format>
+                <records>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.controllerInstances</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.test</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.test.models.modelTools</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin.models.controllerApplicationGit</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.ATS</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.networkEquipment</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.dataStorageSystem</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.DBMS</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.PLC</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.webSettings</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.cabinets</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.PDU</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.catalogues</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin.models.controllerPlantUML</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.bffCore</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.hypervisors</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.appsServices</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.test.models.userTools</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin.models.bff</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore.models.serverEquipment</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                </records>
+              </table>
+            </value>
+          </record>
+          <record>
+            <value name="resource">users.%.models.userTools</value>
+            <value name="type">model</value>
+            <value name="dependentResources">
+              <table>
+                <format maxRecords="2147483647">
+                  <fields>
+                    <field name="dependentResource" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field name="dependentResourceType" type="S">
+                      <defaultValue/>
+                    </field>
+                  </fields>
+                </format>
+                <records>
+                  <record>
+                    <value name="dependentResource">users.test</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.bhkCore</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.demo</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                </records>
+              </table>
+            </value>
           </record>
         </records>
       </table>

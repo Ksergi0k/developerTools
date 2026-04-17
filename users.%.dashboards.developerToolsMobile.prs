@@ -1963,8 +1963,8 @@
                     <field description="Расположение вкладок" name="dockTabPosition" type="S">
                       <selectionValues>
                         <option description="Вверху">top</option>
-                        <option description="Слева">left</option>
                         <option description="Внизу">bottom</option>
+                        <option description="Слева">left</option>
                         <option description="Справа">right</option>
                       </selectionValues>
                       <defaultValue>top</defaultValue>
@@ -2010,10 +2010,10 @@
                     <field description="Выход за пределы контента" name="overflow" type="S">
                       <selectionValues>
                         <option description="Авто">auto</option>
-                        <option description="Видимый">visible</option>
                         <option description="Скрытый">hidden</option>
                         <option description="Прокрутка">scroll</option>
                         <option description="Не установлено">unset</option>
+                        <option description="Видимый">visible</option>
                       </selectionValues>
                       <defaultValue>auto</defaultValue>
                     </field>
@@ -2568,28 +2568,28 @@ svg{
                                     </field>
                                     <field description="Позиция" name="position" type="S">
                                       <selectionValues>
-                                        <option description="top">top</option>
-                                        <option description="tab">tab</option>
                                         <option description="left">left</option>
-                                        <option description="bottom">bottom</option>
                                         <option description="right">right</option>
+                                        <option description="top">top</option>
+                                        <option description="bottom">bottom</option>
+                                        <option description="tab">tab</option>
                                         <option description="float">float</option>
                                       </selectionValues>
                                       <defaultValue>float</defaultValue>
                                     </field>
                                     <field description="Атрибут позиции" name="positionAttribute" type="S">
                                       <selectionValues>
-                                        <option description="outer">outer</option>
                                         <option description="inner">inner</option>
+                                        <option description="outer">outer</option>
                                       </selectionValues>
                                       <defaultValue>inner</defaultValue>
                                     </field>
                                     <field description="Позиция вкладки" name="tabPosition" nullable="true" type="S">
                                       <selectionValues>
-                                        <option description="top">top</option>
                                         <option description="left">left</option>
-                                        <option description="bottom">bottom</option>
                                         <option description="right">right</option>
+                                        <option description="top">top</option>
+                                        <option description="bottom">bottom</option>
                                       </selectionValues>
                                       <defaultValue>top</defaultValue>
                                     </field>
