@@ -1094,25 +1094,38 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
         </format>
         <records>
           <record>
-            <value name="name">disableResources</value>
-            <value name="expression">setVariable(
-  dc()
-  ,&quot;resources&quot;
-  ,subtable(
-    setMultiple(
-      addColumns(
-        {.:resources}
-        ,&quot;&lt;count&gt;&lt;S&gt;&quot;
-        ,&quot; catch(records(getVariable(&apos;users.&apos; + {.:childInfo$name[0]} + &apos;.&apos; + substring({pattern},index({pattern},&apos;%&apos;,0)+2),&apos;children&apos;)),0)&quot;
-      )
-      ,&quot;available&quot;
-      ,FALSE
-      ,&quot;{count} == 0&quot;
-
-    )
-    ,&quot;description&quot;
-    ,&quot;available&quot;
-  )
+            <value name="name">switchResources</value>
+            <value name="help">Включает все ресурсы, при повторном вызове выключает все ресурсы, кроме задействованных</value>
+            <value name="expression">records(filter({.:resources},&quot;!{available}&quot;)) &gt; 0&#xd;
+? // Enable all&#xd;
+setVariable(&#xd;
+  dc()&#xd;
+  ,&quot;resources&quot;&#xd;
+  ,setMultiple(&#xd;
+        {.:resources}&#xd;
+      , &quot;available&quot;&#xd;
+      , true&#xd;
+    )&#xd;
+)&#xd;
+: // Disable all except in usage&#xd;
+setVariable(&#xd;
+  dc()&#xd;
+  ,&quot;resources&quot;&#xd;
+  ,subtable(&#xd;
+    setMultiple(&#xd;
+      addColumns(&#xd;
+        {.:resources}&#xd;
+        ,&quot;&lt;count&gt;&lt;S&gt;&quot;&#xd;
+        ,&quot; catch(records(getVariable(&apos;users.&apos; + {.:childInfo$name[0]} + &apos;.&apos; + substring({pattern},index({pattern},&apos;%&apos;,0)+2),&apos;children&apos;)),0)&quot;&#xd;
+      )&#xd;
+      ,&quot;available&quot;&#xd;
+      ,FALSE&#xd;
+      ,&quot;{count} == 0&quot;&#xd;
+&#xd;
+    )&#xd;
+    ,&quot;description&quot;&#xd;
+    ,&quot;available&quot;&#xd;
+  )&#xd;
 )</value>
           </record>
         </records>
@@ -1387,7 +1400,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
           <bindings>
             <binding>
               <reference>variable#choices</reference>
-              <expression>{.:variablesByMask({.:})}</expression>
+              <expression>{utilities:variablesByMask({.:})}</expression>
             </binding>
           </bindings>
           <validators contentType="base64">HEseHQ==</validators>

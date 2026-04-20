@@ -537,10 +537,6 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.test.models.modelTools</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.admin.models.controllerApplicationGit</value>
                     <value name="dependentResourceType">model</value>
                   </record>
@@ -573,6 +569,10 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
+                    <value name="dependentResource">users.admin.models.modelTools</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
                     <value name="dependentResource">users.bhkCore.models.PDU</value>
                     <value name="dependentResourceType">model</value>
                   </record>
@@ -597,15 +597,15 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.test.models.userTools</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.admin.models.bff</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
                     <value name="dependentResource">users.bhkCore.models.serverEquipment</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin.models.userTools</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                 </records>
