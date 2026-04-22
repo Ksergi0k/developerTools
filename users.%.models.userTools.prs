@@ -1400,7 +1400,7 @@ setVariable(&#xd;
           <bindings>
             <binding>
               <reference>variable#choices</reference>
-              <expression>{utilities:variablesByMask({.:})}</expression>
+              <expression>{.:variablesByMask({.:})}</expression>
             </binding>
           </bindings>
           <validators contentType="base64">HEseHQ==</validators>
