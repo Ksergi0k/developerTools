@@ -549,6 +549,10 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
+                    <value name="dependentResource">users.admin.models.review</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
                     <value name="dependentResource">users.bhkCore.models.dataStorageSystem</value>
                     <value name="dependentResourceType">model</value>
                   </record>
@@ -558,10 +562,6 @@
                   </record>
                   <record>
                     <value name="dependentResource">users.bhkCore.models.PLC</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
-                    <value name="dependentResource">users.test.models.123</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
@@ -651,6 +651,62 @@
                   <record>
                     <value name="dependentResource">users.admin</value>
                     <value name="dependentResourceType">user</value>
+                  </record>
+                </records>
+              </table>
+            </value>
+          </record>
+          <record>
+            <value name="resource">users.%.models.review</value>
+            <value name="type">model</value>
+            <value name="dependentResources">
+              <table>
+                <format maxRecords="2147483647">
+                  <fields>
+                    <field name="dependentResource" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field name="dependentResourceType" type="S">
+                      <defaultValue/>
+                    </field>
+                  </fields>
+                </format>
+                <records>
+                  <record>
+                    <value name="dependentResource">users.admin.models.review</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                </records>
+              </table>
+            </value>
+            <value name="dependentVariables">
+              <table>
+                <format maxRecords="2147483647">
+                  <fields>
+                    <field name="context" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field name="variable" type="S">
+                      <defaultValue/>
+                    </field>
+                  </fields>
+                </format>
+                <records>
+                  <record>
+                    <value name="context">users.admin.models.review</value>
+                    <value name="variable">dashboardsBindings</value>
+                  </record>
+                  <record>
+                    <value name="context">users.admin.models.review</value>
+                    <value name="variable">modelsBindings</value>
+                  </record>
+                  <record>
+                    <value name="context">users.admin.models.review</value>
+                    <value name="variable">modelsFunctions</value>
+                  </record>
+                  <record>
+                    <value name="context">users.admin.models.review</value>
+                    <value name="variable">modelsVariables</value>
                   </record>
                 </records>
               </table>
