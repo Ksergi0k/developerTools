@@ -1779,7 +1779,7 @@ setVariable(&#xd;
                                   <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                                 </binding>
                               </bindings>
-                              <validators contentType="base64">HEseHQ==</validators>
+                              <validators contentType="base64">HEseHRxWHh0=</validators>
                             </format>
                           </table>
                         </defaultValue>

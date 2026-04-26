@@ -737,13 +737,6 @@
                     <field description="Генерировать события &quot;Вывод указателя мыши&quot;" name="generateMouseExited" type="B">
                       <defaultValue>0</defaultValue>
                     </field>
-                    <field description="Привязки компонента" name="componentBindings" type="T">
-                      <defaultValue>
-                        <table>
-                          <format maxRecords="2147483647"/>
-                        </table>
-                      </defaultValue>
-                    </field>
                     <field description="childContexts" name="childContexts" type="T">
                       <defaultValue>
                         <table>

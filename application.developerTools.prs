@@ -593,6 +593,10 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
+                    <value name="dependentResource">users.bhkCore.models.controllerMoxa</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
                     <value name="dependentResource">users.bhkCore.models.hypervisors</value>
                     <value name="dependentResourceType">model</value>
                   </record>
