@@ -1743,11 +1743,51 @@ flex-direction: row;</value>
                         </format>
                         <records>
                           <record>
+                            <value name="bindingId">2255988945780538368</value>
+                            <value name="target">form/debug:dataTable</value>
+                            <value name="expression">{env/value}</value>
+                            <value name="activator">form/dataTableEditorDashboardsBindings:cellUpdated@</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">5093094882974410752</value>
+                            <value name="target">form/dataTableEditorDashboardsBindings:dataTable</value>
+                            <value name="expression">aggregate(&#xd;
+  &quot;users.&quot;+{form/textFieldUser:text$text}+&quot;.dashboards.*&quot;&#xd;
+  ,&quot;union(addColumns(cell(cell(getVariable(dc(),&apos;elements&apos;),&apos;parameters&apos;),&apos;bindings&apos;),&apos;&lt;row&gt;&lt;I&gt;&lt;F=R&gt;&apos;, &apos;dr()&apos;,&apos;&lt;context&gt;&lt;S&gt;&lt;F=R&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
+  ,table()&#xd;
+)</value>
+                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">2135982649143925760</value>
+                            <value name="target">form/textFieldUser:text</value>
+                            <value name="expression">callFunction(&#xd;
+    &quot;&quot;&#xd;
+    ,&quot;sessionSet&quot;&#xd;
+    ,&quot;bulkEditUser&quot;&#xd;
+    ,table(&quot;&lt;&lt;value&gt;&lt;S&gt;&lt;F=N&gt;&gt;&quot;&#xd;
+      ,{form/textFieldUser:text$text}&#xd;
+    )&#xd;
+)</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">4533864107288522752</value>
+                            <value name="target">form/textFieldUser:text</value>
+                            <value name="expression">catch(&#xd;
+  {:sessionGet(&quot;bulkEditUser&quot;)$value}&#xd;
+  ,null&#xd;
+)</value>
+                            <value name="onstartup">1</value>
+                          </record>
+                          <record>
                             <value name="bindingId">715017046354333696</value>
                             <value name="target">form/dataTableEditorModelsVariables:dataTable</value>
                             <value name="expression">aggregate(&#xd;
     &quot;users.&quot;+{form/textFieldUser:text$text}+&quot;.models.*&quot;&#xd;
-    ,&quot;union(addColumns(getVariable(dc(),&apos;modelVariables&apos;),&apos;&lt;context&gt;&lt;S&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
+    ,&quot;union(addColumns(getVariable(dc(),&apos;modelVariables&apos;),&apos;&lt;row&gt;&lt;I&gt;&lt;F=R&gt;&apos;, &apos;dr()&apos;,&apos;&lt;context&gt;&lt;S&gt;&lt;F=R&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
     ,table()&#xd;
   )</value>
                             <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
@@ -1758,7 +1798,7 @@ flex-direction: row;</value>
                             <value name="target">form/dataTableEditorModelsFunctions:dataTable</value>
                             <value name="expression">aggregate(&#xd;
     &quot;users.&quot;+{form/textFieldUser:text$text}+&quot;.models.*&quot;&#xd;
-    ,&quot;union(addColumns(getVariable(dc(),&apos;modelFunctions&apos;),&apos;&lt;context&gt;&lt;S&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
+    ,&quot;union(addColumns(getVariable(dc(),&apos;modelFunctions&apos;),&apos;&lt;row&gt;&lt;I&gt;&lt;F=R&gt;&apos;, &apos;dr()&apos;,&apos;&lt;context&gt;&lt;S&gt;&lt;F=R&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
     ,table()&#xd;
   )</value>
                             <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
@@ -1769,18 +1809,7 @@ flex-direction: row;</value>
                             <value name="target">form/dataTableEditorModelsBindings:dataTable</value>
                             <value name="expression">aggregate(&#xd;
     &quot;users.&quot;+{form/textFieldUser:text$text}+&quot;.models.*&quot;&#xd;
-    ,&quot;union(addColumns(getVariable(dc(),&apos;bindings&apos;),&apos;&lt;context&gt;&lt;S&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
-    ,table()&#xd;
-  )</value>
-                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
-                            <value name="onevent">1</value>
-                          </record>
-                          <record>
-                            <value name="bindingId">5093094882974410752</value>
-                            <value name="target">form/dataTableEditorDashboardsBindings:dataTable</value>
-                            <value name="expression">aggregate(&#xd;
-    &quot;users.&quot;+{form/textFieldUser:text$text}+&quot;.dashboards.*&quot;&#xd;
-    ,&quot;union(addColumns(cell(cell(getVariable(dc(),&apos;elements&apos;),&apos;parameters&apos;),&apos;bindings&apos;),&apos;&lt;context&gt;&lt;S&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
+    ,&quot;union(addColumns(getVariable(dc(),&apos;bindings&apos;),&apos;&lt;row&gt;&lt;I&gt;&lt;F=R&gt;&apos;,&apos;dr()&apos;,&apos;&lt;context&gt;&lt;S&gt;&lt;F=R&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
     ,table()&#xd;
   )</value>
                             <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
@@ -2851,6 +2880,9 @@ td,th{
                         </format>
                         <records>
                           <record>
+                            <value name="path">debug</value>
+                          </record>
+                          <record>
                             <value name="path">buttonClearResult</value>
                           </record>
                           <record>
@@ -3077,6 +3109,9 @@ td,th{
                           </record>
                           <record>
                             <value name="childContexts">panelSideBar</value>
+                          </record>
+                          <record>
+                            <value name="childContexts">debug</value>
                           </record>
                         </records>
                       </table>
@@ -3449,37 +3484,50 @@ td,th{
                         </format>
                         <records>
                           <record>
-                            <value name="id">+394</value>
-                            <value name="mode">horizontal</value>
+                            <value name="id">+527</value>
+                            <value name="mode">vertical</value>
                             <value name="size">200</value>
+                          </record>
+                          <record>
+                            <value name="id">+394</value>
+                            <value name="parentId">+527</value>
+                            <value name="orderId">1</value>
+                            <value name="mode">horizontal</value>
+                            <value name="size">280</value>
+                          </record>
+                          <record>
+                            <value name="id">+528</value>
+                            <value name="parentId">+527</value>
+                            <value name="orderId">2</value>
+                            <value name="size">120</value>
                           </record>
                           <record>
                             <value name="id">+495</value>
                             <value name="parentId">+394</value>
-                            <value name="orderId">1</value>
+                            <value name="orderId">3</value>
                             <value name="size">516</value>
                           </record>
                           <record>
                             <value name="id">+399</value>
                             <value name="parentId">+394</value>
-                            <value name="orderId">2</value>
+                            <value name="orderId">4</value>
                             <value name="size">2800</value>
                           </record>
                           <record>
                             <value name="id">+395</value>
-                            <value name="orderId">3</value>
+                            <value name="orderId">5</value>
                             <value name="mode">float</value>
                             <value name="size">200</value>
                           </record>
                           <record>
                             <value name="id">+396</value>
-                            <value name="orderId">4</value>
+                            <value name="orderId">6</value>
                             <value name="mode">window</value>
                             <value name="size">200</value>
                           </record>
                           <record>
                             <value name="id">+397</value>
-                            <value name="orderId">5</value>
+                            <value name="orderId">7</value>
                             <value name="mode">maximize</value>
                             <value name="size">200</value>
                           </record>
@@ -8793,22 +8841,19 @@ svg{
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*container-style:.table-input, .agg-textarea{
+  height: 3lh;
+}*~*</value>
                           </record>
                         </records>
                       </table>
@@ -8857,7 +8902,9 @@ svg{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">.table-input, .agg-textarea{
+  height: 3lh;
+}</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -8983,6 +9030,7 @@ svg{
                         </format>
                       </table>
                     </value>
+                    <value name="showPageSizeSelector">1</value>
                     <value name="columnsSettings">
                       <table>
                         <format maxRecords="2147483647">
@@ -9982,7 +10030,7 @@ svg{
                           <record>
                             <value name="breakpoint">none</value>
                             <value name="style">row-height:20*~*gap:12px*~*max-columns:12*~*max-rows:2*~*</value>
-                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*show-header:true*~*description:Custom CSS*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelCustomCSS*~*panel-id:+449*~*order-id:2*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
+                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:auto*~*show-header:true*~*description:Custom CSS*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelCustomCSS*~*panel-id:+449*~*order-id:2*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
                       </table>
@@ -10964,22 +11012,19 @@ svg{
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*container-style:.table-input, .agg-textarea{
+  height: 3lh;
+}*~*</value>
                           </record>
                         </records>
                       </table>
@@ -11028,7 +11073,9 @@ svg{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">.table-input, .agg-textarea{
+  height: 3lh;
+}</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -11154,6 +11201,7 @@ svg{
                         </format>
                       </table>
                     </value>
+                    <value name="showPageSizeSelector">1</value>
                     <value name="columnsSettings">
                       <table>
                         <format maxRecords="2147483647">
@@ -13053,7 +13101,7 @@ svg{
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*show-header:true*~*description:Passwords*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelPassword*~*panel-id:+449*~*order-id:4*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
+                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:auto*~*show-header:true*~*description:Passwords*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelPassword*~*panel-id:+449*~*order-id:4*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
                       </table>
@@ -15339,22 +15387,19 @@ svg{
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*container-style:.table-input, .agg-textarea{
+  height: 3lh;
+}*~*</value>
                           </record>
                         </records>
                       </table>
@@ -15403,7 +15448,9 @@ svg{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">.table-input, .agg-textarea{
+  height: 3lh;
+}</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -15517,6 +15564,7 @@ svg{
                         <format maxRecords="0"/>
                       </table>
                     </value>
+                    <value name="generateCellUpdatedEvents">1</value>
                     <value name="enableContextMenu">1</value>
                     <value name="pageSizeOptions">
                       <table>
@@ -15529,6 +15577,7 @@ svg{
                         </format>
                       </table>
                     </value>
+                    <value name="showPageSizeSelector">1</value>
                     <value name="columnsSettings">
                       <table>
                         <format maxRecords="2147483647">
@@ -16995,7 +17044,7 @@ svg{
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*show-header:true*~*description:Connections*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelConnections*~*panel-id:+449*~*order-id:5*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
+                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:auto*~*show-header:true*~*description:Connections*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelConnections*~*panel-id:+449*~*order-id:5*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
                       </table>
@@ -20176,21 +20225,16 @@ table{
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
                             <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:hidden*~*show-header:true*~*description:Bulk Edit*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelBulkEdit*~*panel-id:+449*~*order-id:8*~*active:true*~*gridx:1*~*gridy:1*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
@@ -20573,8 +20617,8 @@ table{
                           </record>
                           <record/>
                           <record>
-                            <value name="template">auto</value>
-                            <value name="unit"/>
+                            <value name="template">120</value>
+                            <value name="unit">px</value>
                           </record>
                           <record/>
                           <record/>
@@ -27774,22 +27818,19 @@ table{
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*container-style:.table-input, .agg-textarea{
+  height: 3lh;
+}*~*</value>
                           </record>
                         </records>
                       </table>
@@ -27838,7 +27879,9 @@ table{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">.table-input, .agg-textarea{
+  height: 3lh;
+}</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -27964,6 +28007,7 @@ table{
                         </format>
                       </table>
                     </value>
+                    <value name="showPageSizeSelector">1</value>
                     <value name="columnsSettings">
                       <table>
                         <format maxRecords="2147483647">
@@ -28954,6 +28998,7 @@ table{
                         </records>
                       </table>
                     </value>
+                    <value name="buttonTheme">auxiliary</value>
                     <value name="textButtonContainerStyle"/>
                     <value name="imageButtonContainerStyle"/>
                     <value name="tooltipPlacement">top</value>
@@ -34297,6 +34342,1260 @@ svg{
             </value>
           </record>
           <record>
+            <value name="name">debug</value>
+            <value name="type">dataTableEditor</value>
+            <value name="parameters">
+              <table>
+                <format maxRecords="1" minRecords="1">
+                  <fields>
+                    <field description="Имя" name="name" nullable="true" type="S">
+                      <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Выход за пределы контента" name="overflow" type="S">
+                      <selectionValues>
+                        <option description="Авто">auto</option>
+                        <option description="Скрытый">hidden</option>
+                        <option description="Прокрутка">scroll</option>
+                        <option description="Не установлено">unset</option>
+                        <option description="Видимый">visible</option>
+                      </selectionValues>
+                      <defaultValue>auto</defaultValue>
+                    </field>
+                    <field description="Видимый" name="visible" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Хранилище переменных" name="variablesStorage" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Точки останова" name="gridBreakpoints" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Показать заголовок" name="showHeader" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Описание" name="description" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Пиктограмма" name="icon" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Максимизируемый" name="maximizable" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Сворачиваемый" name="collapsible" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Подвижный" name="dockMovable" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Свернутый" name="dockCollapsed" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Плавающий" name="dockFloatable" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Изменяемый" name="dockResizable" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Расположение вкладок" name="dockTabPosition" type="S">
+                      <selectionValues>
+                        <option description="Вверху">top</option>
+                        <option description="Внизу">bottom</option>
+                        <option description="Слева">left</option>
+                        <option description="Справа">right</option>
+                      </selectionValues>
+                      <defaultValue>top</defaultValue>
+                    </field>
+                    <field description="Предпочитаемая ширина" name="dockPreferredWidth" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Предпочитаемая высота" name="dockPreferredHeight" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Минимальная ширина" name="dockMinimumWidth" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Минимальная высота" name="dockMinimumHeight" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="ID вкладки" name="tabId" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="ID Панели" name="panelId" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Order ID" name="orderId" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Активный" name="active" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Горизонтальное Положение" name="gridx" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Вертикальное Положение" name="gridy" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Ширина контейнера" name="gridWidth" type="I">
+                      <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Высота контейнера" name="gridHeight" type="I">
+                      <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Пользовательские классы" name="customClasses" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Стиль" editor="code" name="style" nullable="true" type="S">
+                      <editorOptions>scss</editorOptions>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Видимые дети" name="visibleChildren" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Стиль обёртки" editor="code" name="containerStyle" nullable="true" type="S">
+                      <editorOptions>scss</editorOptions>
+                      <help>CSS стиль, который будет применен к обёртке компонента.</help>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Имя класса" name="preloaderClass" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Текст" name="preloaderText" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Видимый" name="preloaderVisible" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Пиктограмма" name="preloaderIcon" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Щелчок мыши&quot;" name="generateMouseClicked" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Двойной щелчок мыши&quot;" name="generateMouseDoubleClicked" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Кнопка мыши нажата&quot;" name="generateMousePressed" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Кнопка мыши отпущена&quot;" name="generateMouseReleased" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Наведение указателя мыши&quot;" name="generateMouseEntered" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Вывод указателя мыши&quot;" name="generateMouseExited" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Кнопка нажата&quot;" name="generateKeyPressed" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Кнопка отпущена&quot;" name="generateKeyReleased" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Привязки компонента" name="componentBindings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Количество Записей" name="recordCount" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Включить кебаб меню" name="additionalActionEnable" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Показать элементы меню внутри строки" name="additionalActionShowInRow" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Иконка меню" name="additionalActionIcon" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Ширина меню" name="additionalActionWidth" type="I">
+                      <defaultValue>50</defaultValue>
+                    </field>
+                    <field description="additionalActionIconExtension" hidden="true" name="additionalActionIconExtension" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Элементы меню" name="additionalActionSettings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Стиль меню" editor="code" name="additionalActionStyle" nullable="true" type="S">
+                      <editorOptions>scss</editorOptions>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Показать строку поиска" name="enableSearch" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Заполнитель в поиске" name="searchPlaceholder" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Таблица с данными" name="dataTable" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Только чтение" name="readOnly" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Показывать тулбар" name="showToolbar" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Текст кнопки &quot;Добавить&quot;" name="addButtonText" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Генерировать события &quot;Строка добавлена&quot;" name="generateRowAddedEvents" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Строка удалена&quot;" name="generateRowRemovedEvents" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Генерировать события &quot;Ячейка обновлена&quot;" name="generateCellUpdatedEvents" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Множественная сортировка колонок" name="multipleSorting" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Включить контекстное меню" name="enableContextMenu" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Показать кнопку импорта" name="showImportButton" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Показать кнопку экспорта" name="showExportButton" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Число элементов на странице" name="pageSize" type="I">
+                      <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                      <defaultValue>100</defaultValue>
+                    </field>
+                    <field description="Пользовательские значения селектора «Число элементов на странице»" name="pageSizeOptions" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Показать селектор «Число элементов на странице»" name="showPageSizeSelector" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Тип селектора «Число элементов на странице»" name="pageSizeSelectorType" type="S">
+                      <selectionValues>
+                        <option description="Поле со списком">combobox</option>
+                        <option description="Группа кнопок">button-group</option>
+                      </selectionValues>
+                      <defaultValue>combobox</defaultValue>
+                    </field>
+                    <field description="currentPage" hidden="true" name="currentPage" type="I">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Имя столбца идентификатора записи" name="idColumn" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Выражение выбора строк" editor="expression" name="selectedRowsExpression" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Есть выбранные строки" name="hasSelectedRows" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Настройки колонок" name="columnsSettings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Максимальная высота без вертикальной прокрутки" name="heightScrollEnabled" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Ширина таблицы" name="widthTable" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Включить выбор нескольких строк" name="checkRows" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Дефолтный цвет строки" name="oddDefaultRowColor" nullable="true" type="C">
+                      <group>Нечётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Дефолтный цвет строки" name="evenDefaultRowColor" nullable="true" type="C">
+                      <group>Чётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет строки при наведении" name="oddHoverRowColor" nullable="true" type="C">
+                      <group>Нечётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет строки при наведении" name="evenHoverRowColor" nullable="true" type="C">
+                      <group>Чётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет выбранной строки" name="oddSelectedRowColor" nullable="true" type="C">
+                      <group>Нечётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет выбранной строки" name="evenSelectedRowColor" nullable="true" type="C">
+                      <group>Чётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет выбранной строки при наведении" name="oddHoverSelectedRowColor" nullable="true" type="C">
+                      <group>Нечётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Цвет выбранной строки при наведении" name="evenHoverSelectedRowColor" nullable="true" type="C">
+                      <group>Чётная строка</group>
+                      <defaultValue>
+                        <nullValue/>
+                      </defaultValue>
+                    </field>
+                    <field description="Колонка с режимом только для чтения строки" name="columnToDefineRowLock" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Колонка с включенным дополнительным меню" name="columnToDefineKebabLock" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Название колонки вложенной таблицы" name="columnToDefineNameForNestedTable" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Разрешить изменение размера колонок" name="resizableColumn" type="B">
+                      <group>default</group>
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Включить удаление строки с подтверждением" name="confirmActionDelete" type="B">
+                      <group>default</group>
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Включить добавление строки с подтверждением" name="confirmActionAdd" type="B">
+                      <group>default</group>
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Фиксированный формат" name="fixedFormat" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Формат" name="format" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Иконка фильтрации" name="filterIcon" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="filterIconExtension" hidden="true" name="filterIconExtension" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Иконка поиска" name="searchIcon" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="searchIconExtension" hidden="true" name="searchIconExtension" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Включить видимость колонок" name="enableColumnVisibility" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Разрешить расширенный поиск" name="enableAdvancedSearch" type="B">
+                      <defaultValue>1</defaultValue>
+                    </field>
+                    <field description="Выражение расширенного поиска" name="smartFilterExpression" type="S">
+                      <defaultValue/>
+                    </field>
+                    <field description="Режим расширенного поиска" name="smartFilterDisplayMode" type="S">
+                      <defaultValue>SMART_FILTER_TEXT_MODE</defaultValue>
+                    </field>
+                    <field description="Состояния управления расширенного поиска" name="smartFilterControlStates" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Ширина колонок настроена вручную" name="manualConfigureColumnWidth" type="B">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Оригинальный формат" name="originalFormat" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Настройки вложенных записей" name="treeRecordsSettings" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Глубина раскрытия записей" name="expansionDepth" type="I">
+                      <defaultValue>0</defaultValue>
+                    </field>
+                    <field description="Изображение переключателя(открыт)" name="openedSwitcherImage" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                    <field description="Изображение переключателя(закрыт)" name="closedSwitcherImage" type="T">
+                      <defaultValue>
+                        <table>
+                          <format maxRecords="2147483647"/>
+                        </table>
+                      </defaultValue>
+                    </field>
+                  </fields>
+                </format>
+                <records>
+                  <record>
+                    <value name="name">debug</value>
+                    <value name="variablesStorage">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Переменная" keyfield="true" name="variable" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Тип хранения" name="layoutStorage" type="S">
+                              <selectionValues>
+                                <option description="Общее">shared</option>
+                                <option description="Для каждого пользователя">forEveryUser</option>
+                                <option description="Для каждого логина">forEveryLogin</option>
+                              </selectionValues>
+                              <defaultValue>shared</defaultValue>
+                            </field>
+                          </fields>
+                          <bindings>
+                            <binding>
+                              <reference>variable#choices</reference>
+                              <expression>{.:variableSelection()}</expression>
+                            </binding>
+                          </bindings>
+                          <validators contentType="base64">HEseHQ==</validators>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="gridBreakpoints">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Точка остановы" name="breakpoint" nullable="true" type="S">
+                              <defaultValue>default</defaultValue>
+                            </field>
+                            <field description="Стиль" name="style" nullable="true" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record>
+                            <value name="breakpoint">none</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:true*~*dock-movable:true*~*dock-collapsed:true*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:debug*~*panel-id:+528*~*order-id:0*~*active:true*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
+                          </record>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="icon">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="collapsible">1</value>
+                    <value name="dockCollapsed">1</value>
+                    <value name="tabId">debug</value>
+                    <value name="panelId">+528</value>
+                    <value name="active">1</value>
+                    <value name="style"/>
+                    <value name="visibleChildren">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field name="path" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="containerStyle"/>
+                    <value name="preloaderIcon">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="additionalActionIcon">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="additionalActionSettings">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Уникальный идентификатор" name="uid" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Описание" name="desc" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Пиктограмма" name="icon" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Иконка при наведении" name="iconHover" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Активная иконка" name="iconActive" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Действие" name="buttonAction" type="S">
+                              <selectionValues>
+                                <option description=""/>
+                                <option description="Редактировать">edit</option>
+                                <option description="Удалить">delete</option>
+                                <option description="Отмена">cancel</option>
+                                <option description="Применить">apply</option>
+                              </selectionValues>
+                              <defaultValue/>
+                            </field>
+                            <field description="Подтверждение" name="confirm" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Текст подтверждения" name="confirmTitle" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="additionalActionStyle"/>
+                    <value name="dataTable">
+                      <table>
+                        <format maxRecords="0"/>
+                      </table>
+                    </value>
+                    <value name="readOnly">1</value>
+                    <value name="enableContextMenu">1</value>
+                    <value name="pageSizeOptions">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Значение" name="pageSizeOptionsValue" type="I">
+                              <defaultValue>10</defaultValue>
+                            </field>
+                          </fields>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="columnsSettings">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Имя" name="name" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Фиксированная колонка" name="fixed" type="S">
+                              <selectionValues>
+                                <option description="Слева">left</option>
+                                <option description="Справа">right</option>
+                                <option description="Не установлено">unset</option>
+                              </selectionValues>
+                              <defaultValue>unset</defaultValue>
+                            </field>
+                            <field description="Поведение текста заголовка" name="headerTextBehavior" type="S">
+                              <selectionValues>
+                                <option description="Развернуть колонку">expandColumn</option>
+                                <option description="Обрезать текст">ellipsis</option>
+                                <option description="Перенос слов">wordWrap</option>
+                              </selectionValues>
+                              <defaultValue>expandColumn</defaultValue>
+                            </field>
+                            <field description="Перенос строк" name="wordBreak" type="S">
+                              <selectionValues>
+                                <option description="Разделить всё">break-all</option>
+                                <option description="Разделить слово">break-word</option>
+                                <option description="Не разделять">false</option>
+                              </selectionValues>
+                              <defaultValue>false</defaultValue>
+                            </field>
+                            <field description="Видимая длина" name="visibleLength" nullable="true" type="I">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                            <field description="Горизонтальное выравнивание текста ячейки" name="textAlignHorizontal" type="S">
+                              <selectionValues>
+                                <option description="Центр">center</option>
+                                <option description="Слева">left</option>
+                                <option description="Справа">right</option>
+                              </selectionValues>
+                              <defaultValue>center</defaultValue>
+                            </field>
+                            <field description="Горизонтальное выравнивание текста заголовка" name="textAlignHeaderHorizontal" type="S">
+                              <selectionValues>
+                                <option description="Центр">center</option>
+                                <option description="Слева">left</option>
+                                <option description="Справа">right</option>
+                              </selectionValues>
+                              <defaultValue>center</defaultValue>
+                            </field>
+                            <field description="Вертикальное выравнивание текста ячейки" name="textAlignVertical" type="S">
+                              <selectionValues>
+                                <option description="Внизу">bottom </option>
+                                <option description="Выравнивание по середине">middle</option>
+                                <option description="Вверху">top</option>
+                              </selectionValues>
+                              <defaultValue>middle</defaultValue>
+                            </field>
+                            <field description="Вертикальное выравнивание текста заголовка" name="textAlignHeaderVertical" type="S">
+                              <selectionValues>
+                                <option description="Внизу">bottom </option>
+                                <option description="Выравнивание по середине">middle</option>
+                                <option description="Вверху">top</option>
+                              </selectionValues>
+                              <defaultValue>middle</defaultValue>
+                            </field>
+                            <field description="Сортировщик" name="sorter" type="B">
+                              <defaultValue>1</defaultValue>
+                            </field>
+                            <field description="Предустановка сортировки" name="sorterPreset" type="S">
+                              <selectionValues>
+                                <option description="По возрастанию">ASC</option>
+                                <option description="По убыванию">DESC</option>
+                                <option description="Не установлено">unset</option>
+                              </selectionValues>
+                              <defaultValue>unset</defaultValue>
+                            </field>
+                            <field description="Фильтрация" extendableSelectionValues="true" name="filtering" type="S">
+                              <selectionValues>
+                                <option description="Отсутствует">none</option>
+                                <option description="Строка соответствия">matchString</option>
+                                <option description="Фильтр">filter</option>
+                              </selectionValues>
+                              <defaultValue>none</defaultValue>
+                            </field>
+                            <field description="Фильтр таблицы" name="filterTable" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647">
+                                    <fields>
+                                      <field description="Значение" name="value" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                      <field description="Описание" name="text" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                      <field description="Выбран" name="checked" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                    </fields>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Строка соответствия" name="matchString" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Ширина" name="width" type="I">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Видимый" name="visibility" type="B">
+                              <defaultValue>1</defaultValue>
+                            </field>
+                            <field description="Индекс" name="index" type="I">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Загрузка" name="loading" type="S">
+                              <selectionValues>
+                                <option description="Безотложная">eager</option>
+                                <option description="Отложенная">lazy</option>
+                              </selectionValues>
+                              <defaultValue>eager</defaultValue>
+                            </field>
+                          </fields>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="checkRows">0</value>
+                    <value name="resizableColumn">0</value>
+                    <value name="confirmActionDelete">0</value>
+                    <value name="confirmActionAdd">0</value>
+                    <value name="format">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Минимальное количество записей" name="minRecords" type="I">
+                              <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Максимальное количество записей" extendableSelectionValues="true" name="maxRecords" type="I">
+                              <validators contentType="base64">HEweMCAyMTQ3NDgzNjQ3HQ==</validators>
+                              <selectionValues>
+                                <option description="Не ограничено">2147483647</option>
+                              </selectionValues>
+                              <defaultValue>2147483647</defaultValue>
+                            </field>
+                            <field description="Поля" name="fields" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field hidden="true" name="oldname" type="S">
+                                        <defaultValue/>
+                                      </field>
+                                      <field description="Имя" name="name" type="S">
+                                        <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+                                        <defaultValue/>
+                                      </field>
+                                      <field description="Тип" name="type" type="S">
+                                        <selectionValues>
+                                          <option description="Целочисленный">I</option>
+                                          <option description="Строковый">S</option>
+                                          <option description="Булевский">B</option>
+                                          <option description="Длинный целочисленный">L</option>
+                                          <option description="С плавающей запятой">F</option>
+                                          <option description="С плавающей запятой (64-бит)">E</option>
+                                          <option description="Дата">D</option>
+                                          <option description="Табличный">T</option>
+                                          <option description="Цвет">C</option>
+                                          <option description="Бинарный блок">A</option>
+                                        </selectionValues>
+                                        <defaultValue>I</defaultValue>
+                                      </field>
+                                      <field description="Описание" name="description" nullable="true" type="S">
+                                        <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="По умолчанию" name="defaultValue" nullable="true" type="S">
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Неизменяемое" name="readonly" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field description="Может быть NULL" name="nullable" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field description="Ключевое" name="key" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field description="Допустимые значения" name="selvals" type="T">
+                                        <defaultValue>
+                                          <table>
+                                            <format maxRecords="2147483647" reorderable="true">
+                                              <fields>
+                                                <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
+                                                  <defaultValue>
+                                                    <nullValue/>
+                                                  </defaultValue>
+                                                </field>
+                                                <field description="Описание" name="description" type="S">
+                                                  <defaultValue/>
+                                                </field>
+                                              </fields>
+                                              <validators contentType="base64">HEseHQ==</validators>
+                                            </format>
+                                          </table>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Расширяемые допустимые значения" name="extselvals" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field advanced="true" description="Скрытый" name="hidden" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field advanced="true" description="Встроенное" name="inline" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field advanced="true" description="Зашифрованное" name="encrypted" type="B">
+                                        <defaultValue>0</defaultValue>
+                                      </field>
+                                      <field description="Справка" editor="textarea" name="help" nullable="true" type="S">
+                                        <validators contentType="base64">HFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Редактор" extendableSelectionValues="true" name="editor" nullable="true" type="S">
+                                        <selectionValues>
+                                          <option description="По умолчанию">
+                                            <nullValue/>
+                                          </option>
+                                          <option description="Список">list</option>
+                                          <option description="Дата">date</option>
+                                          <option description="Время">time</option>
+                                          <option description="Индикатор">bar</option>
+                                          <option description="Байты">bytes</option>
+                                          <option description="Формат значения">formatString</option>
+                                          <option description="Экземпляр класса">instance</option>
+                                          <option description="Период времени">period</option>
+                                          <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                          <option description="Выражение">expression</option>
+                                          <option description="Выбор функции">functionselector</option>
+                                          <option description="Пароль">password</option>
+                                          <option description="Текстовый редактор">text</option>
+                                          <option description="HTML">html</option>
+                                          <option description="Текстовая область">textarea</option>
+                                          <option description="Встроенная текстовая область">etextarea</option>
+                                          <option description="Контекст">context</option>
+                                          <option description="Маска контекстов">contextmask</option>
+                                          <option description="Шрифт">font</option>
+                                          <option description="IP адрес">ip</option>
+                                          <option description="Бокс">box</option>
+                                          <option description="Изображение">image</option>
+                                          <option description="Звук">sound</option>
+                                          <option description="Hex">hex</option>
+                                          <option description="Ссылка">reference</option>
+                                          <option description="Активатор">activator</option>
+                                          <option description="Редактор кода">code</option>
+                                          <option description="Счетчик">spinner</option>
+                                          <option description="Уровень события">eventLevel</option>
+                                          <option description="Временной диапазон">dateRange</option>
+                                        </selectionValues>
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Опции редактора" name="editorOptions" nullable="true" type="T">
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Валидаторы" name="validators" nullable="true" type="T">
+                                        <defaultValue>
+                                          <table>
+                                            <format maxRecords="2147483647" reorderable="true">
+                                              <fields>
+                                                <field description="Тип" name="validator" nullable="true" type="S">
+                                                  <selectionValues>
+                                                    <option description="По умолчанию">
+                                                      <nullValue/>
+                                                    </option>
+                                                    <option description="Валидатор идентификаторов">I</option>
+                                                    <option description="Валидатор лимитов">L</option>
+                                                    <option description="Ненулевой Валидатор">N</option>
+                                                    <option description="Валидатор регулярных выражений">R</option>
+                                                    <option description="Валидатор выражений">E</option>
+                                                  </selectionValues>
+                                                  <defaultValue>
+                                                    <nullValue/>
+                                                  </defaultValue>
+                                                </field>
+                                                <field description="Параметры" name="options" type="S">
+                                                  <defaultValue/>
+                                                </field>
+                                              </fields>
+                                            </format>
+                                          </table>
+                                        </defaultValue>
+                                      </field>
+                                      <field description="Группа" name="group" nullable="true" type="S">
+                                        <defaultValue>
+                                          <nullValue/>
+                                        </defaultValue>
+                                      </field>
+                                    </fields>
+                                    <bindings>
+                                      <binding>
+                                        <reference>editorOptions</reference>
+                                        <expression>callFunction(&quot;utilities&quot;, &quot;editorOptions&quot;, {type}, {editor}, {editorOptions})</expression>
+                                      </binding>
+                                      <binding>
+                                        <reference>editor#choices</reference>
+                                        <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
+                                      </binding>
+                                    </bindings>
+                                    <validators contentType="base64">HEseHRxWHh0=</validators>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Сортировка разрешена" name="reorderable" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Запрещено изменение количества записей" name="unresizable" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Привязки" name="bindings" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647" reorderable="true">
+                                    <fields>
+                                      <field description="Цель" name="target" type="S">
+                                        <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                        <defaultValue/>
+                                      </field>
+                                      <field description="Выражение" editor="expression" name="expression" type="S">
+                                        <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
+                                        <defaultValue/>
+                                      </field>
+                                    </fields>
+                                  </format>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Закодированный" editor="textarea" name="encoded" readonly="true" type="S">
+                              <help>Закодированный формат таблицы</help>
+                              <defaultValue/>
+                            </field>
+                            <field description="Выражение именования" editor="expression" name="namingExpression" nullable="true" type="S">
+                              <defaultValue>
+                                <nullValue/>
+                              </defaultValue>
+                            </field>
+                          </fields>
+                          <validators contentType="base64">HEUeZTIxcGJsSmxZMjl5WkhOOUlEdzlJSHR0WVhoU1pXTnZjbVJ6ZlNBL0lHNTFiR3dnT2lBbnpPRHE4ZWpzNE92ODdlN2xJT3J1NitqMzVmSHk0dTRnNStEdjZQSGw2U0R0NVNEczd1Ymw4aURoKy9MOElPemw3Zno0NVN3ZzkrWHNJT3pvN2VqczRPdjg3ZTdsSnc9PR0=</validators>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="filterIcon">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="searchIcon">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="enableAdvancedSearch">0</value>
+                    <value name="smartFilterDisplayMode">SMART_FILTER_COMPONENT_MODE</value>
+                    <value name="smartFilterControlStates">
+                      <table>
+                        <format maxRecords="2147483647">
+                          <fields>
+                            <field description="Столбец" name="COMPONENT_SMART_FILTER_COLUMN" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Тип фильтра" name="COMPONENT_SMART_FILTER_TYPE" type="I">
+                              <selectionValues>
+                                <option description="Не определен">0</option>
+                                <option description="Число">1</option>
+                                <option description="Строка">2</option>
+                                <option description="Булево">3</option>
+                                <option description="Цвет">4</option>
+                                <option description="Дата">5</option>
+                                <option description="Таблица">6</option>
+                                <option description="Блок данных">7</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Состояние фильтра" name="COMPONENT_SMART_FILTER_STATE" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647"/>
+                                </table>
+                              </defaultValue>
+                            </field>
+                          </fields>
+                        </format>
+                      </table>
+                    </value>
+                    <value name="originalFormat">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Оригинальный формат" name="originalFormat" type="T">
+                              <defaultValue>
+                                <table>
+                                  <format maxRecords="2147483647"/>
+                                </table>
+                              </defaultValue>
+                            </field>
+                            <field description="Совместимость с оригинальным форматом" name="originalFormatCompatibility" type="B">
+                              <defaultValue>0</defaultValue>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="treeRecordsSettings">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Имя столбца идентификатора записи" name="idColumnName" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Имя столбца идентификатора родительской записи" name="parentIdColumnName" type="S">
+                              <defaultValue/>
+                            </field>
+                            <field description="Размер отступа" name="indentSize" type="I">
+                              <defaultValue>15</defaultValue>
+                            </field>
+                            <field description="Видимые дети" name="visibleChildren" type="I">
+                              <defaultValue>10</defaultValue>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="openedSwitcherImage">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                    <value name="closedSwitcherImage">
+                      <table>
+                        <format maxRecords="1" minRecords="1">
+                          <fields>
+                            <field description="Тип" name="imageType" type="I">
+                              <selectionValues>
+                                <option description="Бинарный блок">0</option>
+                                <option description="URL">1</option>
+                              </selectionValues>
+                              <defaultValue>0</defaultValue>
+                            </field>
+                            <field description="Данные изображения" name="imageData" type="A">
+                              <defaultValue>
+                                <data>
+                                  <nullValue/>
+                                </data>
+                              </defaultValue>
+                            </field>
+                            <field description="Ссылка на изображение" name="imageUrl" type="S">
+                              <defaultValue/>
+                            </field>
+                          </fields>
+                        </format>
+                        <records>
+                          <record/>
+                        </records>
+                      </table>
+                    </value>
+                  </record>
+                </records>
+              </table>
+            </value>
+          </record>
+          <record>
             <value name="name">htmlSnippetFullScreent</value>
             <value name="type">htmlSnippet</value>
             <value name="parameters">
@@ -37731,7 +39030,7 @@ height: 26px;</value>
                           <record>
                             <value name="breakpoint">none</value>
                             <value name="style">row-height:20*~*gap:12px*~*max-columns:12*~*max-rows:2*~*</value>
-                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*show-header:true*~*description:Console*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelConsole*~*panel-id:+449*~*order-id:3*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
+                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:auto*~*show-header:true*~*description:Console*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:false*~*collapsible:false*~*dock-movable:false*~*dock-collapsed:false*~*dock-floatable:false*~*dock-resizable:false*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelConsole*~*panel-id:+449*~*order-id:3*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
                       </table>
@@ -39873,21 +41172,16 @@ pointer-events: none;
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
                             <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:3*~*gridy:1*~*grid-width:2*~*grid-height:1*~*</value>
                           </record>
                         </records>
@@ -40380,21 +41674,16 @@ pointer-events: none;
                               <defaultValue>default</defaultValue>
                             </field>
                             <field description="Стиль" name="style" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                             <field description="Стиль обёртки" name="containerStyle" nullable="true" type="S">
-                              <defaultValue>
-                                <nullValue/>
-                              </defaultValue>
+                              <defaultValue/>
                             </field>
                           </fields>
                         </format>
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="style"/>
                             <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:2*~*grid-width:12*~*grid-height:1*~*</value>
                           </record>
                         </records>
@@ -42131,7 +43420,7 @@ pointer-events: none;
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*show-header:true*~*description:Session Notes*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelSessionNotes*~*panel-id:+449*~*order-id:6*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*overflow:auto*~*</value>
+                            <value name="containerStyle">indent-top:0px*~*indent-bottom:0px*~*indent-left:0px*~*indent-right:0px*~*overflow:auto*~*show-header:true*~*description:Session Notes*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*tab-id:panelSessionNotes*~*panel-id:+449*~*order-id:6*~*active:false*~*gridx:0*~*gridy:0*~*grid-width:1*~*grid-height:1*~*</value>
                           </record>
                         </records>
                       </table>
