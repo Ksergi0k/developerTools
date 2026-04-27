@@ -537,6 +537,10 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
+                    <value name="dependentResource">users.bhkCore.models.mapDPC</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
                     <value name="dependentResource">users.admin.models.controllerApplicationGit</value>
                     <value name="dependentResourceType">model</value>
                   </record>
@@ -550,6 +554,10 @@
                   </record>
                   <record>
                     <value name="dependentResource">users.bhkCore.models.dataStorageSystem</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.admin.models.converter</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
