@@ -1743,6 +1743,37 @@ flex-direction: row;</value>
                         </format>
                         <records>
                           <record>
+                            <value name="bindingId">1829481714549507072</value>
+                            <value name="target">form/buttonDashboardsSaveBindings:disabled</value>
+                            <value name="expression">records({form/dropdownListDashboardsBindingsContext:currentOptions}) == 0</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">6313891620763876352</value>
+                            <value name="expression">setVariableField(&#xd;
+  {form/dropdownListDashboardsBindingsContext:currentOptions$value}&#xd;
+  ,&apos;elements&apos;&#xd;
+  ,&apos;parameters&apos;&#xd;
+  ,0&#xd;
+  ,set(&#xd;
+      cell(&#xd;
+        getVariable(&#xd;
+            {form/dropdownListDashboardsBindingsContext:currentOptions$value}&#xd;
+            ,&apos;elements&apos;&#xd;
+        )&#xd;
+        ,&apos;parameters&apos;&#xd;
+      )&#xd;
+      ,&apos;bindings&apos;&#xd;
+      ,0&#xd;
+      ,filter({form/dataTableEditorDashboardsBindings:dataTable}&#xd;
+        ,&quot;{context} == &apos;&quot; + {form/dropdownListDashboardsBindingsContext:currentOptions$value} + &quot;&apos;&quot;&#xd;
+      )&#xd;
+  )&#xd;
+)</value>
+                            <value name="activator">form/buttonDashboardsSaveBindings:mouseClicked@</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
                             <value name="bindingId">5093094882974410752</value>
                             <value name="target">form/dataTableEditorDashboardsBindings:dataTable</value>
                             <value name="expression">aggregate(&#xd;
@@ -1750,20 +1781,6 @@ flex-direction: row;</value>
   ,&quot;union(addColumns(cell(cell(getVariable(dc(),&apos;elements&apos;),&apos;parameters&apos;),&apos;bindings&apos;),&apos;&lt;row&gt;&lt;I&gt;&lt;F=R&gt;&apos;, &apos;dr()&apos;,&apos;&lt;context&gt;&lt;S&gt;&lt;F=R&gt;&apos;,&apos;dc()&apos;,&apos;&lt;comments&gt;&lt;S&gt;&lt;F=N&gt;&apos;,&apos;&apos;),{env/previous})&quot;&#xd;
   ,table()&#xd;
 )</value>
-                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
-                            <value name="onevent">1</value>
-                          </record>
-                          <record>
-                            <value name="bindingId">2664877012939076608</value>
-                            <value name="target">form/dropdownListDashboardsBindingsContext:options</value>
-                            <value name="expression">table(&quot;&lt;&lt;value&gt;&lt;S&gt;&lt;F=K&gt;&lt;A=&gt;&lt;D=Значение&gt;&gt;&lt;&lt;label&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Метка&gt;&gt;&lt;&lt;tooltip&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Всплывающая подсказка&gt;&gt;&quot;)</value>
-                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
-                            <value name="onevent">1</value>
-                          </record>
-                          <record>
-                            <value name="bindingId">1169027014887866368</value>
-                            <value name="target">form/dropdownListDashboardsBindingsContext:currentOptions</value>
-                            <value name="expression">&quot;&quot;</value>
                             <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
                             <value name="onevent">1</value>
                           </record>
@@ -1782,6 +1799,20 @@ flex-direction: row;</value>
   )&#xd;
 )</value>
                             <value name="activator">form/dataTableEditorDashboardsBindings:cellUpdated@</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">2664877012939076608</value>
+                            <value name="target">form/dropdownListDashboardsBindingsContext:options</value>
+                            <value name="expression">table(&quot;&lt;&lt;value&gt;&lt;S&gt;&lt;F=K&gt;&lt;A=&gt;&lt;D=Значение&gt;&gt;&lt;&lt;label&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Метка&gt;&gt;&lt;&lt;tooltip&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Всплывающая подсказка&gt;&gt;&quot;)</value>
+                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
+                            <value name="onevent">1</value>
+                          </record>
+                          <record>
+                            <value name="bindingId">1169027014887866368</value>
+                            <value name="target">form/dropdownListDashboardsBindingsContext:currentOptions</value>
+                            <value name="expression">&quot;&quot;</value>
+                            <value name="activator">form/buttonCollectContexts:mouseClicked@</value>
                             <value name="onevent">1</value>
                           </record>
                           <record>
@@ -15430,7 +15461,7 @@ svg{
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:2*~*grid-width:12*~*grid-height:1*~*container-style:.table-input, .agg-textarea{
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:12*~*grid-height:2*~*container-style:.table-input, .agg-textarea{
   height: 3lh;
 }*~*</value>
                           </record>
@@ -15466,8 +15497,9 @@ svg{
                       </table>
                     </value>
                     <value name="gridx">1</value>
-                    <value name="gridy">2</value>
+                    <value name="gridy">1</value>
                     <value name="gridWidth">12</value>
+                    <value name="gridHeight">2</value>
                     <value name="style"/>
                     <value name="visibleChildren">
                       <table>
@@ -21108,7 +21140,8 @@ table{
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:11*~*gridy:1*~*grid-width:1*~*grid-height:1*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:11*~*gridy:1*~*grid-width:1*~*grid-height:1*~*container-style:z-index: 999;
+margin-top: 8px;*~*</value>
                           </record>
                         </records>
                       </table>
@@ -21155,7 +21188,8 @@ table{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">z-index: 999;
+margin-top: 8px;</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -24212,7 +24246,8 @@ table{
                         <records>
                           <record>
                             <value name="breakpoint">none</value>
-                            <value name="containerStyle">show-header:true*~*icon:0*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:12*~*gridy:1*~*grid-width:1*~*grid-height:1*~*</value>
+                            <value name="containerStyle">overflow:auto*~*show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:12*~*gridy:1*~*grid-width:1*~*grid-height:1*~*container-style:z-index: 999;
+margin-top: 8px;*~*</value>
                           </record>
                         </records>
                       </table>
@@ -24259,7 +24294,8 @@ table{
                         </format>
                       </table>
                     </value>
-                    <value name="containerStyle"/>
+                    <value name="containerStyle">z-index: 999;
+margin-top: 8px;</value>
                     <value name="preloaderIcon">
                       <table>
                         <format maxRecords="1" minRecords="1">
@@ -24321,6 +24357,7 @@ table{
                         </records>
                       </table>
                     </value>
+                    <value name="disabled">1</value>
                     <value name="buttonTheme">auxiliary</value>
                     <value name="textButtonContainerStyle"/>
                     <value name="imageButtonContainerStyle"/>
