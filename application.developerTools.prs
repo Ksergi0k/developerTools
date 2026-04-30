@@ -533,10 +533,6 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.bhkCore.models.test</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.bhkCore.models.mapDPC</value>
                     <value name="dependentResourceType">model</value>
                   </record>
