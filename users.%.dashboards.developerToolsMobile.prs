@@ -1194,16 +1194,16 @@
                                       </field>
                                       <field description="Тип" name="type" type="S">
                                         <selectionValues>
-                                          <option description="Целочисленный">I</option>
-                                          <option description="Строковый">S</option>
+                                          <option description="Бинарный блок">A</option>
                                           <option description="Булевский">B</option>
-                                          <option description="Длинный целочисленный">L</option>
-                                          <option description="С плавающей запятой">F</option>
-                                          <option description="С плавающей запятой (64-бит)">E</option>
+                                          <option description="Строковый">S</option>
+                                          <option description="Цвет">C</option>
                                           <option description="Дата">D</option>
                                           <option description="Табличный">T</option>
-                                          <option description="Цвет">C</option>
-                                          <option description="Бинарный блок">A</option>
+                                          <option description="С плавающей запятой (64-бит)">E</option>
+                                          <option description="С плавающей запятой">F</option>
+                                          <option description="Целочисленный">I</option>
+                                          <option description="Длинный целочисленный">L</option>
                                         </selectionValues>
                                         <defaultValue>I</defaultValue>
                                       </field>
@@ -1269,36 +1269,36 @@
                                           <option description="По умолчанию">
                                             <nullValue/>
                                           </option>
-                                          <option description="Список">list</option>
                                           <option description="Дата">date</option>
-                                          <option description="Время">time</option>
-                                          <option description="Индикатор">bar</option>
-                                          <option description="Байты">bytes</option>
                                           <option description="Формат значения">formatString</option>
                                           <option description="Экземпляр класса">instance</option>
-                                          <option description="Период времени">period</option>
-                                          <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                          <option description="Выражение">expression</option>
-                                          <option description="Выбор функции">functionselector</option>
-                                          <option description="Пароль">password</option>
-                                          <option description="Текстовый редактор">text</option>
-                                          <option description="HTML">html</option>
-                                          <option description="Текстовая область">textarea</option>
-                                          <option description="Встроенная текстовая область">etextarea</option>
-                                          <option description="Контекст">context</option>
-                                          <option description="Маска контекстов">contextmask</option>
-                                          <option description="Шрифт">font</option>
-                                          <option description="IP адрес">ip</option>
-                                          <option description="Бокс">box</option>
-                                          <option description="Изображение">image</option>
-                                          <option description="Звук">sound</option>
-                                          <option description="Hex">hex</option>
-                                          <option description="Ссылка">reference</option>
-                                          <option description="Активатор">activator</option>
                                           <option description="Редактор кода">code</option>
-                                          <option description="Счетчик">spinner</option>
-                                          <option description="Уровень события">eventLevel</option>
                                           <option description="Временной диапазон">dateRange</option>
+                                          <option description="Выбор функции">functionselector</option>
+                                          <option description="Звук">sound</option>
+                                          <option description="Текстовая область">textarea</option>
+                                          <option description="Бокс">box</option>
+                                          <option description="Ссылка">reference</option>
+                                          <option description="Индикатор">bar</option>
+                                          <option description="Пароль">password</option>
+                                          <option description="Уровень события">eventLevel</option>
+                                          <option description="Контекст">context</option>
+                                          <option description="HTML">html</option>
+                                          <option description="Hex">hex</option>
+                                          <option description="Текстовый редактор">text</option>
+                                          <option description="Счетчик">spinner</option>
+                                          <option description="Изображение">image</option>
+                                          <option description="Период времени">period</option>
+                                          <option description="Выражение">expression</option>
+                                          <option description="IP адрес">ip</option>
+                                          <option description="Список">list</option>
+                                          <option description="Встроенная текстовая область">etextarea</option>
+                                          <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                          <option description="Маска контекстов">contextmask</option>
+                                          <option description="Байты">bytes</option>
+                                          <option description="Время">time</option>
+                                          <option description="Активатор">activator</option>
+                                          <option description="Шрифт">font</option>
                                         </selectionValues>
                                         <defaultValue>
                                           <nullValue/>
@@ -1319,11 +1319,11 @@
                                                     <option description="По умолчанию">
                                                       <nullValue/>
                                                     </option>
+                                                    <option description="Валидатор регулярных выражений">R</option>
+                                                    <option description="Валидатор выражений">E</option>
                                                     <option description="Валидатор идентификаторов">I</option>
                                                     <option description="Валидатор лимитов">L</option>
                                                     <option description="Ненулевой Валидатор">N</option>
-                                                    <option description="Валидатор регулярных выражений">R</option>
-                                                    <option description="Валидатор выражений">E</option>
                                                   </selectionValues>
                                                   <defaultValue>
                                                     <nullValue/>
@@ -1668,16 +1668,16 @@
                                                 </field>
                                                 <field description="Тип" name="type" type="S">
                                                   <selectionValues>
-                                                    <option description="Целочисленный">I</option>
-                                                    <option description="Строковый">S</option>
+                                                    <option description="Бинарный блок">A</option>
                                                     <option description="Булевский">B</option>
-                                                    <option description="Длинный целочисленный">L</option>
-                                                    <option description="С плавающей запятой">F</option>
-                                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                                    <option description="Строковый">S</option>
+                                                    <option description="Цвет">C</option>
                                                     <option description="Дата">D</option>
                                                     <option description="Табличный">T</option>
-                                                    <option description="Цвет">C</option>
-                                                    <option description="Бинарный блок">A</option>
+                                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                                    <option description="С плавающей запятой">F</option>
+                                                    <option description="Целочисленный">I</option>
+                                                    <option description="Длинный целочисленный">L</option>
                                                   </selectionValues>
                                                   <defaultValue>I</defaultValue>
                                                 </field>
@@ -1743,36 +1743,36 @@
                                                     <option description="По умолчанию">
                                                       <nullValue/>
                                                     </option>
-                                                    <option description="Список">list</option>
                                                     <option description="Дата">date</option>
-                                                    <option description="Время">time</option>
-                                                    <option description="Индикатор">bar</option>
-                                                    <option description="Байты">bytes</option>
                                                     <option description="Формат значения">formatString</option>
                                                     <option description="Экземпляр класса">instance</option>
-                                                    <option description="Период времени">period</option>
-                                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                                    <option description="Выражение">expression</option>
-                                                    <option description="Выбор функции">functionselector</option>
-                                                    <option description="Пароль">password</option>
-                                                    <option description="Текстовый редактор">text</option>
-                                                    <option description="HTML">html</option>
-                                                    <option description="Текстовая область">textarea</option>
-                                                    <option description="Встроенная текстовая область">etextarea</option>
-                                                    <option description="Контекст">context</option>
-                                                    <option description="Маска контекстов">contextmask</option>
-                                                    <option description="Шрифт">font</option>
-                                                    <option description="IP адрес">ip</option>
-                                                    <option description="Бокс">box</option>
-                                                    <option description="Изображение">image</option>
-                                                    <option description="Звук">sound</option>
-                                                    <option description="Hex">hex</option>
-                                                    <option description="Ссылка">reference</option>
-                                                    <option description="Активатор">activator</option>
                                                     <option description="Редактор кода">code</option>
-                                                    <option description="Счетчик">spinner</option>
-                                                    <option description="Уровень события">eventLevel</option>
                                                     <option description="Временной диапазон">dateRange</option>
+                                                    <option description="Выбор функции">functionselector</option>
+                                                    <option description="Звук">sound</option>
+                                                    <option description="Текстовая область">textarea</option>
+                                                    <option description="Бокс">box</option>
+                                                    <option description="Ссылка">reference</option>
+                                                    <option description="Индикатор">bar</option>
+                                                    <option description="Пароль">password</option>
+                                                    <option description="Уровень события">eventLevel</option>
+                                                    <option description="Контекст">context</option>
+                                                    <option description="HTML">html</option>
+                                                    <option description="Hex">hex</option>
+                                                    <option description="Текстовый редактор">text</option>
+                                                    <option description="Счетчик">spinner</option>
+                                                    <option description="Изображение">image</option>
+                                                    <option description="Период времени">period</option>
+                                                    <option description="Выражение">expression</option>
+                                                    <option description="IP адрес">ip</option>
+                                                    <option description="Список">list</option>
+                                                    <option description="Встроенная текстовая область">etextarea</option>
+                                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                                    <option description="Маска контекстов">contextmask</option>
+                                                    <option description="Байты">bytes</option>
+                                                    <option description="Время">time</option>
+                                                    <option description="Активатор">activator</option>
+                                                    <option description="Шрифт">font</option>
                                                   </selectionValues>
                                                   <defaultValue>
                                                     <nullValue/>
@@ -1793,11 +1793,11 @@
                                                               <option description="По умолчанию">
                                                                 <nullValue/>
                                                               </option>
+                                                              <option description="Валидатор регулярных выражений">R</option>
+                                                              <option description="Валидатор выражений">E</option>
                                                               <option description="Валидатор идентификаторов">I</option>
                                                               <option description="Валидатор лимитов">L</option>
                                                               <option description="Ненулевой Валидатор">N</option>
-                                                              <option description="Валидатор регулярных выражений">R</option>
-                                                              <option description="Валидатор выражений">E</option>
                                                             </selectionValues>
                                                             <defaultValue>
                                                               <nullValue/>
@@ -1956,8 +1956,8 @@
                     <field description="Расположение вкладок" name="dockTabPosition" type="S">
                       <selectionValues>
                         <option description="Вверху">top</option>
-                        <option description="Внизу">bottom</option>
                         <option description="Слева">left</option>
+                        <option description="Внизу">bottom</option>
                         <option description="Справа">right</option>
                       </selectionValues>
                       <defaultValue>top</defaultValue>
@@ -2003,10 +2003,10 @@
                     <field description="Выход за пределы контента" name="overflow" type="S">
                       <selectionValues>
                         <option description="Авто">auto</option>
+                        <option description="Видимый">visible</option>
                         <option description="Скрытый">hidden</option>
                         <option description="Прокрутка">scroll</option>
                         <option description="Не установлено">unset</option>
-                        <option description="Видимый">visible</option>
                       </selectionValues>
                       <defaultValue>auto</defaultValue>
                     </field>

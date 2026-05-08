@@ -713,7 +713,7 @@
                                   <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                                 </binding>
                               </bindings>
-                              <validators contentType="base64">HEseHQ==</validators>
+                              <validators contentType="base64">HEseHRxWHh0=</validators>
                             </format>
                           </table>
                         </defaultValue>
@@ -950,7 +950,7 @@
                                   <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                                 </binding>
                               </bindings>
-                              <validators contentType="base64">HEseHQ==</validators>
+                              <validators contentType="base64">HEseHRxWHh0=</validators>
                             </format>
                           </table>
                         </defaultValue>
@@ -1283,7 +1283,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                 <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                               </binding>
                             </bindings>
-                            <validators contentType="base64">HEseHQ==</validators>
+                            <validators contentType="base64">HEseHRxWHh0=</validators>
                           </format>
                         </table>
                       </defaultValue>
@@ -1500,7 +1500,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                               <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                             </binding>
                           </bindings>
-                          <validators contentType="base64">HEseHQ==</validators>
+                          <validators contentType="base64">HEseHRxWHh0=</validators>
                         </format>
                         <records>
                           <record>
@@ -1837,7 +1837,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
                                 <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                               </binding>
                             </bindings>
-                            <validators contentType="base64">HEseHQ==</validators>
+                            <validators contentType="base64">HEseHRxWHh0=</validators>
                           </format>
                         </table>
                       </defaultValue>
@@ -2054,7 +2054,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
                               <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                             </binding>
                           </bindings>
-                          <validators contentType="base64">HEseHQ==</validators>
+                          <validators contentType="base64">HEseHRxWHh0=</validators>
                         </format>
                         <records>
                           <record>
@@ -2609,7 +2609,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                   <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                                 </binding>
                               </bindings>
-                              <validators contentType="base64">HEseHQ==</validators>
+                              <validators contentType="base64">HEseHRxWHh0=</validators>
                             </format>
                           </table>
                         </defaultValue>
@@ -2993,7 +2993,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                   <expression>{utilities:editors(&apos;{type}&apos;)}</expression>
                                 </binding>
                               </bindings>
-                              <validators contentType="base64">HEseHQ==</validators>
+                              <validators contentType="base64">HEseHRxWHh0=</validators>
                             </format>
                           </table>
                         </defaultValue>

@@ -93,7 +93,7 @@
         <records>
           <record>
             <value name="name">developerTools</value>
-            <value name="applicationFolderPath">.\apps\developerTools</value>
+            <value name="applicationFolderPath">apps\developerTools</value>
           </record>
         </records>
       </table>
@@ -537,7 +537,7 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.admin.models.controllerApplicationGit</value>
+                    <value name="dependentResource">users.test.models.object</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
@@ -553,15 +553,19 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.admin.models.converter</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.bhkCore.models.DBMS</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
                     <value name="dependentResource">users.bhkCore.models.PLC</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.plantUML.models.controllerPlantUML</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.converter.models.converter</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
@@ -573,10 +577,6 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.admin.models.modelTools</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.bhkCore.models.PDU</value>
                     <value name="dependentResourceType">model</value>
                   </record>
@@ -585,19 +585,23 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.admin.models.controllerPlantUML</value>
-                    <value name="dependentResourceType">model</value>
-                  </record>
-                  <record>
                     <value name="dependentResource">users.bhkCore.models.bffCore</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.bhkCore.models.controllerMoxa</value>
+                    <value name="dependentResource">users.controllerGit.models.controllerApplicationGit</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
                     <value name="dependentResource">users.bhkCore.models.hypervisors</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.developerTools.models.userTools</value>
+                    <value name="dependentResourceType">model</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.developerTools.models.modelTools</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
@@ -613,7 +617,7 @@
                     <value name="dependentResourceType">model</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.admin.models.userTools</value>
+                    <value name="dependentResource">users.telegramBotAPI.models.controllerTelegram</value>
                     <value name="dependentResourceType">model</value>
                   </record>
                 </records>
@@ -645,11 +649,31 @@
                     <value name="dependentResourceType">user</value>
                   </record>
                   <record>
-                    <value name="dependentResource">users.demo</value>
+                    <value name="dependentResource">users.plantUML</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.controllerGit</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.telegramBotAPI</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.usr</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.developerTools</value>
                     <value name="dependentResourceType">user</value>
                   </record>
                   <record>
                     <value name="dependentResource">users.admin</value>
+                    <value name="dependentResourceType">user</value>
+                  </record>
+                  <record>
+                    <value name="dependentResource">users.converter</value>
                     <value name="dependentResourceType">user</value>
                   </record>
                 </records>
