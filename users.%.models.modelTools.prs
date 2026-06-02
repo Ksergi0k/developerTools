@@ -184,69 +184,6 @@ public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
 </value>
             </record>
             <record>
-              <value name="name">sendFeedback</value>
-              <value name="inputformat">
-                <table>
-                  <formatId id="5"/>
-                  <records>
-                    <record>
-                      <value name="minRecords">1</value>
-                      <value name="maxRecords">1</value>
-                      <value name="fields">
-                        <table>
-                          <formatId id="6"/>
-                          <records>
-                            <record>
-                              <value name="name">message</value>
-                              <value name="type">S</value>
-                              <value name="editorOptions">
-                                <table>
-                                  <formatId id="7"/>
-                                  <records>
-                                    <record/>
-                                  </records>
-                                </table>
-                              </value>
-                            </record>
-                          </records>
-                        </table>
-                      </value>
-                      <value name="reorderable">0</value>
-                    </record>
-                  </records>
-                </table>
-              </value>
-              <value name="outputformat">
-                <table>
-                  <formatId id="5"/>
-                  <records>
-                    <record>
-                      <value name="reorderable">0</value>
-                    </record>
-                  </records>
-                </table>
-              </value>
-              <value name="type">0</value>
-              <value name="implementation">import com.tibbo.aggregate.common.context.*;&#xd;
-import com.tibbo.aggregate.common.datatable.*;&#xd;
-import com.tibbo.aggregate.common.server.*;&#xd;
-&#xd;
-import com.tibbo.linkserver.*;&#xd;
-import com.tibbo.linkserver.context.*;&#xd;
-&#xd;
-public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
-{&#xd;
-  public DataTable execute(Context con, FunctionDefinition def, CallerController caller, RequestController request, DataTable parameters) throws ContextException&#xd;
-  {&#xd;
-     &#xd;
-    &#xd;
-    caller.sendFeedback(1,parameters.get().toString(),10000);&#xd;
-    return null;&#xd;
-  }&#xd;
-}&#xd;
-</value>
-            </record>
-            <record>
               <value name="name">getFormat</value>
               <value name="inputformat">
                 <table>
@@ -305,7 +242,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                               <value name="type">T</value>
                               <value name="editorOptions">
                                 <table>
-                                  <formatId id="9"/>
+                                  <formatId id="7"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -317,7 +254,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                               <value name="type">S</value>
                               <value name="editorOptions">
                                 <table>
-                                  <formatId id="9"/>
+                                  <formatId id="7"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -329,7 +266,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                               <value name="type">S</value>
                               <value name="editorOptions">
                                 <table>
-                                  <formatId id="9"/>
+                                  <formatId id="7"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -447,6 +384,69 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
     }
   }
 }</value>
+            </record>
+            <record>
+              <value name="name">sendFeedback</value>
+              <value name="inputformat">
+                <table>
+                  <formatId id="5"/>
+                  <records>
+                    <record>
+                      <value name="minRecords">1</value>
+                      <value name="maxRecords">1</value>
+                      <value name="fields">
+                        <table>
+                          <formatId id="6"/>
+                          <records>
+                            <record>
+                              <value name="name">message</value>
+                              <value name="type">S</value>
+                              <value name="editorOptions">
+                                <table>
+                                  <formatId id="9"/>
+                                  <records>
+                                    <record/>
+                                  </records>
+                                </table>
+                              </value>
+                            </record>
+                          </records>
+                        </table>
+                      </value>
+                      <value name="reorderable">0</value>
+                    </record>
+                  </records>
+                </table>
+              </value>
+              <value name="outputformat">
+                <table>
+                  <formatId id="5"/>
+                  <records>
+                    <record>
+                      <value name="reorderable">0</value>
+                    </record>
+                  </records>
+                </table>
+              </value>
+              <value name="type">0</value>
+              <value name="implementation">import com.tibbo.aggregate.common.context.*;&#xd;
+import com.tibbo.aggregate.common.datatable.*;&#xd;
+import com.tibbo.aggregate.common.server.*;&#xd;
+&#xd;
+import com.tibbo.linkserver.*;&#xd;
+import com.tibbo.linkserver.context.*;&#xd;
+&#xd;
+public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
+{&#xd;
+  public DataTable execute(Context con, FunctionDefinition def, CallerController caller, RequestController request, DataTable parameters) throws ContextException&#xd;
+  {&#xd;
+     &#xd;
+    &#xd;
+    caller.sendFeedback(1,parameters.get().toString(),10000);&#xd;
+    return null;&#xd;
+  }&#xd;
+}&#xd;
+</value>
             </record>
           </records>
         </table>
@@ -2568,7 +2568,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
         <int>7</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="Опции редактора" name="options" type="S">
+            <field description="Editor Options" name="options" type="S">
               <defaultValue/>
             </field>
           </fields>
@@ -2594,7 +2594,7 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
         <int>9</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="Editor Options" name="options" type="S">
+            <field description="Опции редактора" name="options" type="S">
               <defaultValue/>
             </field>
           </fields>
