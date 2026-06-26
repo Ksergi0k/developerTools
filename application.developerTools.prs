@@ -14,7 +14,7 @@
           <records>
             <record>
               <value name="name">developerTools</value>
-              <value name="applicationFolderPath">apps\developerTools</value>
+              <value name="applicationFolderPath">apps/developerTools</value>
             </record>
           </records>
         </table>
@@ -76,8 +76,8 @@
         <int>0</int>
         <format maxRecords="2147483647">
           <fields>
-            <field description="Application/Plugin ID" extendableSelectionValues="true" keyfield="true" name="id" type="S">
-              <help>ID of another Application required by the application. It should match the name of another application’s context, e.g. &quot;baseApp&quot;.</help>
+            <field description="ID приложения/плагина" extendableSelectionValues="true" keyfield="true" name="id" type="S">
+              <help>ID другого приложения, необходимого для правильной работы данного приложения. Он должен совпадать с именем контекста другого приложения, например &quot;baseApp&quot;.</help>
               <defaultValue/>
             </field>
           </fields>
@@ -94,70 +94,70 @@
         <int>1</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="Name" name="name" notReplicated="true" type="S">
-              <validators contentType="base64">HEkeHRxMHjEgNTAdHFIeXHcrXl5OYW1lIG1heSBjb250YWluIG9ubHkgTGF0aW4gbGV0dGVycywgZGlnaXRzLCBhbmQgdW5kZXJzY29yZXMd</validators>
-              <help>Name of the resource and corresponding system context, required to refer to this resource from other parts of the system. It should satisfy the context naming conventions. WARNING: changing name will corrupt all references to the resource.</help>
+            <field description="Имя" name="name" notReplicated="true" type="S">
+              <validators contentType="base64">HEkeHRxMHjEgNTAdHFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+              <help>Имя объекта и соответствующего контекста, необходимое для ссылки на данный контекст из других частей системы. Оно должно соответствовать соглашениям по именованию контекстов. ПРЕДУПРЕЖДЕНИЕ: изменение имени приведет к неработоспособности всех ссылок на объект.</help>
               <defaultValue/>
             </field>
-            <field description="Description" name="description" notReplicated="true" type="S">
-              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5eRGVzY3JpcHRpb24gbWF5IGNvbnRhaW4gb25seSBwcmludGFibGUgY2hhcmFjdGVycx0=</validators>
-              <help>The application context description (the text is displayed in the context tree).</help>
+            <field description="Описание" name="description" notReplicated="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <help>Описание контекста приложения (текст отображается в дереве контекстов).</help>
               <defaultValue/>
             </field>
-            <field advanced="true" description="Application Folder Path" name="applicationFolderPath" type="S">
-              <help>Server folder used for importing/exporting of application files by default.</help>
+            <field advanced="true" description="Путь к папке приложения" name="applicationFolderPath" type="S">
+              <help>Папка на сервере, используемая по умолчанию для импорта/экспорта файлов приложения.</help>
               <defaultValue/>
             </field>
-            <field advanced="true" description="Comment" editor="textarea" name="comment" type="S">
-              <help>Any detailed information about the application, such as purpose, recent change history, etc.</help>
+            <field advanced="true" description="Комментарий" editor="textarea" name="comment" type="S">
+              <help>Любые подробности о приложении, такие как назначение, изменения в последней версии, и т.д.</help>
               <defaultValue/>
             </field>
-            <field description="State" hidden="true" name="state" type="S">
+            <field description="Состояние Приложения" hidden="true" name="state" type="S">
               <selectionValues>
-                <option description="Editable">EDITABLE</option>
-                <option description="Installed">INSTALLED</option>
-                <option description="Deployed">DEPLOYED</option>
-                <option description="Deployed with errors">DEPLOYED_WITH_ERRORS</option>
+                <option description="В разработке">EDITABLE</option>
+                <option description="Установлено">INSTALLED</option>
+                <option description="Развёрнуто">DEPLOYED</option>
+                <option description="Развёрнуто с ошибками">DEPLOYED_WITH_ERRORS</option>
               </selectionValues>
               <defaultValue>EDITABLE</defaultValue>
             </field>
-            <field advanced="true" description="Application Home Dashboard" editor="context" name="applicationHomeDashboard" nullable="true" type="S">
-              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQeUm9vdB0cRR5jb250ZXh0HR0cHGNvbnRleHRUeXBlcx0cVB0cQR4cRh4cHGNvbnRleHRUeXBlHRxTHRxBHh0cRB5Db250ZXh0IFR5cGUdHR0dHEQeQ29udGV4dCBUeXBlcx0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQeQ29udGV4dCBNYXNrHR0dHRxEHkNvbnRleHQgTWFza3MdHRxNHjEdHFgeMR0dHFIeHBodHBxSHhxkYXNoYm9hcmQdHR0cHFIeHHVzZXJzLiouZGFzaGJvYXJkcy4qLiodHRxSHhx1c2Vycy4qLmRhc2hib2FyZHNfZ3JvdXBzLiouKi4qHR0dHQ==</editorOptions>
-              <help>Indicates which dashboard to open when the Open action is called on the application.</help>
+            <field advanced="true" description="Домашний экран приложения" editor="context" name="applicationHomeDashboard" nullable="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cZGFzaGJvYXJkHR0dHBxSHhx1c2Vycy4qLmRhc2hib2FyZHMuKi4qHR0cUh4cdXNlcnMuKi5kYXNoYm9hcmRzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Указывает, какую инструментальную панель следует открывать при вызове действия Открыть приложение.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field advanced="true" description="Disable Simple Mode" name="applicationDisableSimpleMode" type="B">
-              <help>When enabled, users with sufficient permissions can open the application without Simple Mode limitations.</help>
+            <field advanced="true" description="Выключить простой режим" name="applicationDisableSimpleMode" type="B">
+              <help>Если параметр включен, пользователи с достаточными правами могут открывать приложение без ограничений простого режима.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field advanced="true" description="Automatic Deployment" name="applicationAutoDeploy" type="B">
-              <help>When enabled, the application&apos;s Deploy action will automatically run upon server launch.</help>
+            <field advanced="true" description="Автоматическое развертывание" name="applicationAutoDeploy" type="B">
+              <help>Если параметр включен, развертывание приложения будет автоматически выполняться при запуске сервера.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field advanced="true" description="Automatic Deployment Parameters" name="applicationAutoDeployParameters" type="T">
-              <help>Parameters applied to the Deploy action triggered by the server launch when Automatic Deployment is enabled.</help>
+            <field advanced="true" description="Параметры автоматического развертывания" name="applicationAutoDeployParameters" type="T">
+              <help>Параметры, применяемые к действию развертывания, запускаемому при запуске сервера, когда включено Автоматическое развертывание.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="1" minRecords="1">
                     <fields>
-                      <field description="Deployment User Mode" name="deploymentUserMode" type="S">
+                      <field description="Режим выбора учетной записи" name="deploymentUserMode" type="S">
                         <selectionValues>
-                          <option description="Application owner">APPLICATION_OWNER</option>
-                          <option description="Current user">CURRENT_USER</option>
-                          <option description="Select custom user">CUSTOM_USER</option>
+                          <option description="От имени владельца приложения">APPLICATION_OWNER</option>
+                          <option description="От имени текущего пользователя">CURRENT_USER</option>
+                          <option description="Выбрать пользователя вручную">CUSTOM_USER</option>
                         </selectionValues>
-                        <help>Deployment user mode which will be used as resources owner</help>
+                        <help>Режим выбора учетной записи пользователя, от имени которого создаются ресурсы.</help>
                         <defaultValue>APPLICATION_OWNER</defaultValue>
                       </field>
-                      <field description="Deployment User Context" editor="context" name="deploymentUser" type="S">
-                        <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQeUm9vdB0cRR5jb250ZXh0HR0cHGNvbnRleHRUeXBlcx0cVB0cQR4cRh4cHGNvbnRleHRUeXBlHRxTHRxBHh0cRB5Db250ZXh0IFR5cGUdHR0dHEQeQ29udGV4dCBUeXBlcx0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQeQ29udGV4dCBNYXNrHR0dHRxEHkNvbnRleHQgTWFza3MdHRxNHjEdHFgeMR0dHFIeHBodHBxSHhx1c2VyHR0dHBxSHhx1c2Vycy4qLnVzZXJzLiouKh0dHFIeHHVzZXJzLioudXNlcnNfZ3JvdXBzLiouKi4qHR0dHQ==</editorOptions>
-                        <help>User Context which will be the resources owner in case “Select custom user mode” was chosen</help>
+                      <field description="Учетная запись" editor="context" name="deploymentUser" type="S">
+                        <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cdXNlch0dHRwcUh4cdXNlcnMuKi51c2Vycy4qLiodHRxSHhx1c2Vycy4qLnVzZXJzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+                        <help>Учетная запись пользователя для создания ресурсов (в случае выбора пользователя вручную)</help>
                         <defaultValue/>
                       </field>
-                      <field description="Remove orphans" name="deploymentRemoveOrphans" type="B">
-                        <help>Remove contexts that were owned and added by the application, but currently do not exist in application resources.</help>
+                      <field description="Удалить отвязанные контексты" name="deploymentRemoveOrphans" type="B">
+                        <help>Удалить контексты, которые хранят ссылку на это приложение, но более не являются его членами</help>
                         <defaultValue>0</defaultValue>
                       </field>
                     </fields>
@@ -172,18 +172,18 @@
         <int>2</int>
         <format maxRecords="2147483647">
           <fields>
-            <field description="Name" keyfield="true" name="name" type="S">
-              <help>Name of the Export / Import Rule which will be also used to name a file containing the data from the Export Expression.</help>
+            <field description="Название" keyfield="true" name="name" type="S">
+              <help>Название правила экспорта/импорта, которое также будет использоваться для именования файла, содержащего данные, полученные от выражения экспорта.</help>
               <defaultValue/>
             </field>
-            <field description="Export Expression" editor="expression" name="exportExpression" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxEYXRhVGFibGUdHFBlcm1pc3Npb25zIG9mIHRoZSBjb250ZXh0IGVudGl0eSBvcGVyYXRpb24gaW5pdGlhdG9yLiBQZXJtaXNzaW9ucyBvZiB0aGUgbG9nZ2VkIHVzZXIgaW4gY2FzZSBvZiBtYW51YWwgaW5pdGlhdGlvbi4gUGVybWlzc2lvbnMgb2YgYW4gYWN0aXZlIHN5c3RlbSByZXNvdXJjZSdzIG93bmVyIGluIGNhc2Ugb2YgYXV0b21hdGljIGluaXRpYXRpb24uHRxUaGUgY3VycmVudCBhcHBsaWNhdGlvbiBjb250ZXh0Lh0cGh0cGh0cMB0cGh0d</editorOptions>
-              <help>Expression which must evaluate to a Data Table. The Data Table will be later passed to the Import Expression as the default table.</help>
+            <field description="Выражение экспорта" editor="expression" name="exportExpression" type="S">
+              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cRGF0YVRhYmxlHRzQn9GA0LDQstCwINC40L3QuNGG0LjQsNGC0L7RgNCwINC+0L/QtdGA0LDRhtC40Lgg0YEg0YHRg9GJ0L3QvtGB0YLRjNGOINC60L7QvdGC0LXQutGB0YLQsC4g0J/RgNCw0LLQsCDQt9Cw0YDQtdCz0LjRgdGC0YDQuNGA0L7QstCw0L3QvdC+0LPQviDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0YHQu9GD0YfQsNC1INGA0YPRh9C90L7Qs9C+INC30LDQv9GD0YHQutCwINC+0L/QtdGA0LDRhtC40LguINCf0YDQsNCy0LAg0LLQu9Cw0LTQtdC70YzRhtCwINCw0LrRgtC40LLQvdC+0LPQviDRgdC40YHRgtC10LzQvdC+0LPQviDRgNC10YHRg9GA0YHQsCDQsiDRgdC70YPRh9Cw0LUg0LDQstGC0L7QvNCw0YLQuNGH0LXRgdC60L7Qs9C+INC30LDQv9GD0YHQutCwLh0c0KLQtdC60YPRidC40Lkg0LrQvtC90YLQtdC60YHRgiDQv9GA0LjQu9C+0LbQtdC90LjRjy4dHBodHBodHDAdHBodHQ==</editorOptions>
+              <help>Выражение, которое должно при вычислении вернуть таблицу. Эта таблица будет позднее передана в Выражение импорта в виде таблицы по-умолчанию.</help>
               <defaultValue/>
             </field>
-            <field description="Import Expression" editor="expression" name="importExpression" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxOb25lHRxQZXJtaXNzaW9ucyBvZiB0aGUgY29udGV4dCBlbnRpdHkgb3BlcmF0aW9uIGluaXRpYXRvci4gUGVybWlzc2lvbnMgb2YgdGhlIGxvZ2dlZCB1c2VyIGluIGNhc2Ugb2YgbWFudWFsIGluaXRpYXRpb24uIFBlcm1pc3Npb25zIG9mIGFuIGFjdGl2ZSBzeXN0ZW0gcmVzb3VyY2UncyBvd25lciBpbiBjYXNlIG9mIGF1dG9tYXRpYyBpbml0aWF0aW9uLh0cVGhlIGN1cnJlbnQgYXBwbGljYXRpb24gY29udGV4dC4dHEEgZGF0YSB0YWJsZSBjcmVhdGVkIGJ5IHRoZSBFeHBvcnQgRXhwcmVzc2lvbiBkdXJpbmcgYXBwbGljYXRpb24gZXhwb3J0Lh0cGh0cMB0cGh0d</editorOptions>
-              <help>Expression that accepts a Data Table created by the Export Expression and applies it to the server where the application is being deployed. For example, it could create the necessary folders in the media library and import the file-type records into the media library.</help>
+            <field description="Выражение импорта" editor="expression" name="importExpression" type="S">
+              <editorOptions contentType="base64">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</editorOptions>
+              <help>Выражение принимает таблицу данных, созданную Выражением импорта, в качестве таблицы по-умолчанию, и применяет ее к серверу, на котором развертывается приложение. Например, оно может создать необходимые папки в медиа библиотеке и импортировать в нее записи файлового типа.</help>
               <defaultValue/>
             </field>
           </fields>
@@ -194,13 +194,13 @@
         <int>3</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="Languages" name="languages" type="T">
-              <help>List of languages supported by the application.</help>
+            <field description="Языки" name="languages" type="T">
+              <help>Список поддерживаемых приложением языков.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647" minRecords="1">
                     <fields>
-                      <field description="Language" keyfield="true" name="language" type="S">
+                      <field description="Язык" keyfield="true" name="language" type="S">
                         <selectionValues>
                           <option description="Afar">aa</option>
                           <option description="Abkhazian">ab</option>
@@ -399,8 +399,8 @@
                 </table>
               </defaultValue>
             </field>
-            <field description="Dictionary" name="textResourceBundle" type="T">
-              <help>Table defining resource constants to be used by the application, and their values in every supported language.</help>
+            <field description="Словарь" name="textResourceBundle" type="T">
+              <help>Таблица со всеми константами ресурсов, используемыми приложением, и их значениями на каждом поддерживаемом язык.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
@@ -420,12 +420,12 @@
         <int>4</int>
         <format maxRecords="2147483647">
           <fields>
-            <field description="Context" editor="context" keyfield="true" name="context" type="S">
-              <help>Path of a context whose variable will be packaged.</help>
+            <field description="Контекст" editor="context" keyfield="true" name="context" type="S">
+              <help>Путь контекста, переменная которого будет упакована в приложение.</help>
               <defaultValue/>
             </field>
-            <field description="Variable" editor="context" extendableSelectionValues="true" keyfield="true" name="variable" type="S">
-              <help>Name of the variable whose value will be packaged.</help>
+            <field description="Переменная" editor="context" extendableSelectionValues="true" keyfield="true" name="variable" type="S">
+              <help>Имя переменной, значение которой будет упаковано.</help>
               <defaultValue/>
             </field>
           </fields>
@@ -442,66 +442,66 @@
         <int>5</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
-            <field description="Resource" editor="context" keyfield="true" name="resource" type="S">
-              <help>This field defines a context (resource) that will be included in the application.</help>
+            <field description="Ресурс" editor="context" keyfield="true" name="resource" type="S">
+              <help>Это поле определяет контекст (ресурс), который будет включен в приложение.</help>
               <defaultValue/>
             </field>
-            <field advanced="true" description="Resource Description" extendableSelectionValues="true" name="description" type="S">
+            <field advanced="true" description="Описание ресурса" extendableSelectionValues="true" name="description" type="S">
               <selectionValues>
-                <option description="Use Context Description">useContextDescription</option>
+                <option description="Использовать описание контекста">useContextDescription</option>
               </selectionValues>
-              <help>Resource description that will be used in the server resource table. This field supports internationalization. Using $R{resourceId} pattern allows you to access text resources.</help>
+              <help>Описание ресурса, которое будет использоваться в таблице ресурсов сервера. Это поле поддерживает интернационализацию. Используйте шаблон $R{resourceId} для доступа к текстовым ресурсам.</help>
               <defaultValue>useContextDescription</defaultValue>
             </field>
-            <field description="Context Description" extendableSelectionValues="true" name="contextDescription" type="S">
+            <field description="Описание контекста" extendableSelectionValues="true" name="contextDescription" type="S">
               <selectionValues>
-                <option description="Use Context Description">useContextDescription</option>
+                <option description="Использовать описание контекста">useContextDescription</option>
               </selectionValues>
-              <help>The description that will be used for the context created from the resources. This field supports internationalization. Using $R{resourceId} pattern allows you to access text resources.</help>
+              <help>Описание, которое будет использоваться для контекста, созданного из ресурсов. Это поле поддерживает интернационализацию. Используйте шаблон $R{resourceId} для доступа к текстовым ресурсам.</help>
               <defaultValue>useContextDescription</defaultValue>
             </field>
-            <field description="Type" hidden="true" name="type" type="S">
+            <field description="Тип" hidden="true" name="type" type="S">
               <defaultValue/>
             </field>
-            <field advanced="true" description="Category" extendableSelectionValues="true" name="category" type="S">
+            <field advanced="true" description="Категория" extendableSelectionValues="true" name="category" type="S">
               <selectionValues>
-                <option description="Use Application Description">useApplicationDescription</option>
+                <option description="Использовать описание приложения">useApplicationDescription</option>
               </selectionValues>
-              <help>The category in which the resource will be placed (used in the server resource table). This field supports internationalization. Using $R{resourceId} pattern allows you to access text resources.</help>
+              <help>Категория, в которой будет размещен ресурс (используется в таблице ресурсов сервера). Это поле поддерживает интернационализацию. Используйте шаблон $R{resourceId} для доступа к текстовым ресурсам.</help>
               <defaultValue>useApplicationDescription</defaultValue>
             </field>
-            <field advanced="true" description="Subcategory" name="subcategory" type="S">
-              <help>The subcategory in which the resource will be placed (used in the server resource table). This field supports internationalization. Using $R{resourceId} pattern allows you to access text resources.</help>
+            <field advanced="true" description="Подкатегория" name="subcategory" type="S">
+              <help>Подкатегория, в которой будет размещен ресурс (используется в таблице ресурсов сервера). Это поле поддерживает интернационализацию. Используйте шаблон $R{resourceId} для доступа к текстовым ресурсам.</help>
               <defaultValue/>
             </field>
-            <field advanced="true" description="Group Name" extendableSelectionValues="true" name="groupName" type="S">
-              <validators contentType="base64">HFIeXHcrXl5OYW1lIG1heSBjb250YWluIG9ubHkgTGF0aW4gbGV0dGVycywgZGlnaXRzLCBhbmQgdW5kZXJzY29yZXMd</validators>
+            <field advanced="true" description="Имя группы" extendableSelectionValues="true" name="groupName" type="S">
+              <validators contentType="base64">HFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
               <selectionValues>
-                <option description="Do Not Create Group">doNotCreateGroup</option>
-                <option description="Use Application Name">useApplicationName</option>
+                <option description="Не создавать группу">doNotCreateGroup</option>
+                <option description="Использовать имя приложения">useApplicationName</option>
               </selectionValues>
-              <help>This field defines the name of the group in which resource will be created.</help>
+              <help>Это поле определяет имя группы, в которой будет создан ресурс.</help>
               <defaultValue>doNotCreateGroup</defaultValue>
             </field>
-            <field advanced="true" description="Group Description" extendableSelectionValues="true" name="groupDescription" type="S">
+            <field advanced="true" description="Описание группы" extendableSelectionValues="true" name="groupDescription" type="S">
               <selectionValues>
-                <option description="Use Application Description">useApplicationDescription</option>
+                <option description="Использовать описание приложения">useApplicationDescription</option>
               </selectionValues>
-              <help>This field defines the description of the group in which resource will be created. This field supports internationalization. Using $R{resourceId} pattern allows you to access text resources.</help>
+              <help>Это поле определяет описание группы, в которой будет создан ресурс. Это поле поддерживает интернационализацию. Используйте шаблон $R{resourceId} для доступа к текстовым ресурсам.</help>
               <defaultValue>useApplicationDescription</defaultValue>
             </field>
-            <field description="Version" name="version" type="I">
+            <field description="Версия" name="version" type="I">
               <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-              <help>Resource version, an integer value that should be incremented each time the resource is modified.</help>
+              <help>Версия ресурса, целочисленное значение, которое следует увеличивать при каждом изменении ресурса.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Dependencies" name="dependencies" type="T">
-              <help>Resource dependency table. Here you should specify all the contexts on which the current resource depends.</help>
+            <field description="Зависимости" name="dependencies" type="T">
+              <help>Таблица зависимостей ресурса. Здесь следует указать все контексты, от которых зависит текущий ресурс.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647">
                     <fields>
-                      <field description="Dependency" editor="context" keyfield="true" name="dependency" type="S">
+                      <field description="Зависимость" editor="context" keyfield="true" name="dependency" type="S">
                         <defaultValue/>
                       </field>
                     </fields>
@@ -510,16 +510,16 @@
                 </table>
               </defaultValue>
             </field>
-            <field advanced="true" description="Create on First Server Launch" name="createOnFirstServerLaunch" type="B">
-              <help>The resource will be created when the server is first started if this does not contradict the resource creation mode selected during the server installation.</help>
+            <field advanced="true" description="Создать при первом запуске сервера" name="createOnFirstServerLaunch" type="B">
+              <help>Ресурс будет создан при первом запуске сервера, если это не противоречит режиму создания ресурсов, выбранному при установке сервера.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field advanced="true" description="Protected" name="protected" type="B">
-              <help>A protected resource does not allow reading and changing its settings.</help>
+            <field advanced="true" description="Защищенный" name="protected" type="B">
+              <help>Защищенный ресурс не позволяет читать и изменять его настройки.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field advanced="true" description="Include Dependent Resources" name="includeDependentResources" type="B">
-              <help>If it is enabled, the application includes all dependent contexts in the export.</help>
+            <field advanced="true" description="Включить зависимые ресурсы" name="includeDependentResources" type="B">
+              <help>Если он включен, приложение включает в экспорт все зависимые контексты.</help>
               <defaultValue>0</defaultValue>
             </field>
             <field hidden="true" name="dependentResources" type="T">
@@ -538,8 +538,8 @@
                 </table>
               </defaultValue>
             </field>
-            <field advanced="true" description="Include Dependent Variables" name="includeDependentVariables" type="B">
-              <help>If it is enabled, the application includes all dependent variables in the export.</help>
+            <field advanced="true" description="Включить зависимые переменные" name="includeDependentVariables" type="B">
+              <help>Если он включен, приложение включает в экспорт все зависимые переменные.</help>
               <defaultValue>0</defaultValue>
             </field>
             <field hidden="true" name="dependentVariables" type="T">
@@ -558,9 +558,9 @@
                 </table>
               </defaultValue>
             </field>
-            <field advanced="true" description="Creation Template Expression" editor="expression" name="templateCreationExpression" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxEYXRhVGFibGUdHFBlcm1pc3Npb25zIG9mIHRoZSBjb250ZXh0IGVudGl0eSBvcGVyYXRpb24gaW5pdGlhdG9yLiBQZXJtaXNzaW9ucyBvZiB0aGUgbG9nZ2VkIHVzZXIgaW4gY2FzZSBvZiBtYW51YWwgaW5pdGlhdGlvbi4gUGVybWlzc2lvbnMgb2YgYW4gYWN0aXZlIHN5c3RlbSByZXNvdXJjZSdzIG93bmVyIGluIGNhc2Ugb2YgYXV0b21hdGljIGluaXRpYXRpb24uHRxUaGUgY3VycmVudCBhcHBsaWNhdGlvbiBjb250ZXh0Lh0cGh0cGh0cMB0cGh0d</editorOptions>
-              <help>The result of this expression is a template table that will be stored in the export section and passed in the create() method of the context during the import procedure.</help>
+            <field advanced="true" description="Выражение шаблона" editor="expression" name="templateCreationExpression" type="S">
+              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cRGF0YVRhYmxlHRzQn9GA0LDQstCwINC40L3QuNGG0LjQsNGC0L7RgNCwINC+0L/QtdGA0LDRhtC40Lgg0YEg0YHRg9GJ0L3QvtGB0YLRjNGOINC60L7QvdGC0LXQutGB0YLQsC4g0J/RgNCw0LLQsCDQt9Cw0YDQtdCz0LjRgdGC0YDQuNGA0L7QstCw0L3QvdC+0LPQviDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0YHQu9GD0YfQsNC1INGA0YPRh9C90L7Qs9C+INC30LDQv9GD0YHQutCwINC+0L/QtdGA0LDRhtC40LguINCf0YDQsNCy0LAg0LLQu9Cw0LTQtdC70YzRhtCwINCw0LrRgtC40LLQvdC+0LPQviDRgdC40YHRgtC10LzQvdC+0LPQviDRgNC10YHRg9GA0YHQsCDQsiDRgdC70YPRh9Cw0LUg0LDQstGC0L7QvNCw0YLQuNGH0LXRgdC60L7Qs9C+INC30LDQv9GD0YHQutCwLh0c0KLQtdC60YPRidC40Lkg0LrQvtC90YLQtdC60YHRgiDQv9GA0LjQu9C+0LbQtdC90LjRjy4dHBodHBodHDAdHBodHQ==</editorOptions>
+              <help>Результатом этого выражения является таблица шаблона, которая будет храниться в разделе экспорта и передаваться при создании контекста во время процедуры импорта.</help>
               <defaultValue/>
             </field>
             <field hidden="true" name="creationTemplate" type="T">

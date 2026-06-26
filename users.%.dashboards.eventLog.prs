@@ -1095,77 +1095,77 @@
         <int>0</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="Name" name="name" notReplicated="true" type="S">
-              <validators contentType="base64">HEkeHRxMHjEgNTAdHFIeXHcrXl5OYW1lIG1heSBjb250YWluIG9ubHkgTGF0aW4gbGV0dGVycywgZGlnaXRzLCBhbmQgdW5kZXJzY29yZXMd</validators>
-              <help>Name of the resource and corresponding system context, required to refer to this resource from other parts of the system. It should satisfy the context naming conventions. WARNING: changing name will corrupt all references to the resource.</help>
+            <field description="Имя" name="name" notReplicated="true" type="S">
+              <validators contentType="base64">HEkeHRxMHjEgNTAdHFIeXHcrXl7QmNC80Y8g0LzQvtC20LXRgiDRgdC+0LTQtdGA0LbQsNGC0Ywg0YLQvtC70YzQutC+INC70LDRgtC40L3RgdC60LjQtSDQsdGD0LrQstGLLCDRhtC40YTRgNGLINC4INGB0LjQvNCy0L7Qu9GLINC/0L7QtNGH0LXRgNC60LjQstCw0L3QuNGPHQ==</validators>
+              <help>Имя объекта и соответствующего контекста, необходимое для ссылки на данный контекст из других частей системы. Оно должно соответствовать соглашениям по именованию контекстов. ПРЕДУПРЕЖДЕНИЕ: изменение имени приведет к неработоспособности всех ссылок на объект.</help>
               <defaultValue/>
             </field>
-            <field description="Description" name="description" notReplicated="true" type="S">
-              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5eRGVzY3JpcHRpb24gbWF5IGNvbnRhaW4gb25seSBwcmludGFibGUgY2hhcmFjdGVycx0=</validators>
-              <help>This field defines a dashboard textual description. This is also a description of the Dashboard context.</help>
+            <field description="Описание" name="description" notReplicated="true" type="S">
+              <validators contentType="base64">HEweMCAxMDAdHFIeW15ccHtDbnRybH1dKl5e0J7Qv9C40YHQsNC90LjQtSDQvNC+0LbQtdGCINGB0L7QtNC10YDQttCw0YLRjCDRgtC+0LvRjNC60L4g0L/QtdGH0LDRgtC90YvQtSDRgdC40LzQstC+0LvRix0=</validators>
+              <help>Данное поле определяет текстовое описание панели. Также является описанием контекста &quot;Инструментальная панель&quot;.</help>
               <defaultValue/>
             </field>
-            <field description="Title Expression" editor="expression" name="title" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDb250ZXh0IGZvciB3aGljaCB0aGUgcmVsYXRpdmUgZGFzaGJvYXJkIGlzIGJlaW5nIG9wZW5lZCBpbiB0aGUgY2FzZSBvZiBhIHJlbGF0aXZlIGRhc2hib2FyZC4gQ3VycmVudCBkYXNoYm9hcmQgY29udGV4dCBpbiB0aGUgY2FzZSBvZiBhbiBhYnNvbHV0ZSBkYXNoYm9hcmQuHRxJbnB1dCBwYXJhbWV0ZXJzIG9mIHRoZSBvcGVuIGRhc2hib2FyZCBhY3Rpb24uHRwaHRwwHRwaHR0=</editorOptions>
-              <help>This field defines a dashboard title appearing on the top of the dashboard window. If the title is not specified, its description is used instead. The title can be a plain string or an expression. If it&apos;s an expression, it returns a string to allow the relative dashboard titles displaying values from the contexts whose data is shown on the dashboard.</help>
-              <group>Window Properties</group>
+            <field description="Выражение заголовка" editor="expression" name="title" type="S">
+              <editorOptions contentType="base64">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</editorOptions>
+              <help>Данное поле позволяет задать заголовок панели, который появляется сверху окна инструментальной панели. Если заголовок не задан, вместо него используется его описание. Заголовок может быть обычной строкой или выражением. Если он является выражением, оно возвращает строку, чтобы позволить заголовкам относительных панелей отображать значения контекстов, чьи данные показаны на инструментальной панели.</help>
+              <group>Свойства окна</group>
               <defaultValue/>
             </field>
-            <field description="Layout" name="layout" type="I">
-              <help>The field allows to specify the dashboard layout: dockable or scrollable.</help>
-              <group>Window Properties</group>
+            <field description="Компоновка" name="layout" type="I">
+              <help>Данное поле позволяет задать раскладку инструментальной панели: пристыкованная или с прокруткой.</help>
+              <group>Свойства окна</group>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Column Count" name="columns" type="I">
-              <help>The field defines a number of columns. The option is relevant to scrollable dashboards only.</help>
-              <group>Window Properties</group>
+            <field description="Количество колонок" name="columns" type="I">
+              <help>Данное поле определяет количество столбцов. Данная опция относится только к панелям с прокруткой.</help>
+              <group>Свойства окна</group>
               <defaultValue>3</defaultValue>
             </field>
-            <field advanced="true" description="Destination" name="destination" readonly="true" type="I">
+            <field advanced="true" description="Назначение" name="destination" readonly="true" type="I">
               <selectionValues>
-                <option description="Web">0</option>
-                <option description="Desktop">1</option>
+                <option description="Веб">0</option>
+                <option description="Десктоп">1</option>
               </selectionValues>
-              <help>The field defines the dashboard destination: Web or Desktop.</help>
+              <help>Данное поле определяет назначение инструментальной панели: Веб или Десктоп.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Type" name="type" type="I">
+            <field description="Тип" name="type" type="I">
               <selectionValues>
-                <option description="Relative">0</option>
-                <option description="Absolute">1</option>
-                <option description="Class Instance">2</option>
+                <option description="Относительный">0</option>
+                <option description="Абсолютный">1</option>
+                <option description="Экземпляр класса">2</option>
               </selectionValues>
-              <help>The field defines the dashboard type: Absolute or Relative.</help>
+              <help>Данное поле определяет тип инструментальной панели: абсолютный или относительный.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Printable" name="printable" type="B">
-              <help>Dashboard type for creating printable reports</help>
+            <field description="Печатный дашборд" name="printable" type="B">
+              <help>Тип дашборда для построения печатных отчетов</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Validity Expression" editor="expression" name="validityExpression" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwcUh4cLjojdHlwZR0cQ29udGV4dCBUeXBlHR0cUh4cLjodHENvbnRleHQgUGF0aB0dHRxCb29sZWFuHRxQZXJtaXNzaW9ucyBvZiB0aGUgY3VycmVudCByZXNvdXJjZSdzIG93bmVyLh0cQ29udGV4dCB3aGljaCBpcyBiZWluZyB2ZXJpZmllZCBmb3IgdmFsaWRpdHkuHRwaHRwaHRwwHRwaHR0=</editorOptions>
-              <help>The field includes the expression defining context(s) to which the dashboard can be attached.</help>
-              <group>Validity</group>
+            <field description="Выражение пригодности" editor="expression" name="validityExpression" type="S">
+              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cHFIeHC46I3R5cGUdHNCi0LjQvyDQutC+0L3RgtC10LrRgdGC0LAdHRxSHhwuOh0c0J/Rg9GC0Ywg0LrQvtC90YLQtdC60YHRgtCwHR0dHEJvb2xlYW4dHNCg0LDQt9GA0LXRiNC10L3QuNGPINCy0LvQsNC00LXQu9GM0YbQsCDRgtC10LrRg9GJ0LXQs9C+INGA0LXRgdGD0YDRgdCwLh0c0JrQvtC90YLQtdC60YHRgiwg0LrQvtGC0L7RgNGL0Lkg0L/RgNC+0LLQtdGA0Y/QtdGC0YHRjyDQvdCwINC/0YDQuNCz0L7QtNC90L7RgdGC0YwuHRwaHRwaHRwwHRwaHR0=</editorOptions>
+              <help>Данное поле содержит выражение, которое определяет контекст (контексты), к которым может быть прикреплена инструментальная панель.</help>
+              <group>Пригодность</group>
               <defaultValue/>
             </field>
-            <field description="Validity Update Rules" name="validityListeners" type="T">
-              <help>This field defines a list of context masks and event names. If the event specified in the Event field occurs in any of contexts matching the mask specified by the Mask field in the same record, the Validity Expression will be recalculated for this context. This allows to make the dashboard valid/invalid for a certain context if some changes occur in it.</help>
-              <group>Validity</group>
+            <field description="Правила обновления пригодности" name="validityListeners" type="T">
+              <help>Данное поле определяет список масок контекстов и имен событий. Если возникает событие, определяемое полем Событие, в любом из контекстов, совпадающих с маской, заданной в поле Маска той же записи, Выражение пригодности будет заново рассчитано для данного контекста. Это позволяет сделать инструментальную панель пригодной/непригодной для определенного контекста, если в нем возникнут изменения.</help>
+              <group>Пригодность</group>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647">
                     <fields>
-                      <field description="Context Mask" editor="contextmask" icon="fi_context" keyfield="true" name="mask" type="S">
-                        <help>Mask of contexts to monitor events in</help>
+                      <field description="Маска контекстов" editor="contextmask" icon="fi_context" keyfield="true" name="mask" type="S">
+                        <help>Маска контекстов, от которых нужно отслеживать события</help>
                         <defaultValue/>
                       </field>
-                      <field description="Event" extendableSelectionValues="true" icon="fi_event" keyfield="true" name="event" type="S">
-                        <help>Name of Event to listen for</help>
+                      <field description="Событие" extendableSelectionValues="true" icon="fi_event" keyfield="true" name="event" type="S">
+                        <help>Имя отслеживаемого события</help>
                         <defaultValue/>
                       </field>
-                      <field description="Target Expression" editor="expression" icon="fi_expression" name="expression" nullable="true" type="S">
-                        <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHFBlcm1pc3Npb25zIG9mIHRoZSBjdXJyZW50IHJlc291cmNlJ3Mgb3duZXIuHRxDb250ZXh0IG9mIHRoZSBldmVudCB0aGF0IGhhcyB0cmlnZ2VyZWQgdGhlIHZhbGlkaXR5IHVwZGF0ZSBydWxlLh0cRGF0YSBvZiB0aGUgZXZlbnQgdGhhdCBoYXMgdHJpZ2dlcmVkIHRoZSB2YWxpZGl0eSB1cGRhdGUgcnVsZS4dHBodHDAdHBodHQ==</editorOptions>
-                        <help>If specified, points to a context those validity should be checked. If Target Expression is not specified (what is suitable in most cases), the system checks validity of context in that Event has occurred.</help>
+                      <field description="Выражение цели" editor="expression" icon="fi_expression" name="expression" nullable="true" type="S">
+                        <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cU3RyaW5nHRzQoNCw0LfRgNC10YjQtdC90LjRjyDQstC70LDQtNC10LvRjNGG0LAg0YLQtdC60YPRidC10LPQviDRgNC10YHRg9GA0YHQsC4dHNCa0L7QvdGC0LXQutGB0YIg0YHQvtCx0YvRgtC40Y8sINC60L7RgtC+0YDQvtC1INCy0YvQt9Cy0LDQu9C+INC/0YDQsNCy0LjQu9C+INC+0LHQvdC+0LLQu9C10L3QuNGPINC/0YDQuNCz0L7QtNC90L7RgdGC0LguHRzQlNCw0L3QvdGL0LUg0YHQvtCx0YvRgtC40Y8sINC60L7RgtC+0YDQvtC1INCy0YvQt9Cy0LDQu9C+INC/0YDQsNCy0LjQu9C+INC+0LHQvdC+0LLQu9C10L3QuNGPINC/0YDQuNCz0L7QtNC90L7RgdGC0LguHRwaHRwwHRwaHR0=</editorOptions>
+                        <help>Если оно определено, то указывает на контекст, чью пригодность нужно проверить. Если &apos;Выражение цели&apos; не определено (что бывает в большинстве случаев), система проверяет пригодность контекста, в котором случилось &apos;Событие&apos;.</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
@@ -1182,60 +1182,60 @@
                 </table>
               </defaultValue>
             </field>
-            <field advanced="true" description="Generate Attached and Detached Events" name="generateAttachedEvents" type="B">
-              <help>Attached and Detached events to be generated after attaching to a context</help>
+            <field advanced="true" description="Генерировать событие Привязки" name="generateAttachedEvents" type="B">
+              <help>Событие Привязки будет вызвано, после привязки сущности к контексту</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Allow Validity For Remote Contexts" name="allowValidityForRemoteContexts" type="B">
-              <help>If enabled then this context will be allowed to attach to remote contexts, connected via distributed architecture</help>
-              <group>Validity</group>
+            <field description="Определять пригодность для удаленных контекстов" name="allowValidityForRemoteContexts" type="B">
+              <help>При включенном флажке разрешено прикрепление к удаленным контекстам, подключенным по распределенной архитектуре</help>
+              <group>Пригодность</group>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Default Context" editor="context" name="defaultContext" nullable="true" type="S">
-              <group>Validity</group>
+            <field description="Контекст по умолчанию" editor="context" name="defaultContext" nullable="true" type="S">
+              <group>Пригодность</group>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Closable" name="closable" type="B">
-              <help>This flag defines whether the dashboard can be closed. Non-closable dashboards often play a role of main dashboards in operator UIs.</help>
-              <group>Additional Properties</group>
+            <field description="Можно закрыть" name="closable" type="B">
+              <help>Данный флаг определяет возможность закрытия инструментальной панели. Незакрывающиеся инструментальные панели часто играют роль основных панелей в операторских интерфейсах.</help>
+              <group>Расширенные свойства</group>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Close Dashboard On Reopen" name="closeDashboardOnReopen" type="B">
-              <group>Additional Properties</group>
+            <field description="Закрывать панель при повторном открытии" name="closeDashboardOnReopen" type="B">
+              <group>Расширенные свойства</group>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Launch as Default Action" name="launchAsDefault" type="B">
-              <help>Defines whether the relative dashboard will open as the default action of contexts it&apos;s attached to.</help>
-              <group>Additional Properties</group>
+            <field description="Запускать как действие по умолчанию" name="launchAsDefault" type="B">
+              <help>Определяет, будет ли относительная инструментальная панель открываться посредством действия по умолчанию контекстов, к которым она прикреплена.</help>
+              <group>Расширенные свойства</group>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Layout Control Panel" name="layoutControlPanel" type="B">
-              <help>This flag defines the visibility of the bottom panel (Save/Load layout and other buttons).</help>
-              <group>Additional Properties</group>
+            <field description="Панель управления расположением" name="layoutControlPanel" type="B">
+              <help>Данное поле определяет видимость нижней панели (сохранить/загрузить расположение макета, а так же другие кнопки).</help>
+              <group>Расширенные свойства</group>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Template Processing Expression" editor="expression" name="templateProcessingExpression" nullable="true" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxEYXRhVGFibGUdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDb250ZXh0IGZvciB3aGljaCB0aGUgcmVsYXRpdmUgZGFzaGJvYXJkIGlzIGJlaW5nIG9wZW5lZCBpbiB0aGUgY2FzZSBvZiBhIHJlbGF0aXZlIGRhc2hib2FyZC4gQ3VycmVudCBkYXNoYm9hcmQgY29udGV4dCBpbiB0aGUgY2FzZSBvZiBhbiBhYnNvbHV0ZSBkYXNoYm9hcmQuHRxEYXNoYm9hcmQncyBlbGVtZW50cyB0YWJsZS4dHBodHDAdHBodHQ==</editorOptions>
-              <help>If specified, it processes the template during dashboard opening and return the modified template</help>
-              <group>Additional Properties</group>
+            <field description="Выражение для обработки шаблона" editor="expression" name="templateProcessingExpression" nullable="true" type="S">
+              <editorOptions contentType="base64">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</editorOptions>
+              <help>Если указано, обрабатывает шаблон во время открытия дашборда и возвращает измененный шаблон</help>
+              <group>Расширенные свойства</group>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Template" editor="context" name="template" nullable="true" type="S">
-              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQeUm9vdB0cRR5jb250ZXh0HR0cHGNvbnRleHRUeXBlcx0cVB0cQR4cRh4cHGNvbnRleHRUeXBlHRxTHRxBHh0cRB5Db250ZXh0IFR5cGUdHR0dHEQeQ29udGV4dCBUeXBlcx0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQeQ29udGV4dCBNYXNrHR0dHRxEHkNvbnRleHQgTWFza3MdHRxNHjEdHFgeMR0dHFIeHBodHBxSHhxkYXNoYm9hcmQdHR0cHFIeHHVzZXJzLiouZGFzaGJvYXJkcy4qLiodHRxSHhx1c2Vycy4qLmRhc2hib2FyZHNfZ3JvdXBzLiouKi4qHR0dHQ==</editorOptions>
-              <help>Dashboard context to be used as template</help>
-              <group>Additional Properties</group>
+            <field description="Шаблон" editor="context" name="template" nullable="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cZGFzaGJvYXJkHR0dHBxSHhx1c2Vycy4qLmRhc2hib2FyZHMuKi4qHR0cUh4cdXNlcnMuKi5kYXNoYm9hcmRzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Контекст дашборда, который используется в качестве шаблона</help>
+              <group>Расширенные свойства</group>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Storage Context" editor="context" name="storageContext" type="S">
+            <field description="Контекст хранилища" editor="context" name="storageContext" type="S">
               <defaultValue/>
             </field>
-            <field description="Table" name="storageClass" type="S">
+            <field description="Таблица" name="storageClass" type="S">
               <defaultValue/>
             </field>
             <field hidden="true" name="resourceBundle" nullable="true" readonly="true" type="S">
@@ -1243,20 +1243,20 @@
                 <nullValue/>
               </defaultValue>
             </field>
-            <field advanced="true" description="Enable Caching" name="cacheEnabled" type="B">
-              <help>Enables caching of this dashboard for better performance. Once a hidden and cached dashboard is displayed again, its startup bindings are not re-evaluated. Cached dashboards also keep user input (e.g. values in text fields) that were not yet transferred to server&apos;s unified data model. This option will only have effect if caching is enabled in Web UI plugin global configuration.</help>
+            <field advanced="true" description="Включить кеширование" name="cacheEnabled" type="B">
+              <help>Включает кэширование этой панели инструментов для повышения производительности. После повторного отображения скрытой и кэшированной панели инструментов ее привязки, работающие при запуске, не активируются снова. Кэшированные панели инструментов также сохраняют ввод пользователя (например, значения в текстовых полях), который еще не был передан в единую модель данных сервера. Этот параметр будет действовать только в том случае, если кэширование включено в глобальной конфигурации плагина Web UI.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field advanced="true" description="Header Expression" editor="expression" name="headerExpression" nullable="true" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDb250ZXh0IGZvciB3aGljaCB0aGUgcmVsYXRpdmUgZGFzaGJvYXJkIGlzIGJlaW5nIG9wZW5lZCBpbiB0aGUgY2FzZSBvZiBhIHJlbGF0aXZlIGRhc2hib2FyZC4gQ3VycmVudCBkYXNoYm9hcmQgY29udGV4dCBpbiB0aGUgY2FzZSBvZiBhbiBhYnNvbHV0ZSBkYXNoYm9hcmQuHRwaHRwaHRwwHRwcUh4cY29udGV4dFBhdGgdHENvbnRleHQgUGF0aB0dHFIeHGFsaWFzHRxBbGlhcx0dHR0=</editorOptions>
-              <help>This expression is evaluated during dashboard startup. It accepts dashboard&apos;s element table as the default table. The returned string is set as the dashboard’s header.</help>
+            <field advanced="true" description="Выражение для вычисления заголовка дашборда" editor="expression" name="headerExpression" nullable="true" type="S">
+              <editorOptions contentType="base64">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</editorOptions>
+              <help>Это выражение вычисляется при запуске инструментальной панели. Оно принимает таблицу элементов панели в качестве таблицы по умолчанию. Строка, возвращенная выражением, устанавливается в качестве заголовка инструментальной панели.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field advanced="true" description="Log Bindings Execution" name="logBindingsExecution" type="B">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDb250ZXh0IGZvciB3aGljaCB0aGUgcmVsYXRpdmUgZGFzaGJvYXJkIGlzIGJlaW5nIG9wZW5lZCBpbiB0aGUgY2FzZSBvZiBhIHJlbGF0aXZlIGRhc2hib2FyZC4gQ3VycmVudCBkYXNoYm9hcmQgY29udGV4dCBpbiB0aGUgY2FzZSBvZiBhbiBhYnNvbHV0ZSBkYXNoYm9hcmQuHRwaHRwaHRwwHRwcUh4cY29udGV4dFBhdGgdHENvbnRleHQgUGF0aB0dHFIeHGFsaWFzHRxBbGlhcx0dHR0=</editorOptions>
-              <help>This option enables and disables the logging of all executed bindings.</help>
+            <field advanced="true" description="Журналировать привязки" name="logBindingsExecution" type="B">
+              <editorOptions contentType="base64">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</editorOptions>
+              <help>Данная настройка включает и отключает журналирование всех выполненных привязок.</help>
               <defaultValue>0</defaultValue>
             </field>
           </fields>
@@ -1327,7 +1327,7 @@
             </binding>
             <binding>
               <reference>templateProcessingExpression#options</reference>
-              <expression>variableAvailable({.:}, &apos;elements&apos;) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Default Context&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Default Table&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Reference &gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Description&gt;&gt;&gt;&gt;&lt;D=References&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Expected Result&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Permissions&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Default Context Description&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Default Table Description&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Default Row Description&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Type&gt;&lt;S=&lt;General=0&gt;&lt;Condition=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Variable&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Description&gt;&gt;&gt;&gt;&lt;D=Environment Variables&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
+              <expression>variableAvailable({.:}, &apos;elements&apos;) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Контекст по умолчанию&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Таблица по умолчанию&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Ссылка&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Ссылки&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Возвращаемое значение&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Права доступа&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание контекста по умолчанию&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание таблицы по умолчанию&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание ряда по умолчанию&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Тип&gt;&lt;S=&lt;Общий=0&gt;&lt;Условие=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Переменная&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Переменные окружения&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
             </binding>
             <binding>
               <reference>cacheEnabled#hidden</reference>
@@ -1348,13 +1348,13 @@
         <int>1</int>
         <format maxRecords="2147483647">
           <fields>
-            <field description="Name" name="name" type="S">
-              <help>Indicates HTTP header name.</help>
+            <field description="Имя" name="name" type="S">
+              <help>Указывает имя HTTP заголовка.</help>
               <defaultValue/>
             </field>
-            <field description="Value Expression" editor="expression" name="valueExpression" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDdXJyZW50IGRhc2hib2FyZCdzIGRlZmF1bHQgY29udGV4dC4dHBodHBodHDAdHBodHQ==</editorOptions>
-              <help>An expression that must evaluate to a string, which is processed as the HTTP header value. The expression is evaluated at the moment the dashboard is opened.</help>
+            <field description="Выражение для значения" editor="expression" name="valueExpression" type="S">
+              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cU3RyaW5nHRzQn9GA0LDQstCwINC30LDQu9C+0LPQuNC90LXQvdC90L7Qs9C+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjy4dHNCi0LXQutGD0YnQuNC5INC60L7QvdGC0LXQutGB0YIg0LjQvdGB0YLRgNGD0LzQtdC90YLQsNC70YzQvdC+0Lkg0L/QsNC90LXQu9C4Lh0cGh0cGh0cMB0cGh0d</editorOptions>
+              <help>Выражение, которое должно возвращать строка, обрабатываемую обрабатывается как значение HTTP заголовка. Выражение вычисляется в момент открытия инструментальной панели.</help>
               <defaultValue/>
             </field>
           </fields>
@@ -1364,25 +1364,25 @@
         <int>2</int>
         <format maxRecords="2147483647">
           <fields>
-            <field description="Component" name="component" type="S">
+            <field description="Компонент" name="component" type="S">
               <defaultValue/>
             </field>
-            <field description="Variables" name="variables" type="T">
+            <field description="Переменные" name="variables" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647">
                     <fields>
-                      <field description="Name" name="name" type="S">
+                      <field description="Имя" name="name" type="S">
                         <defaultValue/>
                       </field>
-                      <field description="Value" name="value" type="T">
+                      <field description="Значение" name="value" type="T">
                         <defaultValue>
                           <table>
                             <format maxRecords="2147483647"/>
                           </table>
                         </defaultValue>
                       </field>
-                      <field description="Username" name="user" nullable="true" type="S">
+                      <field description="Имя пользователя" name="user" nullable="true" type="S">
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
@@ -1402,79 +1402,79 @@
             <field description="ID" name="id" type="S">
               <defaultValue/>
             </field>
-            <field description="Username" name="user" nullable="true" type="S">
+            <field description="Имя пользователя" name="user" nullable="true" type="S">
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Layout Data" name="layoutData" type="T">
+            <field description="Данные расположения элементов" name="layoutData" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647">
                     <fields>
                       <field description="ID" name="id" type="S">
-                        <help>If this element was previously docked, this is the ID of the panel it was docked to before it became a floating element.</help>
+                        <help>Если этот элемент ранее был закреплен, то это идентификатор панели, к которой он был закреплен до того, как стал плавающим элементом.</help>
                         <defaultValue/>
                       </field>
-                      <field description="Parent ID" name="parentId" nullable="true" type="S">
-                        <help>ID of the parent element.</help>
+                      <field description="ID Родителя" name="parentId" nullable="true" type="S">
+                        <help>Идентификатор родительского элемента.</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
                       <field description="Order ID" name="orderId" type="I">
-                        <help>Order of the element within its parent container.</help>
+                        <help>Порядок элемента в родительском контейнере.</help>
                         <defaultValue>0</defaultValue>
                       </field>
-                      <field description="Mode" name="mode" nullable="true" type="S">
-                        <help>Mode of the element (e.g., &apos;dock&apos;, &apos;float&apos;).</help>
+                      <field description="Режим" name="mode" nullable="true" type="S">
+                        <help>Режим элемента (например, &apos;dock&apos;, &apos;float&apos;).</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
-                      <field description="Size" name="size" type="I">
-                        <help>Size of the element.</help>
+                      <field description="Размер" name="size" type="I">
+                        <help>Размер элемента.</help>
                         <defaultValue>0</defaultValue>
                       </field>
                       <field description="X" name="x" nullable="true" type="E">
-                        <help>X-coordinate of the element (for floating elements).</help>
+                        <help>X-координата элемента (для плавающих элементов).</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
                       <field description="Y" name="y" nullable="true" type="E">
-                        <help>Y-coordinate of the element (for floating elements).</help>
+                        <help>Y-координата элемента (для плавающих элементов).</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
                       <field description="Z" name="z" nullable="true" type="I">
-                        <help>Z-index of the element (for floating elements). Elements with a larger Z-index will obscure elements with a lower Z-index.</help>
+                        <help>Z-индекс элемента (для плавающих элементов). Элементы с большим Z-индексом будут скрывать элементы с меньшим Z-индексом.</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
                       <field description="H" name="h" nullable="true" type="I">
-                        <help>Height of the element (for floating elements).</help>
+                        <help>Высота элемента (для плавающих элементов).</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
                       <field description="W" name="w" nullable="true" type="I">
-                        <help>Width of the element (for floating elements).</help>
+                        <help>Ширина элемента (для плавающих элементов).</help>
                         <defaultValue>
                           <nullValue/>
                         </defaultValue>
                       </field>
-                      <field description="Dock Location Parent ID" name="dockLocationParentId" type="S">
+                      <field description="ID пристыкованного родителя" name="dockLocationParentId" type="S">
                         <defaultValue/>
                       </field>
-                      <field description="Dock Location Tab Index" name="dockLocationTabIndex" type="I">
-                        <help>If this element was previously docked as a tab, this is its index within the parent tab container before it became a floating element.</help>
+                      <field description="Индекс вкладки внутри пристыкованного родителя" name="dockLocationTabIndex" type="I">
+                        <help>Если этот элемент ранее был закреплен как вкладка, это его индекс в контейнере родительской вкладки до того, как он стал плавающим элементом.</help>
                         <defaultValue>0</defaultValue>
                       </field>
-                      <field description="Dock Location Panel Index" name="dockLocationPanelIndex" type="I">
-                        <help>If this element was previously docked as a panel, this is its index within the parent panel container before it became a floating element.</help>
+                      <field description="Индекс панели внутри пристыкованного родителя" name="dockLocationPanelIndex" type="I">
+                        <help>Если этот элемент ранее был закреплен как панель, это его индекс в контейнере родительской панели до того, как он стал плавающим элементом.</help>
                         <defaultValue>0</defaultValue>
                       </field>
                     </fields>
@@ -1490,20 +1490,20 @@
                       <field name="componentId" type="S">
                         <defaultValue/>
                       </field>
-                      <field description="Tab ID" name="tabId" type="S">
-                        <help>Dockable tab identifier, which by default is the dockable component name.</help>
+                      <field description="ID вкладки" name="tabId" type="S">
+                        <help>Идентификатор пристыковываемой вкладки, который по умолчанию является именем пристыковываемого компонента.</help>
                         <defaultValue/>
                       </field>
-                      <field description="Panel ID" name="panelId" type="S">
-                        <help>Identified of the panel the dockable component is located in.</help>
+                      <field description="ID Панели" name="panelId" type="S">
+                        <help>Идентификатор панели, на которой находится пристыковываемый компонент.</help>
                         <defaultValue/>
                       </field>
                       <field description="Order ID" name="orderId" type="I">
-                        <help>Index of tab the dockable component will occupy in a tabbed panel. Indexed from zero, where 0 is the first tab, 1 is the second tab, and so on.</help>
+                        <help>Индекс вкладки, которую будет занимать пристыковываемый компонент в панели с вкладками. Индексируется с нуля, где 0 — первая вкладка, 1 — вторая и так далее.</help>
                         <defaultValue>0</defaultValue>
                       </field>
-                      <field description="Active" name="active" type="B">
-                        <help>Indicates that the dockable component is the selected tab, in the case that the component is in a tabbed panel.</help>
+                      <field description="Активный" name="active" type="B">
+                        <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
                         <defaultValue>0</defaultValue>
                       </field>
                     </fields>
@@ -1518,80 +1518,80 @@
         <int>4</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
-            <field description="Name" keyfield="true" name="name" type="S">
-              <help>Name of the resource and corresponding system context, required to refer to this resource from other parts of the system. It should satisfy the context naming conventions. WARNING: changing name will corrupt all references to the resource.</help>
+            <field description="Имя" keyfield="true" name="name" type="S">
+              <help>Имя объекта и соответствующего контекста, необходимое для ссылки на данный контекст из других частей системы. Оно должно соответствовать соглашениям по именованию контекстов. ПРЕДУПРЕЖДЕНИЕ: изменение имени приведет к неработоспособности всех ссылок на объект.</help>
               <defaultValue/>
             </field>
-            <field description="Type" extendableSelectionValues="true" name="type" type="S">
+            <field description="Тип" extendableSelectionValues="true" name="type" type="S">
               <selectionValues>
-                <option description="Root">root</option>
-                <option description="Simple Panel">panel</option>
-                <option description="Tab Panel">tabbedPanel</option>
-                <option description="Carousel">carousel</option>
-                <option description="Steps Panel">steps</option>
-                <option description="Steps Content">stepsContent</option>
-                <option description="Sub-dashboard">subdashboard</option>
-                <option description="Implant">implant</option>
-                <option description="Drawer Panel">drawerPanel</option>
-                <option description="HTML Snippet">htmlSnippet</option>
-                <option description="Label">label</option>
-                <option description="Image">image</option>
-                <option description="Tree">customTree</option>
-                <option description="System Tree">systemTree</option>
-                <option description="Progress Bar">progressBar</option>
-                <option description="Tab">tab</option>
-                <option description="Data Table">dataTableEditor</option>
-                <option description="Spreadsheet">spreadsheet</option>
-                <option description="Data Table Header">dataTableEditorHeader</option>
-                <option description="Timer">timer</option>
-                <option description="Class Data Table">classDataTableEditor</option>
-                <option description="Class Field List">classFieldList</option>
-                <option description="Event Log">eventLog</option>
-                <option description="Vector Drawing">vectorDrawing</option>
-                <option description="Slider">slider</option>
-                <option description="Context List">contextList</option>
-                <option description="Connector">connector</option>
-                <option description="Text Field">textField</option>
-                <option description="Text Area">textArea</option>
-                <option description="Dropdown Menu">dropDownButton</option>
-                <option description="Button">button</option>
-                <option description="Dropdown List">dropdownList</option>
-                <option description="Check Box">checkBox</option>
-                <option description="Check Box Group">checkBoxGroup</option>
-                <option description="Toggle Button">toggleButton</option>
-                <option description="Radio Button Group">radioButton</option>
-                <option description="Date Time Picker">dateTimePicker</option>
-                <option description="Button Group">buttonGroup</option>
-                <option description="Dropdown Tree">treeSelect</option>
-                <option description="Number Field">numberField</option>
-                <option description="Time Picker">timePicker</option>
-                <option description="Uploader">uploader</option>
-                <option description="Map">map</option>
-                <option description="Breadcrumbs">breadcrumb</option>
-                <option description="Menu">menu</option>
-                <option description="Gantt Chart">ganttChart</option>
-                <option description="Bubble Chart">bubbleChart</option>
-                <option description="Bar Chart">barChart</option>
-                <option description="Candlestick Chart">candlestickChart</option>
-                <option description="Interval Bar Chart">intervalBarChart</option>
-                <option description="Line Chart">lineChart</option>
-                <option description="Statistical Chart">statisticalChart</option>
-                <option description="Deviation Chart">deviationChart</option>
-                <option description="Interval Chart">intervalChart</option>
-                <option description="Area Chart">areaChart</option>
-                <option description="Pie Chart">pieChart</option>
-                <option description="Spider Chart">spiderChart</option>
-                <option description="Polar Chart">polarChart</option>
-                <option description="Gauge">gauge</option>
-                <option description="Linear Gauge">linearGauge</option>
-                <option description="Liquid Gauge">liquidGauge</option>
-                <option description="Graph">graph</option>
+                <option description="Корневая панель">root</option>
+                <option description="Простая панель">panel</option>
+                <option description="Панель вкладок">tabbedPanel</option>
+                <option description="Карусель">carousel</option>
+                <option description="Панель с шагами">steps</option>
+                <option description="Контент шага">stepsContent</option>
+                <option description="Вложенная панель">subdashboard</option>
+                <option description="Имплант">implant</option>
+                <option description="Выдвижная панель">drawerPanel</option>
+                <option description="HTML сниппет">htmlSnippet</option>
+                <option description="Подпись">label</option>
+                <option description="Изображение">image</option>
+                <option description="Дерево">customTree</option>
+                <option description="Системное дерево">systemTree</option>
+                <option description="Индикатор выполнения">progressBar</option>
+                <option description="Вкладка">tab</option>
+                <option description="Таблица с данными">dataTableEditor</option>
+                <option description="Электронная таблица">spreadsheet</option>
+                <option description="Заголовок таблицы">dataTableEditorHeader</option>
+                <option description="Таймер">timer</option>
+                <option description="Классовая таблица">classDataTableEditor</option>
+                <option description="Список полей класса">classFieldList</option>
+                <option description="Журнал событий">eventLog</option>
+                <option description="Векторное изображение">vectorDrawing</option>
+                <option description="Регулятор">slider</option>
+                <option description="Список контекстов">contextList</option>
+                <option description="Коннектор">connector</option>
+                <option description="Текстовое поле">textField</option>
+                <option description="Текстовая область">textArea</option>
+                <option description="Выпадающее меню">dropDownButton</option>
+                <option description="Кнопка">button</option>
+                <option description="Выпадающий список">dropdownList</option>
+                <option description="Чекбокс">checkBox</option>
+                <option description="Группа чекбоксов">checkBoxGroup</option>
+                <option description="Переключатель">toggleButton</option>
+                <option description="Радиокнопки">radioButton</option>
+                <option description="Дата/время">dateTimePicker</option>
+                <option description="Группа кнопок">buttonGroup</option>
+                <option description="Выпадающее дерево">treeSelect</option>
+                <option description="Числовое поле">numberField</option>
+                <option description="Время">timePicker</option>
+                <option description="Загрузчик">uploader</option>
+                <option description="Карта">map</option>
+                <option description="Хлебные крошки">breadcrumb</option>
+                <option description="Меню">menu</option>
+                <option description="Диаграмма Ганта">ganttChart</option>
+                <option description="Пузырьковая диаграмма">bubbleChart</option>
+                <option description="Столбчатая диаграмма">barChart</option>
+                <option description="Диаграмма японские свечи">candlestickChart</option>
+                <option description="Столбчатая диаграмма интервалов">intervalBarChart</option>
+                <option description="Диаграмма">lineChart</option>
+                <option description="Статистическая диаграмма">statisticalChart</option>
+                <option description="Диаграмма отклонений">deviationChart</option>
+                <option description="Диаграмма интервалов">intervalChart</option>
+                <option description="Диаграмма с областями">areaChart</option>
+                <option description="Круговая диаграмма">pieChart</option>
+                <option description="Лепестковая диаграмма">spiderChart</option>
+                <option description="Полярная диаграмма">polarChart</option>
+                <option description="Индикатор">gauge</option>
+                <option description="Линейный индикатор">linearGauge</option>
+                <option description="Индикатор уровня жидкости">liquidGauge</option>
+                <option description="Граф">graph</option>
               </selectionValues>
-              <help>This field defines the element type.</help>
+              <help>Данное поле определяет тип элемента.</help>
               <defaultValue>root</defaultValue>
             </field>
-            <field description="Parameters" name="parameters" type="T">
-              <help>This field defines the element settings. The settings define which data to show and how to present it. The list of settings depends on the element type.</help>
+            <field description="Параметры" name="parameters" type="T">
+              <help>Данное поле определяет настройки элемента. Настройки определяют, какие данные будут отображаться и как их представлять. Список настроек зависит от типа элемента.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
@@ -1612,178 +1612,178 @@
         <int>5</int>
         <format maxRecords="1" minRecords="1">
           <fields>
-            <field description="All Bindings" name="bindings" type="T">
+            <field description="Все привязки" name="bindings" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Startup Bindings Concurrency" name="startupBindingsConcurrency" type="B">
-              <help>If enabled, multiple threads will concurrently process all startup bindings. If disabled, all startup bindings are processed sequentially.</help>
+            <field description="Параллельная работа привязок при запуске" name="startupBindingsConcurrency" type="B">
+              <help>Если включено, несколько потоков будут параллельно обрабатывать все привязки при запуске. Если отключено, все привязки при запуске будут обрабатываться последовательно.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Normal Concurrent Bindings" extendableSelectionValues="true" name="normalConcurrentBindings" type="I">
+            <field description="Количество параллельно работающих привязок" extendableSelectionValues="true" name="normalConcurrentBindings" type="I">
               <selectionValues>
-                <option description="Disabled">0</option>
+                <option description="Неактивный">0</option>
               </selectionValues>
-              <help>The maximum number of binding processing tasks under normal circumstances. If more than this number of tasks should start execution, further tasks are getting queued for later execution once execution threads get free.</help>
+              <help>Максимальное количество задач по обработке привязок в нормальных условиях. Если к выполнению должно приступить большее количество заданий, чем это указано, дальнейшие задания будут поставлены в очередь для последующего выполнения, как только освободятся потоки выполнения.</help>
               <defaultValue>5</defaultValue>
             </field>
-            <field description="Maximum Concurrent Bindings" extendableSelectionValues="true" name="maximumConcurrentBindings" type="I">
+            <field description="Максимум параллельно работающих привязок" extendableSelectionValues="true" name="maximumConcurrentBindings" type="I">
               <selectionValues>
-                <option description="Disabled">0</option>
+                <option description="Неактивный">0</option>
               </selectionValues>
-              <help>The absolute maximum number of threads in a binding processing pool. If this maximum number is reached and there are even more tasks to be executed right now, their execution will either fail or block until the pool gets some free resources.</help>
+              <help>Абсолютное максимальное количество потоков в пуле обработки привязок. Если это максимальное число достигнуто, а заданий, которые должны быть выполнены прямо сейчас, еще больше, их выполнение либо завершится неудачей, либо будет заблокировано, пока пул не получит свободные ресурсы.</help>
               <defaultValue>100</defaultValue>
             </field>
-            <field description="Maximum Unprocessed Binding Queue Length" name="maximumBindingQueueLength" type="I">
-              <help>The maximum number of binding processing tasks that can get queued. If the queue gets full, additional binding processing threads will be created in the pool until the Maximum Concurrent Bindings limit is reached.</help>
+            <field description="Максимальная длина очереди необработанных привязок" name="maximumBindingQueueLength" type="I">
+              <help>Максимальное количество заданий по обработке привязок, которые могут быть поставлены в очередь. Если очередь будет переполнена, в пуле будут создаваться дополнительные потоки обработки привязок, пока не будет достигнут предел максимального количества параллельных привязок.</help>
               <defaultValue>1000</defaultValue>
             </field>
-            <field description="Background Image" name="backgroundImage" type="T">
+            <field description="Фоновое изображение" name="backgroundImage" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Variables Storage" name="variablesStorage" type="T">
+            <field description="Хранилище переменных" name="variablesStorage" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Context Menu" name="contextMenu" type="T">
+            <field description="Контекстное меню" name="contextMenu" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Show Header" name="showHeader" type="B">
-              <help>Configures whether the dockable window header should be displayed.</help>
+            <field description="Показать заголовок" name="showHeader" type="B">
+              <help>Настраивает, должен ли отображаться заголовок пристыковываемого окна.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Description" name="description" type="S">
-              <help>Dockable window header text.</help>
+            <field description="Описание" name="description" type="S">
+              <help>Текст заголовка пристыковываемого окна.</help>
               <defaultValue/>
             </field>
-            <field description="Icon" name="icon" type="T">
+            <field description="Пиктограмма" name="icon" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Maximizable" name="maximizable" type="B">
-              <help>Configures whether the dockable window can be maximized.</help>
+            <field description="Максимизируемый" name="maximizable" type="B">
+              <help>Настраивает, можно ли максимизировать пристыковываемое окно.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Collapsible" name="collapsible" type="B">
-              <help>Configures whether the dockable window can be collapsed.</help>
+            <field description="Сворачиваемый" name="collapsible" type="B">
+              <help>Настраивает, можно ли сворачивать пристыковываемое окно.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Movable" name="dockMovable" type="B">
-              <help>Configures whether the dockable window can be moved.</help>
+            <field description="Подвижный" name="dockMovable" type="B">
+              <help>Настраивает, можно ли перемещать пристыковываемое окно.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Collapsed" name="dockCollapsed" type="B">
-              <help>Configures whether the dockable window is collapsed.</help>
+            <field description="Свернутый" name="dockCollapsed" type="B">
+              <help>Настраивает, сворачивается ли пристыковываемое окно.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Floatable" name="dockFloatable" type="B">
-              <help>Configures whether the dockable window can be floated.</help>
+            <field description="Плавающий" name="dockFloatable" type="B">
+              <help>Настраивает, может ли пристыковываемое окно быть плавающим.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Resizable" name="dockResizable" type="B">
-              <help>Configures whether the dockable window can be resized.</help>
+            <field description="Изменяемый" name="dockResizable" type="B">
+              <help>Настраивает, можно ли изменять размер пристыковываемого окна.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Tab Position" name="dockTabPosition" type="S">
+            <field description="Расположение вкладок" name="dockTabPosition" type="S">
               <selectionValues>
-                <option description="Top">top</option>
-                <option description="Bottom">bottom</option>
-                <option description="Left">left</option>
-                <option description="Right">right</option>
+                <option description="Вверху">top</option>
+                <option description="Внизу">bottom</option>
+                <option description="Слева">left</option>
+                <option description="Справа">right</option>
               </selectionValues>
-              <help>Configures the position of tabs appearing when the dockable window is stacked into a tabbed panel with other windows.</help>
+              <help>Настраивает положение вкладок, появляющихся, когда пристыковываемое окно складывается в панель с вкладками вместе с другими окнами.</help>
               <defaultValue>top</defaultValue>
             </field>
-            <field description="Preferred Width" name="dockPreferredWidth" type="I">
-              <help>Desired width of the dockable window when split into another component or a dashboard.</help>
+            <field description="Предпочитаемая ширина" name="dockPreferredWidth" type="I">
+              <help>Желаемая ширина пристыковываемого окна при разделении на другой компонент или инструментальную панель.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Preferred Height" name="dockPreferredHeight" type="I">
-              <help>Desired height of the dockable window when split into another component or a dashboard.</help>
+            <field description="Предпочитаемая высота" name="dockPreferredHeight" type="I">
+              <help>Желаемая высота пристыковываемого окна при разделении на другой компонент или инструментальную панель.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Minimum Width" name="dockMinimumWidth" type="I">
-              <help>Minimum width of the dockable window when split into another component or a dashboard. Overridden when the viewscreen does not have sufficient space for the minimum width.</help>
+            <field description="Минимальная ширина" name="dockMinimumWidth" type="I">
+              <help>Минимальная ширина пристыковываемого окна при разделении на другой компонент или инструментальную панель. Переопределяется, если на экране просмотра не хватает места для минимальной ширины.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Minimum Height" name="dockMinimumHeight" type="I">
-              <help>Minimum height of the dockable window when split into another component or a dashboard. Overridden when the viewscreen does not have sufficient space for the minimum height.</help>
+            <field description="Минимальная высота" name="dockMinimumHeight" type="I">
+              <help>Минимальная высота пристыковываемого окна при разделении на другой компонент или инструментальную панель. Переопределяется, если на экране просмотра недостаточно места для минимальной высоты.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Custom Classes" name="customClasses" type="S">
-              <help>Custom CSS classes that may be used in the CSS style related properties.</help>
+            <field description="Пользовательские классы" name="customClasses" type="S">
+              <help>Нестандартные классы CSS, которые могут быть использованы в свойствах, связанных со стилями CSS.</help>
               <defaultValue/>
             </field>
-            <field description="Component Content Style" editor="code" name="style" nullable="true" type="S">
+            <field description="Стиль CSS элемента" editor="code" name="style" nullable="true" type="S">
               <editorOptions>scss</editorOptions>
-              <help>CSS Style to be applied to the component.</help>
+              <help>CSS стиль, который будет применен к компоненту.</help>
               <defaultValue/>
             </field>
-            <field description="Visible Children" name="visibleChildren" type="T">
+            <field description="Видимые дети" name="visibleChildren" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Visible" name="preloaderVisible" type="B">
-              <help>Toggles whether the preloader is displayed. When true, the entire component will be hidden behind the preloader during the loading phase.</help>
+            <field description="Видимый" name="preloaderVisible" type="B">
+              <help>Переключает, будет ли отображаться прелоадер. Если значение равно true, весь компонент будет скрыт за прелоадером во время фазы загрузки.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Class Name" name="preloaderClass" type="S">
-              <help>CSS class name to add to the preloader image and text.</help>
+            <field description="Имя класса" name="preloaderClass" type="S">
+              <help>Имя класса CSS для добавления к изображению и тексту прелоадера.</help>
               <defaultValue/>
             </field>
-            <field description="Text" name="preloaderText" type="S">
-              <help>Text to display in the preloader.</help>
+            <field description="Текст" name="preloaderText" type="S">
+              <help>Текст для отображения в прелоадере.</help>
               <defaultValue/>
             </field>
-            <field description="Icon" name="preloaderIcon" type="T">
+            <field description="Пиктограмма" name="preloaderIcon" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Generate Mouse Clicked Events" name="generateMouseClicked" type="B">
-              <help>Controls whether the component generated Mouse Clicked events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Щелчок мыши&quot;" name="generateMouseClicked" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Щелчок мыши&quot; на мышь. Изначально отключено по соображениям производительности.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Generate Mouse Double Clicked Events" name="generateMouseDoubleClicked" type="B">
-              <help>Controls whether the component generated Mouse Double events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Двойной щелчок мыши&quot;" name="generateMouseDoubleClicked" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Двойной щелчок мыши&quot;. Изначально отключено по соображениям производительности.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Generate Mouse Pressed Events" name="generateMousePressed" type="B">
-              <help>Controls whether the component generated Mouse Pressed events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Кнопка мыши нажата&quot;" name="generateMousePressed" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Кнопка мыши нажата&quot;. Изначально отключено по соображениям производительности.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Generate Mouse Released Events" name="generateMouseReleased" type="B">
-              <help>Controls whether the component generated Mouse Released events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Кнопка мыши отпущена&quot;" name="generateMouseReleased" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Кнопка мыши отпущена&quot;. Изначально отключено по соображениям производительности.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Generate Mouse Entered Events" name="generateMouseEntered" type="B">
-              <help>Controls whether the component generated Mouse Entered events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Наведение указателя мыши&quot;" name="generateMouseEntered" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Наведение указателя мыши&quot;. Изначально отключено по соображениям производительности.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Generate Mouse Exited Events" name="generateMouseExited" type="B">
-              <help>Controls whether the component generated Mouse Exited events. Initially disabled for performance reasons.</help>
+            <field description="Генерировать события &quot;Вывод указателя мыши&quot;" name="generateMouseExited" type="B">
+              <help>Контролирует, генерирует ли компонент события &quot;Вывод указателя мыши&quot;. Изначально отключено по соображениям производительности.</help>
               <defaultValue>0</defaultValue>
             </field>
             <field description="childContexts" name="childContexts" type="T">
@@ -1793,201 +1793,201 @@
                 </table>
               </defaultValue>
             </field>
-            <field description="Editable" name="editable" type="B">
+            <field description="Редактируемый" name="editable" type="B">
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Enable Dynamic Contents" name="dynamicContentsEnabled" type="B">
-              <help>Controls runtime creation of contents within the container. A container with dynamic contents must contain exactly one child component (or a single child hierarchy of components with a container-type root component). This component/hierarchy will be replicated for each row in the Dynamic Contents table, effectively adding new children to the container.</help>
+            <field description="Включить динамическое содержимое" name="dynamicContentsEnabled" type="B">
+              <help>Контролирует автоматическое создание содержимого внутри контейнера во время работы инструментальной панели. Контейнер с динамическим содержимым должен содержать ровно один дочерний компонент (или одну дочернюю иерархию компонентов с корневым компонентом контейнерного типа). Этот компонент/иерархия будет реплицироваться для каждой строки в таблице динамического содержимого, фактически добавляя новые компоненты в контейнер.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Static Format" name="dynamicContentsUseStaticFormat" type="B">
-              <help>When true, the Format property will define the format of the Dynamic Contents data table. This also allows putting a &quot;static&quot; dataset into the Dynamic Contents table via the component properties editor.</help>
+            <field description="Статический формат" name="dynamicContentsUseStaticFormat" type="B">
+              <help>Если включено, то свойство Формат будет определять формат таблицы &quot;Динамическое содержимое&quot;. Это также позволяет поместить «статический» набор данных в таблицу &quot;Динамическое содержимое&quot; через редактор свойств компонента.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Format" name="dynamicContentsFormat" type="T">
+            <field description="Формат" name="dynamicContentsFormat" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Dynamic Contents" name="dynamicContentsSource" type="T">
+            <field description="Динамическое содержимое" name="dynamicContentsSource" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Component Name Suffix Expression" editor="expression" name="dynamicContentsSuffix" type="S">
-              <help>An expression used to generate custom suffixes for the names of dynamically created components based on the current row of the Dynamic Contents dataset. If not specified, the contexts are named according to &lt;originalComponentName&gt;{#row} pattern: if a name of the dynamic container&apos;s component being replicated is &quot;template&quot; its clones will be named &quot;template1&quot;, &quot;template2&quot;, etc.</help>
+            <field description="Выражение суффикса для имён компонентов" editor="expression" name="dynamicContentsSuffix" type="S">
+              <help>Выражение, используемое для генерации пользовательских суффиксов для имен динамически создаваемых компонентов на основе текущей строки набора данных &quot;Динамическое содержимое&quot;. Если оно не указано, контексты будут названы в соответствии с шаблоном &lt;originalComponentName&gt;{#row}: если имя реплицируемого компонента динамического контейнера — &quot;template&quot;, его клоны будут названы &quot;template1&quot;, &quot;template2&quot; и т.д.</help>
               <defaultValue/>
             </field>
-            <field description="Positioning" name="dynamicContentsPositioning" type="S">
+            <field description="Позиционирование" name="dynamicContentsPositioning" type="S">
               <selectionValues>
-                <option description="Automatic">AUTOMATIC</option>
-                <option description="Manual">MANUAL</option>
+                <option description="Автоматически">AUTOMATIC</option>
+                <option description="Вручную">MANUAL</option>
               </selectionValues>
-              <help>When &apos;Automatic&apos; is selected, the created components will be positioned next to each other according to the current container&apos;s layout, and with &apos;Manual&apos; their constraints must be set with bindings.</help>
+              <help>Когда выбрано &apos;Автоматически&apos;, создаваемые элементы будут располагаться последовательно рядом друг с другом с учетом текущей раскладки контейнера, а когда &apos;Вручную&apos;, их ограничения будет необходимо задавать привязками</help>
               <defaultValue>AUTOMATIC</defaultValue>
             </field>
-            <field description="Current Page Offset" name="currentPageOffset" type="I">
+            <field description="Смещение текущей страницы" name="currentPageOffset" type="I">
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Items Total Count" name="totalCount" type="I">
+            <field description="Общее количество элементов" name="totalCount" type="I">
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Items Per Page" name="pageSize" type="I">
+            <field description="Число элементов на странице" name="pageSize" type="I">
               <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-              <help>Number of dynamically created components (or component hierarchies) to display per page. If the number of dynamically created components exceeds this number, a paginator appears in the container, otherwise the components are displayed without pagination. Each page contains a unique set of components.</help>
+              <help>Количество динамически созданных компонентов (или иерархий компонентов) для отображения на одной странице. Если количество динамически создаваемых компонентов превышает это число, в контейнере появляется пагинатор, в противном случае компоненты отображаются без пагинации. Каждая страница содержит уникальный набор компонентов.</help>
               <defaultValue>10</defaultValue>
             </field>
-            <field description="Show &apos;Items per Page&apos; Selector" name="showPageSizeSelector" type="B">
-              <help>Gives the user an option to select the number of items to display per page, with selection values taken from Custom ‘Items Per Page’ Selection Values.</help>
+            <field description="Показать селектор «Число элементов на странице»" name="showPageSizeSelector" type="B">
+              <help>Дает пользователю возможность выбрать количество элементов для отображения на странице, при этом значения выбора берутся из пользовательских значений выбора &quot;Число элементов на странице&quot;.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="&apos;Items per Page&apos; Selector Type" name="pageSizeSelectorType" type="S">
+            <field description="Тип селектора «Число элементов на странице»" name="pageSizeSelectorType" type="S">
               <selectionValues>
-                <option description="Combo Box">combobox</option>
-                <option description="Button Group">button-group</option>
+                <option description="Поле со списком">combobox</option>
+                <option description="Группа кнопок">button-group</option>
               </selectionValues>
-              <help>Indicates what kind of selector to display to the user, allowing them to select the number of items to display per page.</help>
+              <help>Указывает, какой тип селектора отображать пользователю, позволяя ему выбрать количество элементов для отображения на странице.</help>
               <defaultValue>combobox</defaultValue>
             </field>
-            <field description="Custom &apos;Items per Page&apos; Selection Values" name="pageSizeOptions" type="T">
+            <field description="Пользовательские значения селектора «Число элементов на странице»" name="pageSizeOptions" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Layout" name="layout" type="S">
+            <field description="Компоновка" name="layout" type="S">
               <selectionValues>
-                <option description="Grid">grid</option>
-                <option description="Absolute">absolute</option>
-                <option description="Dockable">dockable</option>
+                <option description="Сетка">grid</option>
+                <option description="Абсолютный">absolute</option>
+                <option description="Плавающие окна">dockable</option>
               </selectionValues>
-              <help>&lt;p&gt;Defines container layout type:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Grid layout&lt;/b&gt; is a matrix of rows and columns, allowing certain components to span multiple rows or columns. Rows can have different heights. Similarly, columns may have different widths. The grid may be shown or hidden when editing the dashboard in the UI Builder, but is never shown when the dashboard is running. Only the actual components are visible. Grid layout is backed by and rendered with &lt;i&gt;CSS Grid&lt;/i&gt; technology.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Absolute layout&lt;/b&gt; defines constraints for each component by their pixel coordinates and size on the canvas. This may be very convenient for designing human-machine interfaces (HMIs), facility/floor plans, and other similar UIs. Components are moved, aligned and sized by dragging and dropping on the canvas, and can even overlap one another.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Dockable layout&lt;/b&gt; empowers interface designers to craft flexible and customizable user interfaces by distributing components as floating windows, horizontally or vertically-aligned panes, or tabs within panes. The dashboard developer designs the initial layout of a dockable container and the extent it can be customized by the user, for example, whether windows can be closed or set as floating. End users are able to reorganize or minimize windows to create personalized layouts that suit their preferences. To edit a dockable layout, users and designers click and hold a window to open the layout selector. A menu will pop up, indicating the orientation of the window when dropped in a certain position.&lt;/li&gt;&lt;/ul&gt;</help>
+              <help>&lt;p&gt;Определяет тип макета контейнера:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Сетка&lt;/b&gt; — это матрица из строк и столбцов, позволяющая определенным компонентам занимать несколько строк или столбцов. Строки могут иметь разную высоту. Аналогично столбцы могут иметь разную ширину. Сетка может быть показана или скрыта при редактировании инструментальной панели в UI Builder, но никогда не показывается во время работы инструментальной панели. Видимыми остаются только реальные компоненты. Сетчатый макет поддерживается и отображается с помощью технологии &lt;i&gt;CSS Grid&lt;/i&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Абсолютное позиционирование&lt;/b&gt; определяет ограничения для каждого компонента по его пиксельным координатам и размеру на холсте. Это может быть очень удобно при разработке мнемосхем (HMI), планов помещений/этажей и других подобных пользовательских интерфейсов. Компоненты перемещаются, выравниваются и изменяют размер путем перетаскивания на холст и даже могут перекрывать друг друга.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Плавающая компоновка&lt;/b&gt; позволяет дизайнерам интерфейсов создавать гибкие и настраиваемые пользовательские интерфейсы, распределяя компоненты в виде плавающих окон, горизонтально или вертикально выровненных панелей или вкладок внутри панелей. Разработчик инструментальной панели создает первоначальный макет контейнера с возможностью стыковки и определяет, насколько он может быть настроен пользователем, например, можно ли закрыть окна или установить их в качестве плавающих. Конечные пользователи могут реорганизовывать или сворачивать окна, чтобы создать индивидуальную компоновку, соответствующую их предпочтениям. Чтобы изменить макет с возможностью стыковки, пользователи и дизайнеры нажимают и удерживают окно, чтобы открыть селектор макетов. Появится меню, в котором будет указана ориентация окна при установке в определенное положение.&lt;/li&gt;&lt;/ul&gt;</help>
               <defaultValue>grid</defaultValue>
             </field>
-            <field description="Gap" name="gap" type="S">
-              <help>Defines cell grid line width, in pixels.</help>
+            <field description="Разрыв" name="gap" type="S">
+              <help>Определяет ширину линии сетки ячеек, в пикселях.</help>
               <defaultValue>10px</defaultValue>
             </field>
-            <field description="Grid Column Properties" name="gridCols" type="T">
+            <field description="Информация о колонках сетки" name="gridCols" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Grid Row Properties" name="gridRows" type="T">
+            <field description="Информация о строках сетки" name="gridRows" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Resizable" hidden="true" name="resizable" type="B">
+            <field description="Изменяемый" hidden="true" name="resizable" type="B">
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Movable" hidden="true" name="movable" type="B">
+            <field description="Подвижный" hidden="true" name="movable" type="B">
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Max columns" hidden="true" name="maxColumns" type="I">
+            <field description="максимальное количество колонок" hidden="true" name="maxColumns" type="I">
               <defaultValue>12</defaultValue>
             </field>
-            <field description="Max Rows" hidden="true" name="maxRows" type="I">
+            <field description="Максимальное количество строк" hidden="true" name="maxRows" type="I">
               <defaultValue>2</defaultValue>
             </field>
-            <field description="Grid Type" name="gridType" type="S">
+            <field description="Тип сетки" name="gridType" type="S">
               <selectionValues>
-                <option description="Scrollable">scrollable</option>
-                <option description="Non-scrollable">dockable</option>
+                <option description="С прокруткой">scrollable</option>
+                <option description="Без прокрутки">dockable</option>
               </selectionValues>
               <defaultValue>dockable</defaultValue>
             </field>
-            <field description="Show Grid Background" name="showGridBackground" type="S">
+            <field description="Показывать фон сетки" name="showGridBackground" type="S">
               <selectionValues>
-                <option description="None">none</option>
-                <option description="Rows">rows</option>
-                <option description="Columns">columns</option>
-                <option description="Rows And Columns">rowsAndColumns</option>
+                <option description="Отсутствует">none</option>
+                <option description="Строки">rows</option>
+                <option description="Колонки">columns</option>
+                <option description="Строки и столбцы">rowsAndColumns</option>
               </selectionValues>
               <defaultValue>rowsAndColumns</defaultValue>
             </field>
-            <field description="Snap to Grid" name="snapToGrid" type="B">
-              <help>Available in containers configured with Absolute layout. When enabled, overlays a snap-to grid on the canvas. This grid is invisible and non-functional during normal dashboard operation. During dashboard editing, components will automatically be aligned with the nearest horizontal and vertical lines of the snap-to grid. The cell size of the snap-to grid is determined by the Grid Step property.</help>
+            <field description="Включить привязку к сетке" name="snapToGrid" type="B">
+              <help>Доступно в контейнерах, настроенных на Абсолютное позиционирование. При включении этого параметра на холст накладывается невидимая во время обычной работы приложения сетка привязки, и компоненты, расположенные в контейнере, при редактировании автоматически выравниваются по ближайшим горизонтальным и вертикальным линиям сетки привязки. Размер ячейки сетки привязки определяется свойством Шаг сетки.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Dock Layout Structure" name="dockLayoutStructure" type="T">
+            <field description="Структура расположения элементов со стыковкой" name="dockLayoutStructure" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Layout Storage" name="layoutStorage" type="S">
+            <field description="Хранение расположения" name="layoutStorage" type="S">
               <selectionValues>
-                <option description="Shared">shared</option>
-                <option description="For Every User">forEveryUser</option>
-                <option description="For Every Login">forEveryLogin</option>
-                <option description="Do Not Store">doNotStore</option>
+                <option description="Общее">shared</option>
+                <option description="Для каждого пользователя">forEveryUser</option>
+                <option description="Для каждого логина">forEveryLogin</option>
+                <option description="Не сохранять">doNotStore</option>
               </selectionValues>
-              <help>&lt;p&gt;Determines how dockable layouts should be persisted between users and user sessions:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Shared:&lt;/b&gt; The layout will be shared between users. If one user makes a change to the layout, this will be applied to all users.&lt;/li&gt;&lt;li&gt;&lt;b&gt;For Every User:&lt;/b&gt; Each user will have their own layout saved, which will persist between sessions.&lt;/li&gt;&lt;li&gt;&lt;b&gt;For Every Login:&lt;/b&gt; The dockable layout will be persisted during a single session, but when the user logs out, the layout will return to the default.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Do Not Store:&lt;/b&gt; The layout will revert to its default each time the user navigates away from the dashboard.&lt;/li&gt;&lt;/ul&gt;</help>
+              <help>&lt;p&gt;Определяет, как компоновка плавающих окон должна сохраняться между пользователями и сеансами пользователей:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Общий:&lt;/b&gt; Макет будет общим для всех пользователей. Если один пользователь внесет изменения в макет, они будут применены ко всем пользователям.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Для каждого пользователя:&lt;/b&gt; У каждого пользователя будет сохранен свой собственный макет, который будет сохраняться между сессиями.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Для каждого входа:&lt;/b&gt; Компоновка будет сохраняться в течение одной сессии, но, когда пользователь выйдет из системы, компоновка вернется к макету по умолчанию.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Не хранить:&lt;/b&gt; Компоновка будет возвращаться к макету по умолчанию каждый раз, когда пользователь будет покидать инструментальную панель.&lt;/li&gt;&lt;/ul&gt;</help>
               <defaultValue>shared</defaultValue>
             </field>
-            <field description="Grid Step" name="gridStep" type="S">
-              <help>Applicable when the Snap to Grid property is enabled. Indicates the number of pixels between each column and row of the snap-to grid.</help>
+            <field description="Шаг сетки" name="gridStep" type="S">
+              <help>Применяется, когда активно свойство &quot;Включить привязку к сетке&quot;. Указывает количество пикселей между каждым столбцом и строкой сетки привязки.</help>
               <defaultValue>10</defaultValue>
             </field>
-            <field description="Band Type" name="bandType" nullable="true" type="S">
-              <help>Functional purpose and place of the band in the report generation life cycle</help>
+            <field description="Тип полосы" name="bandType" nullable="true" type="S">
+              <help>Функциональное назначение и место полосы в жизненном цикле построения отчета.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Layout Width" name="layoutWidth" type="I">
-              <help>Layout width for absolute layout, in pixels.</help>
+            <field description="Ширина макета" name="layoutWidth" type="I">
+              <help>Ширина макета для абсолютного позиционирования, в пикселях.</help>
               <defaultValue>800</defaultValue>
             </field>
-            <field description="Layout Height" name="layoutHeight" type="I">
-              <help>Layout height for absolute layout, in pixels.</help>
+            <field description="Высота макета" name="layoutHeight" type="I">
+              <help>Высота макета для абсолютного позиционирования, в пикселях.</help>
               <defaultValue>800</defaultValue>
             </field>
-            <field description="Left Margin" name="marginLeft" type="I">
-              <help>Left Margin</help>
+            <field description="Левое поле" name="marginLeft" type="I">
+              <help>Левое поле</help>
               <defaultValue>30</defaultValue>
             </field>
-            <field description="Right Margin" name="marginRight" type="I">
-              <help>Right Margin</help>
+            <field description="Правое поле" name="marginRight" type="I">
+              <help>Правое поле</help>
               <defaultValue>30</defaultValue>
             </field>
-            <field description="Top Margin" name="marginTop" type="I">
-              <help>Top Margin</help>
+            <field description="Верхнее поле" name="marginTop" type="I">
+              <help>Верхнее поле</help>
               <defaultValue>40</defaultValue>
             </field>
-            <field description="Bottom Margin" name="marginBottom" type="I">
-              <help>Bottom Margin</help>
+            <field description="Нижнее поле" name="marginBottom" type="I">
+              <help>Нижнее поле</help>
               <defaultValue>40</defaultValue>
             </field>
-            <field description="Breakpoints" name="breakpoints" type="T">
+            <field description="Точки перелома" name="breakpoints" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Current Breakpoint" name="currentBreakpoint" type="T">
+            <field description="Текущее разрешение экрана" name="currentBreakpoint" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Default Screen Resolution" name="defaultBreakpoint" type="S">
+            <field description="Разрешение экрана по умолчанию" name="defaultBreakpoint" type="S">
               <defaultValue>none</defaultValue>
             </field>
-            <field description="Custom Properties" name="customProperties" type="T">
+            <field description="Дополнительные свойства" name="customProperties" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
@@ -2004,23 +2004,23 @@
               </selectionValues>
               <defaultValue>CREATED</defaultValue>
             </field>
-            <field description="Show Empty Dashboard Message" name="showEmptyDashboardMessage" type="B">
-              <help>Determines whether a message will be shown to users when viewing a dashboard that has no components on it. If enabled, displays a message and an Edit button when a dashboard contains no components. This helps users understand the state of the dashboard and encourages them to start adding content. When disabled, no message is displayed on empty dashboards, resulting in a somewhat confusing blank dashboard when no components are present.</help>
+            <field description="Показывать сообщение на пустой инструментальной панели" name="showEmptyDashboardMessage" type="B">
+              <help>Определяет, будет ли показано сообщение пользователям при просмотре инструментальной панели, на которой нет компонентов. Если включено, отображается сообщение и кнопка &quot;Редактировать&quot;, когда инструментальная панель не содержит компонентов. Это помогает пользователям понять состояние инструментальной панели и побуждает их начать добавлять содержимое. Если эта функция отключена, на пустых инструментальных панелях не отображается никакого сообщения, что приводит к появлению пустой инструментальной панели при отсутствии компонентов и иногда может вызвать заблуждение пользователей.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Printable" name="printable" type="B">
-              <help>Dashboard type for creating printable reports</help>
+            <field description="Печатный дашборд" name="printable" type="B">
+              <help>Тип дашборда для построения печатных отчетов</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Page Settings" name="pageSettings" type="T">
+            <field description="Настройки страницы" name="pageSettings" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
                 </table>
               </defaultValue>
             </field>
-            <field description="Name" name="name" nullable="true" type="S">
-              <help>Unique name of the UI component within the dashboard. Since all UI components are represented by contexts located in the two-level component context tree, a component&apos;s name also equals to both the name and full path of the component context.</help>
+            <field description="Имя" name="name" nullable="true" type="S">
+              <help>Уникальное имя UI компонента в инструментальной панели. Поскольку все UI компоненты представлены контекстами, расположенными в двухуровневом дереве контекстов компонентов, имя компонента также равно и имени и полному пути контекста компонента.</help>
               <defaultValue/>
             </field>
           </fields>
@@ -4631,13 +4631,13 @@
         <int>45</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
-            <field description="Type" hidden="true" name="type" type="S">
+            <field description="Тип" hidden="true" name="type" type="S">
               <selectionValues>
-                <option description="Tag">tag</option>
+                <option description="Тег">tag</option>
               </selectionValues>
               <defaultValue>tag</defaultValue>
             </field>
-            <field description="Tag Name" extendableSelectionValues="true" name="name" nullable="true" type="S">
+            <field description="Имя тега" extendableSelectionValues="true" name="name" nullable="true" type="S">
               <selectionValues>
                 <option description="title">title</option>
                 <option description="base">base</option>
@@ -4648,22 +4648,22 @@
                 <option description="noscript">noscript</option>
                 <option description="template">template</option>
               </selectionValues>
-              <help>Defines the name of the tag.</help>
+              <help>Определяет имя тега.</help>
               <defaultValue>meta</defaultValue>
             </field>
-            <field description="Tag Attributes" name="attributes" nullable="true" type="T">
-              <help>Defines a list of tag attributes.</help>
+            <field description="Атрибуты тега" name="attributes" nullable="true" type="T">
+              <help>Определяет список атрибутов тега.</help>
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647" reorderable="true">
                     <fields>
-                      <field description="Name" name="attributeName" type="S">
-                        <help>Defines the tag attribute name.</help>
+                      <field description="Имя" name="attributeName" type="S">
+                        <help>Определяет имя атрибута тэга.</help>
                         <defaultValue/>
                       </field>
-                      <field description="Value Expression" editor="expression" name="attributeValueExpression" type="S">
-                        <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDdXJyZW50IGRhc2hib2FyZCdzIGRlZmF1bHQgY29udGV4dC4dHBodHBodHDAdHBxSHhxjb250ZXh0UGF0aB0cQ29udGV4dCBQYXRoHR0cUh4cYWxpYXMdHEFsaWFzHR0dHQ==</editorOptions>
-                        <help>An expression which evaluates to the tag attribute value string.</help>
+                      <field description="Выражение для значения" editor="expression" name="attributeValueExpression" type="S">
+                        <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cU3RyaW5nHRzQn9GA0LDQstCwINC30LDQu9C+0LPQuNC90LXQvdC90L7Qs9C+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjy4dHNCi0LXQutGD0YnQuNC5INC60L7QvdGC0LXQutGB0YIg0LjQvdGB0YLRgNGD0LzQtdC90YLQsNC70YzQvdC+0Lkg0L/QsNC90LXQu9C4Lh0cGh0cGh0cMB0cHFIeHGNvbnRleHRQYXRoHRzQn9GD0YLRjCDQutC+0L3RgtC10LrRgdGC0LAdHRxSHhxhbGlhcx0c0J/RgdC10LLQtNC+0L3QuNC8HR0dHQ==</editorOptions>
+                        <help>Выражение, которое вычисляет строку значения атрибута тэга.</help>
                         <defaultValue/>
                       </field>
                     </fields>
@@ -4671,9 +4671,9 @@
                 </table>
               </defaultValue>
             </field>
-            <field description="Content Expression" editor="expression" name="contentExpression" nullable="true" type="S">
-              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQdHRwcdGFibGUdHFQdHEYeTh0cQR4aHRxEHkRlZmF1bHQgVGFibGUdHRwccmVmZXJlbmNlcx0cVB0cRh5OHRxBHhxGHhwccmVmZXJlbmNlHRxTHRxBHh0cRB5SZWZlcmVuY2UgHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB5EZXNjcmlwdGlvbh0dHR0cRB5SZWZlcmVuY2VzHR0cHGV4cGVjdGVkUmVzdWx0HRxTHRxGHk4dHEEeGh0cRB5FeHBlY3RlZCBSZXN1bHQdHRwccGVybWlzc2lvbnNEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeUGVybWlzc2lvbnMdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB5EZWZhdWx0IENvbnRleHQgRGVzY3JpcHRpb24dHRwcdGFibGVEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBUYWJsZSBEZXNjcmlwdGlvbh0dHBxyb3dEZXNjcmlwdGlvbh0cUx0cRh5OHRxBHhodHEQeRGVmYXVsdCBSb3cgRGVzY3JpcHRpb24dHRwcdHlwZR0cSR0cRh5IHRxBHjAdHEQeVHlwZR0cUx4cR2VuZXJhbB4wHRxDb25kaXRpb24eMR0dHRwcZW52aXJvbm1lbnRWYXJpYWJsZXMdHFQdHEYeTh0cQR4cRh4cHHZhcmlhYmxlHRxTHRxBHh0cRB5WYXJpYWJsZR0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQeRGVzY3JpcHRpb24dHR0dHEQeRW52aXJvbm1lbnQgVmFyaWFibGVzHR0cTR4xHRxYHjEdHRxSHhwaHRwaHRwaHRxTdHJpbmcdHExvZ2dlZCB1c2VyJ3MgcGVybWlzc2lvbnMuHRxDdXJyZW50IGRhc2hib2FyZCdzIGRlZmF1bHQgY29udGV4dC4dHBodHBodHDAdHBodHQ==</editorOptions>
-              <help>An expression that must evaluate to a string, which is processed as the tag content value. The expression is evaluated at the moment the dashboard is being opened. Evaluation result is HTML-escaped before inserted into the HTML markup.</help>
+            <field description="Выражение для содержимого" editor="expression" name="contentExpression" nullable="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxjb250ZXh0HRxTHRxGHk4dHEEeGh0cRB7QmtC+0L3RgtC10LrRgdGCINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHRhYmxlHRxUHRxGHk4dHEEeGh0cRB7QotCw0LHQu9C40YbQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBxyZWZlcmVuY2VzHRxUHRxGHk4dHEEeHEYeHBxyZWZlcmVuY2UdHFMdHEEeHRxEHtCh0YHRi9C70LrQsB0dHBxkZXNjcmlwdGlvbh0cUx0cQR4dHEQe0J7Qv9C40YHQsNC90LjQtR0dHR0cRB7QodGB0YvQu9C60LgdHRwcZXhwZWN0ZWRSZXN1bHQdHFMdHEYeTh0cQR4aHRxEHtCS0L7Qt9Cy0YDQsNGJ0LDQtdC80L7QtSDQt9C90LDRh9C10L3QuNC1HR0cHHBlcm1pc3Npb25zRGVzY3JpcHRpb24dHFMdHEYeTh0cQR4aHRxEHtCf0YDQsNCy0LAg0LTQvtGB0YLRg9C/0LAdHRwcY29udGV4dERlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INC60L7QvdGC0LXQutGB0YLQsCDQv9C+INGD0LzQvtC70YfQsNC90LjRjh0dHBx0YWJsZURlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGC0LDQsdC70LjRhtGLINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHJvd0Rlc2NyaXB0aW9uHRxTHRxGHk4dHEEeGh0cRB7QntC/0LjRgdCw0L3QuNC1INGA0Y/QtNCwINC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOHR0cHHR5cGUdHEkdHEYeSB0cQR4wHRxEHtCi0LjQvx0cUx4c0J7QsdGJ0LjQuR4wHRzQo9GB0LvQvtCy0LjQtR4xHR0dHBxlbnZpcm9ubWVudFZhcmlhYmxlcx0cVB0cRh5OHRxBHhxGHhwcdmFyaWFibGUdHFMdHEEeHRxEHtCf0LXRgNC10LzQtdC90L3QsNGPHR0cHGRlc2NyaXB0aW9uHRxTHRxBHh0cRB7QntC/0LjRgdCw0L3QuNC1HR0dHRxEHtCf0LXRgNC10LzQtdC90L3Ri9C1INC+0LrRgNGD0LbQtdC90LjRjx0dHE0eMR0cWB4xHR0cUh4cGh0cGh0cGh0cU3RyaW5nHRzQn9GA0LDQstCwINC30LDQu9C+0LPQuNC90LXQvdC90L7Qs9C+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjy4dHNCi0LXQutGD0YnQuNC5INC60L7QvdGC0LXQutGB0YIg0LjQvdGB0YLRgNGD0LzQtdC90YLQsNC70YzQvdC+0Lkg0L/QsNC90LXQu9C4Lh0cGh0cGh0cMB0cGh0d</editorOptions>
+              <help>Выражение, которое должно возвращать строку, обрабатываемую как значение содержимого тэга. Выражение вычисляется в момент открытия инструментальной панели. К результат вычисления применяется HTML-экранирование перед тем, как он вставляется в HTML разметку.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
