@@ -2027,8 +2027,8 @@ public class %ScriptClassNamePattern% implements FunctionImplementation&#xd;
             </field>
             <field description="Тип" name="type" type="I">
               <selectionValues>
-                <option description="Выражение">1</option>
                 <option description="Код на Java">0</option>
+                <option description="Выражение">1</option>
                 <option description="Запрос">2</option>
               </selectionValues>
               <help>Данное поле определяет тип реализации функции.</help>
