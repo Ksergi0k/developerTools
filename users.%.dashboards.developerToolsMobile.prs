@@ -75,7 +75,6 @@
                       <value name="componentId">systemTree</value>
                       <value name="tabId">systemTree</value>
                       <value name="panelId">+949</value>
-                      <value name="active">1</value>
                     </record>
                   </records>
                 </table>
@@ -113,7 +112,7 @@
                           <formatId id="10"/>
                         </table>
                       </value>
-                      <value name="icon">
+                      <value name="dockIcon">
                         <table>
                           <formatId id="9"/>
                           <records>
@@ -273,21 +272,9 @@
                           </records>
                         </table>
                       </value>
-                      <value name="currentBreakpoint">
-                        <table>
-                          <formatId id="18"/>
-                          <records>
-                            <record>
-                              <value name="name">none</value>
-                              <value name="description">None</value>
-                              <value name="value">0</value>
-                            </record>
-                          </records>
-                        </table>
-                      </value>
                       <value name="customProperties">
                         <table>
-                          <formatId id="19"/>
+                          <formatId id="18"/>
                         </table>
                       </value>
                       <value name="state">RUNNING</value>
@@ -301,7 +288,7 @@
               <value name="type">systemTree</value>
               <value name="parameters">
                 <table>
-                  <formatId id="20"/>
+                  <formatId id="19"/>
                   <records>
                     <record>
                       <value name="name">systemTree</value>
@@ -312,7 +299,7 @@
                       </value>
                       <value name="gridBreakpoints">
                         <table>
-                          <formatId id="21"/>
+                          <formatId id="20"/>
                           <records>
                             <record>
                               <value name="breakpoint">none</value>
@@ -336,22 +323,12 @@ svg{
                           </records>
                         </table>
                       </value>
-                      <value name="description">Дерево</value>
-                      <value name="icon">
-                        <table>
-                          <formatId id="9"/>
-                          <records>
-                            <record/>
-                          </records>
-                        </table>
-                      </value>
                       <value name="maximizable">0</value>
                       <value name="dockMovable">0</value>
                       <value name="dockFloatable">0</value>
                       <value name="dockResizable">0</value>
                       <value name="tabId">systemTree</value>
                       <value name="panelId">+949</value>
-                      <value name="active">1</value>
                       <value name="gridx">1</value>
                       <value name="gridy">1</value>
                       <value name="style"/>
@@ -385,13 +362,13 @@ svg{
                       </value>
                       <value name="componentLocation">
                         <table>
-                          <formatId id="22"/>
+                          <formatId id="21"/>
                           <records>
                             <record>
                               <value name="path"/>
                               <value name="dockable">
                                 <table>
-                                  <formatId id="23"/>
+                                  <formatId id="22"/>
                                   <records>
                                     <record>
                                       <value name="position">tab</value>
@@ -415,7 +392,7 @@ svg{
                       </value>
                       <value name="selectedNodes">
                         <table>
-                          <formatId id="24"/>
+                          <formatId id="23"/>
                           <records>
                             <record>
                               <value name="key">uiComponents</value>
@@ -425,10 +402,20 @@ svg{
                       </value>
                       <value name="expandedNodes">
                         <table>
-                          <formatId id="24"/>
+                          <formatId id="23"/>
                         </table>
                       </value>
                       <value name="showContextMenuShortcut">1</value>
+                      <value name="dockActive">1</value>
+                      <value name="dockTitle">Дерево</value>
+                      <value name="dockIcon">
+                        <table>
+                          <formatId id="9"/>
+                          <records>
+                            <record/>
+                          </records>
+                        </table>
+                      </value>
                     </record>
                   </records>
                 </table>
@@ -440,7 +427,7 @@ svg{
       <entry>
         <string>headContent</string>
         <table>
-          <formatId id="25"/>
+          <formatId id="24"/>
         </table>
       </entry>
     </properties>
@@ -683,7 +670,7 @@ svg{
             </binding>
             <binding>
               <reference>templateProcessingExpression#options</reference>
-              <expression>variableAvailable({.:}, &apos;elements&apos;) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Контекст по умолчанию&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Таблица по умолчанию&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Ссылка&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Ссылки&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Возвращаемое значение&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Права доступа&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание контекста по умолчанию&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание таблицы по умолчанию&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание ряда по умолчанию&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Тип&gt;&lt;S=&lt;Общий=0&gt;&lt;Условие=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Переменная&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Переменные окружения&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
+              <expression>variableAvailable({.:}, &apos;elements&apos;) &amp;&amp; !isEmpty({.:childInfo$templateProcessingExpression}) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Контекст по умолчанию&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Таблица по умолчанию&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Ссылка&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Ссылки&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Возвращаемое значение&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Права доступа&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание контекста по умолчанию&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание таблицы по умолчанию&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание ряда по умолчанию&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Тип&gt;&lt;S=&lt;Общий=0&gt;&lt;Условие=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Переменная&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Переменные окружения&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
             </binding>
             <binding>
               <reference>cacheEnabled#hidden</reference>
@@ -858,8 +845,11 @@ svg{
                         <help>Индекс вкладки, которую будет занимать пристыковываемый компонент в панели с вкладками. Индексируется с нуля, где 0 — первая вкладка, 1 — вторая и так далее.</help>
                         <defaultValue>0</defaultValue>
                       </field>
-                      <field description="Активный" name="active" type="B">
+                      <field description="Активная вкладка" name="dockActive" type="B">
                         <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
+                        <aliases>
+                          <alias>active</alias>
+                        </aliases>
                         <defaultValue>0</defaultValue>
                       </field>
                     </fields>
@@ -961,8 +951,11 @@ svg{
               <help>Индекс вкладки, которую будет занимать пристыковываемый компонент в панели с вкладками. Индексируется с нуля, где 0 — первая вкладка, 1 — вторая и так далее.</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Активный" name="active" type="B">
+            <field description="Активная вкладка" name="dockActive" type="B">
               <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
+              <aliases>
+                <alias>active</alias>
+              </aliases>
               <defaultValue>0</defaultValue>
             </field>
           </fields>
@@ -994,46 +987,46 @@ svg{
                 <option description="Системное дерево">systemTree</option>
                 <option description="Индикатор выполнения">progressBar</option>
                 <option description="Вкладка">tab</option>
-                <option description="Таблица с данными">dataTableEditor</option>
-                <option description="Электронная таблица">spreadsheet</option>
                 <option description="Заголовок таблицы">dataTableEditorHeader</option>
                 <option description="Таймер">timer</option>
-                <option description="Классовая таблица">classDataTableEditor</option>
-                <option description="Список полей класса">classFieldList</option>
-                <option description="Журнал событий">eventLog</option>
                 <option description="Векторное изображение">vectorDrawing</option>
                 <option description="Регулятор">slider</option>
-                <option description="Список контекстов">contextList</option>
                 <option description="Коннектор">connector</option>
                 <option description="Текстовое поле">textField</option>
                 <option description="Текстовая область">textArea</option>
-                <option description="Выпадающее меню">dropDownButton</option>
-                <option description="Кнопка">button</option>
+                <option description="Выпадающее меню">dropdownMenu</option>
                 <option description="Выпадающий список">dropdownList</option>
+                <option description="Выпадающее дерево">treeSelect</option>
+                <option description="Кнопка">button</option>
                 <option description="Чекбокс">checkBox</option>
                 <option description="Группа чекбоксов">checkBoxGroup</option>
                 <option description="Переключатель">toggleButton</option>
                 <option description="Радиокнопки">radioButton</option>
                 <option description="Дата/время">dateTimePicker</option>
-                <option description="Группа кнопок">buttonGroup</option>
-                <option description="Выпадающее дерево">treeSelect</option>
-                <option description="Числовое поле">numberField</option>
                 <option description="Время">timePicker</option>
+                <option description="Группа кнопок">buttonGroup</option>
+                <option description="Числовое поле">numberField</option>
                 <option description="Загрузчик">uploader</option>
+                <option description="Таблица с данными">dataTableEditor</option>
+                <option description="Журнал событий">eventLog</option>
+                <option description="Электронная таблица">spreadsheet</option>
+                <option description="Классовая таблица">classDataTableEditor</option>
+                <option description="Список полей класса">classFieldList</option>
+                <option description="Список контекстов">contextList</option>
                 <option description="Карта">map</option>
                 <option description="Хлебные крошки">breadcrumb</option>
                 <option description="Меню">menu</option>
+                <option description="Диаграмма">lineChart</option>
+                <option description="Столбчатая диаграмма">barChart</option>
+                <option description="Диаграмма с областями">areaChart</option>
+                <option description="Круговая диаграмма">pieChart</option>
                 <option description="Диаграмма Ганта">ganttChart</option>
                 <option description="Пузырьковая диаграмма">bubbleChart</option>
-                <option description="Столбчатая диаграмма">barChart</option>
                 <option description="Диаграмма японские свечи">candlestickChart</option>
                 <option description="Столбчатая диаграмма интервалов">intervalBarChart</option>
-                <option description="Диаграмма">lineChart</option>
                 <option description="Статистическая диаграмма">statisticalChart</option>
                 <option description="Диаграмма отклонений">deviationChart</option>
                 <option description="Диаграмма интервалов">intervalChart</option>
-                <option description="Диаграмма с областями">areaChart</option>
-                <option description="Круговая диаграмма">pieChart</option>
                 <option description="Лепестковая диаграмма">spiderChart</option>
                 <option description="Полярная диаграмма">polarChart</option>
                 <option description="Индикатор">gauge</option>
@@ -1109,22 +1102,18 @@ svg{
                 </table>
               </defaultValue>
             </field>
-            <field description="Контекстное меню" name="contextMenu" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
-            </field>
             <field description="Показать заголовок" name="showHeader" type="B">
               <help>Настраивает, должен ли отображаться заголовок пристыковываемого окна.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Описание" name="description" type="S">
+            <field description="Заголовок" name="dockTitle" type="S">
               <help>Текст заголовка пристыковываемого окна.</help>
+              <aliases>
+                <alias>description</alias>
+              </aliases>
               <defaultValue/>
             </field>
-            <field description="Пиктограмма" name="icon" type="T">
+            <field description="Иконка окна" name="dockIcon" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
@@ -1358,15 +1347,17 @@ svg{
                 <option description="С прокруткой">scrollable</option>
                 <option description="Без прокрутки">dockable</option>
               </selectionValues>
+              <help>&lt;p&gt;Поведение инструментальной панели, если содержимое не помещается на экране:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;С прокруткой&lt;/b&gt; — если содержимое выходит за пределы экрана, появляется вертикальная полоса прокрутки.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Без прокрутки&lt;/b&gt; — содержимое инструментальной панели масштабируется по размеру экрана.&lt;/li&gt;&lt;/ul&gt;</help>
               <defaultValue>dockable</defaultValue>
             </field>
-            <field description="Показывать фон сетки" name="showGridBackground" type="S">
+            <field description="Показывать сетку" name="showGridBackground" type="S">
               <selectionValues>
                 <option description="Отсутствует">none</option>
                 <option description="Строки">rows</option>
                 <option description="Колонки">columns</option>
                 <option description="Строки и столбцы">rowsAndColumns</option>
               </selectionValues>
+              <help>Определяет, какие линии сетки отображаются. Это свойство применимо только к режиму редактирования и не влияет на обычную работу информационной панели.</help>
               <defaultValue>rowsAndColumns</defaultValue>
             </field>
             <field description="Включить привязку к сетке" name="snapToGrid" type="B">
@@ -1431,14 +1422,12 @@ svg{
                 </table>
               </defaultValue>
             </field>
-            <field description="Текущее разрешение экрана" name="currentBreakpoint" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
+            <field description="Текущая точка перелома" name="currentBreakpoint" type="S">
+              <help>Имя активной точки перелома инструментальной панели. Должно совпадать с именем, определённым в таблице Точки перелома. В процессе редактирования инструментальной панели это свойство автоматически обновляется при выборе точки перелома в верхней панели инструментов Web UI Builder. В штатном режиме работы инструментальной панели это свойство автоматически обновляется при запуске инструментальной панели и при изменении размера окна браузера.</help>
+              <defaultValue>none</defaultValue>
             </field>
-            <field description="Разрешение экрана по умолчанию" name="defaultBreakpoint" type="S">
+            <field description="Точка перелома по умолчанию" name="defaultBreakpoint" type="S">
+              <help>&lt;p&gt;Имя точки перелома из таблицы &lt;b&gt;Точки перелома&lt;/b&gt;, настройки которой используются, если для текущей точки перелома не заданы собственные стили и значения свойств.&lt;/p&gt;&lt;p&gt;Обычно указывается точка перелома None.&lt;/p&gt;&lt;p&gt;Если настройки компонента отсутствуют как для текущей точки перелома, так и для точки перелома по умолчанию, компонент не отображается на инструментальной панели.&lt;/p&gt;</help>
               <defaultValue>none</defaultValue>
             </field>
             <field description="Дополнительные свойства" name="customProperties" type="T">
@@ -1962,35 +1951,6 @@ svg{
       </entry>
       <entry>
         <int>18</int>
-        <format maxRecords="1" minRecords="1">
-          <fields>
-            <field description="Имя" name="name" type="S">
-              <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-              <defaultValue/>
-            </field>
-            <field description="Описание" name="description" type="S">
-              <defaultValue/>
-            </field>
-            <field description="Значение" extendableSelectionValues="true" name="value" type="S">
-              <selectionValues>
-                <option description="None">0</option>
-                <option description="Mobile">320</option>
-                <option description="Full HD">1920</option>
-                <option description="Laptop">1366</option>
-                <option description="Tablet">800</option>
-                <option description="Ultra HD">3840</option>
-                <option description="QHD">2560</option>
-              </selectionValues>
-              <defaultValue>320</defaultValue>
-            </field>
-            <field description="Активный" name="enabled" type="B">
-              <defaultValue>1</defaultValue>
-            </field>
-          </fields>
-        </format>
-      </entry>
-      <entry>
-        <int>19</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Имя" name="name" type="S">
@@ -2245,7 +2205,7 @@ svg{
         </format>
       </entry>
       <entry>
-        <int>20</int>
+        <int>19</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Имя" name="name" nullable="true" type="S">
@@ -2273,16 +2233,6 @@ svg{
             </field>
             <field description="Показать заголовок" name="showHeader" type="B">
               <defaultValue>1</defaultValue>
-            </field>
-            <field description="Описание" name="description" type="S">
-              <defaultValue/>
-            </field>
-            <field description="Пиктограмма" name="icon" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
             </field>
             <field description="Максимизируемый" name="maximizable" type="B">
               <defaultValue>1</defaultValue>
@@ -2330,9 +2280,6 @@ svg{
               <defaultValue/>
             </field>
             <field description="Order ID" name="orderId" type="I">
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Активный" name="active" type="B">
               <defaultValue>0</defaultValue>
             </field>
             <field description="Горизонтальное Положение" name="gridx" type="I">
@@ -2458,11 +2405,36 @@ svg{
             <field description="Показывать кнопку вызова контекстного меню" name="showContextMenuShortcut" type="B">
               <defaultValue>0</defaultValue>
             </field>
+            <field description="Активная вкладка" name="dockActive" type="B">
+              <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
+              <aliases>
+                <alias>active</alias>
+              </aliases>
+              <defaultValue>0</defaultValue>
+            </field>
+            <field description="Заголовок" name="dockTitle" type="S">
+              <help>Текст заголовка пристыковываемого окна.</help>
+              <aliases>
+                <alias>description</alias>
+              </aliases>
+              <defaultValue/>
+            </field>
+            <field description="Иконка окна" name="dockIcon" type="T">
+              <help>Изображение, которое будет использоваться в качестве иконки прикрепляемого окна.</help>
+              <aliases>
+                <alias>icon</alias>
+              </aliases>
+              <defaultValue>
+                <table>
+                  <format maxRecords="2147483647"/>
+                </table>
+              </defaultValue>
+            </field>
           </fields>
         </format>
       </entry>
       <entry>
-        <int>21</int>
+        <int>20</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Точка остановы" name="breakpoint" nullable="true" type="S">
@@ -2482,7 +2454,7 @@ svg{
         </format>
       </entry>
       <entry>
-        <int>22</int>
+        <int>21</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Путь" name="path" nullable="true" type="S">
@@ -2740,7 +2712,7 @@ svg{
         </format>
       </entry>
       <entry>
-        <int>23</int>
+        <int>22</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="X" name="x" nullable="true" type="I">
@@ -2880,7 +2852,7 @@ svg{
         </format>
       </entry>
       <entry>
-        <int>24</int>
+        <int>23</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Ключ" name="key" type="S">
@@ -2890,7 +2862,7 @@ svg{
         </format>
       </entry>
       <entry>
-        <int>25</int>
+        <int>24</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
             <field description="Тип" hidden="true" name="type" type="S">

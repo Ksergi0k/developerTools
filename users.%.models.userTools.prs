@@ -91,6 +91,7 @@ setVariable(&#xd;
     ,&quot;available&quot;&#xd;
   )&#xd;
 )</value>
+              <value name="inheritedFrom">false</value>
             </record>
             <record>
               <value name="name">showDevicesTypes</value>
@@ -141,6 +142,7 @@ setVariable(&#xd;
   ,&quot;setVariableField(dc(),&apos;genericProperties&apos;,&apos;showFullDeviceDescription&apos;,0,&quot;+{show}+&quot;)&quot;&#xd;
   ,&quot;&quot;&#xd;
 )</value>
+              <value name="inheritedFrom">false</value>
             </record>
           </records>
         </table>
@@ -804,7 +806,7 @@ setVariable(&#xd;
                         <expression>hasResolver(&apos;parent&apos;) ? ({.:childInfo$type[0]} != 1 &amp;&amp; !variableAvailable({.:},{parent/variable}) ? cell(callFunction({.:}, &apos;expressionEditorOptions&apos;,{.:}, {parent/variable})):expressionEditorOptions({.:}, {parent/variable}, 1)): null</expression>
                       </binding>
                     </bindings>
-                    <validators contentType="base64">HEUeZTIxcGJsWmhiSFZsZlNBOElIdHRZWGhXWVd4MVpYMGdQeUJ1ZFd4c0lEb2dKOUNjMExqUXZkQzQwTHpRc05DNzBZelF2ZEMrMExVZzBMZlF2ZEN3MFlmUXRkQzkwTGpRdFNEUXROQyswTHZRdHRDOTBMNGcwTEhSaTlHQzBZd2cwTHpRdGRDOTBZelJpTkMxSU5DYzBMRFF1dEdCMExqUXZOQ3cwTHZSak5DOTBMN1FzOUMrSU5DMzBMM1FzTkdIMExYUXZkQzQwWThuHQ==</validators>
+                    <validators contentType="base64">HEUeZTIxcGJsWmhiSFZsZlNBOElIdHRZWGhXWVd4MVpYMGdQeUJ1ZFd4c0lEb2dKOHpvN2VqczRPdjg3ZTdsSU9mdDRQZmw3ZWpsSU9UdTYrYnQ3aURoKy9MOElPemw3Zno0NVNETTRPcng2T3pnNi96dDd1UHVJT2Z0NFBmbDdlai9Kdz09HQ==</validators>
                   </format>
                   <records>
                     <record>
@@ -816,11 +818,9 @@ setVariable(&#xd;
                 </table>
               </defaultValue>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" nullable="true" type="S">
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
@@ -1101,12 +1101,12 @@ setVariable(&#xd;
               <help>Для целевых операций привязок, находящихся в одной очереди, гарантируется последовательное выполнение.</help>
               <defaultValue/>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" type="S">
-              <defaultValue>false</defaultValue>
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
             </field>
           </fields>
           <bindings>
@@ -1192,16 +1192,16 @@ setVariable(&#xd;
                                 </field>
                                 <field description="Тип" name="type" type="S">
                                   <selectionValues>
-                                    <option description="Целочисленный">I</option>
-                                    <option description="Строковый">S</option>
+                                    <option description="Бинарный блок">A</option>
                                     <option description="Булевский">B</option>
-                                    <option description="Длинный целочисленный">L</option>
-                                    <option description="С плавающей запятой">F</option>
-                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Цвет">C</option>
                                     <option description="Дата">D</option>
                                     <option description="Табличный">T</option>
-                                    <option description="Цвет">C</option>
-                                    <option description="Бинарный блок">A</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Длинный целочисленный">L</option>
                                   </selectionValues>
                                   <help>Тип поля.</help>
                                   <defaultValue>I</defaultValue>
@@ -1279,39 +1279,39 @@ setVariable(&#xd;
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
-                                    <option description="Список">list</option>
                                     <option description="Дата">date</option>
-                                    <option description="Время">time</option>
                                     <option description="Дата/время">dateTime</option>
-                                    <option description="Индикатор">bar</option>
-                                    <option description="Байты">bytes</option>
                                     <option description="Формат значения">formatString</option>
                                     <option description="Экземпляр класса">instance</option>
-                                    <option description="Период времени">period</option>
-                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                    <option description="Выражение">expression</option>
-                                    <option description="Выбор функции">functionselector</option>
-                                    <option description="Пароль">password</option>
-                                    <option description="Текстовый редактор">text</option>
-                                    <option description="HTML">html</option>
-                                    <option description="Текстовая область">textarea</option>
-                                    <option description="Иерархический список">hierarchicalList</option>
-                                    <option description="Встроенная текстовая область">etextarea</option>
-                                    <option description="Контекст">context</option>
-                                    <option description="Маска контекстов">contextmask</option>
-                                    <option description="Шрифт">font</option>
-                                    <option description="IP адрес">ip</option>
-                                    <option description="Бокс">box</option>
-                                    <option description="Изображение">image</option>
-                                    <option description="Звук">sound</option>
-                                    <option description="Hex">hex</option>
-                                    <option description="Ссылка">reference</option>
-                                    <option description="Активатор">activator</option>
                                     <option description="Редактор кода">code</option>
-                                    <option description="Счетчик">spinner</option>
-                                    <option description="Уровень события">eventLevel</option>
                                     <option description="Временной диапазон">dateRange</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Ссылка">reference</option>
                                     <option description="Вычисление">evaluation</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Список">list</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Иерархический список">hierarchicalList</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Время">time</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Шрифт">font</option>
                                   </selectionValues>
                                   <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                                   <defaultValue>
@@ -1335,11 +1335,11 @@ setVariable(&#xd;
                                               <option description="По умолчанию">
                                                 <nullValue/>
                                               </option>
+                                              <option description="Регулярное выражение">R</option>
+                                              <option description="Валидатор выражений">E</option>
                                               <option description="Валидатор идентификаторов">I</option>
                                               <option description="Лимиты">L</option>
                                               <option description="Не NULL">N</option>
-                                              <option description="Регулярное выражение">R</option>
-                                              <option description="Валидатор выражений">E</option>
                                             </selectionValues>
                                             <defaultValue>
                                               <nullValue/>
@@ -1349,6 +1349,12 @@ setVariable(&#xd;
                                             <defaultValue/>
                                           </field>
                                         </fields>
+                                        <bindings>
+                                          <binding>
+                                            <reference>options#options</reference>
+                                            <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                          </binding>
+                                        </bindings>
                                       </format>
                                     </table>
                                   </defaultValue>
@@ -1460,16 +1466,16 @@ setVariable(&#xd;
                                 </field>
                                 <field description="Тип" name="type" type="S">
                                   <selectionValues>
-                                    <option description="Целочисленный">I</option>
-                                    <option description="Строковый">S</option>
+                                    <option description="Бинарный блок">A</option>
                                     <option description="Булевский">B</option>
-                                    <option description="Длинный целочисленный">L</option>
-                                    <option description="С плавающей запятой">F</option>
-                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Цвет">C</option>
                                     <option description="Дата">D</option>
                                     <option description="Табличный">T</option>
-                                    <option description="Цвет">C</option>
-                                    <option description="Бинарный блок">A</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Длинный целочисленный">L</option>
                                   </selectionValues>
                                   <help>Тип поля.</help>
                                   <defaultValue>I</defaultValue>
@@ -1547,39 +1553,39 @@ setVariable(&#xd;
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
-                                    <option description="Список">list</option>
                                     <option description="Дата">date</option>
-                                    <option description="Время">time</option>
                                     <option description="Дата/время">dateTime</option>
-                                    <option description="Индикатор">bar</option>
-                                    <option description="Байты">bytes</option>
                                     <option description="Формат значения">formatString</option>
                                     <option description="Экземпляр класса">instance</option>
-                                    <option description="Период времени">period</option>
-                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                    <option description="Выражение">expression</option>
-                                    <option description="Выбор функции">functionselector</option>
-                                    <option description="Пароль">password</option>
-                                    <option description="Текстовый редактор">text</option>
-                                    <option description="HTML">html</option>
-                                    <option description="Текстовая область">textarea</option>
-                                    <option description="Иерархический список">hierarchicalList</option>
-                                    <option description="Встроенная текстовая область">etextarea</option>
-                                    <option description="Контекст">context</option>
-                                    <option description="Маска контекстов">contextmask</option>
-                                    <option description="Шрифт">font</option>
-                                    <option description="IP адрес">ip</option>
-                                    <option description="Бокс">box</option>
-                                    <option description="Изображение">image</option>
-                                    <option description="Звук">sound</option>
-                                    <option description="Hex">hex</option>
-                                    <option description="Ссылка">reference</option>
-                                    <option description="Активатор">activator</option>
                                     <option description="Редактор кода">code</option>
-                                    <option description="Счетчик">spinner</option>
-                                    <option description="Уровень события">eventLevel</option>
                                     <option description="Временной диапазон">dateRange</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Ссылка">reference</option>
                                     <option description="Вычисление">evaluation</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Список">list</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Иерархический список">hierarchicalList</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Время">time</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Шрифт">font</option>
                                   </selectionValues>
                                   <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                                   <defaultValue>
@@ -1603,11 +1609,11 @@ setVariable(&#xd;
                                               <option description="По умолчанию">
                                                 <nullValue/>
                                               </option>
+                                              <option description="Регулярное выражение">R</option>
+                                              <option description="Валидатор выражений">E</option>
                                               <option description="Валидатор идентификаторов">I</option>
                                               <option description="Лимиты">L</option>
                                               <option description="Не NULL">N</option>
-                                              <option description="Регулярное выражение">R</option>
-                                              <option description="Валидатор выражений">E</option>
                                             </selectionValues>
                                             <defaultValue>
                                               <nullValue/>
@@ -1617,6 +1623,12 @@ setVariable(&#xd;
                                             <defaultValue/>
                                           </field>
                                         </fields>
+                                        <bindings>
+                                          <binding>
+                                            <reference>options#options</reference>
+                                            <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                          </binding>
+                                        </bindings>
                                       </format>
                                     </table>
                                   </defaultValue>
@@ -1709,10 +1721,10 @@ setVariable(&#xd;
               <selectionValues>
                 <option description="Нет прав"/>
                 <option description="Наблюдатель">observer</option>
-                <option description="Оператор">operator</option>
                 <option description="Менеджер">manager</option>
-                <option description="Инженер">engineer</option>
                 <option description="Администратор">admin</option>
+                <option description="Инженер">engineer</option>
+                <option description="Оператор">operator</option>
               </selectionValues>
               <help>Данное поле определяет уровень прав доступа в контексте модели (либо контекст, к которому прикреплена относительная модель, либо контекст экземпляра инстанцируемой модели), необходимый для выполнения функции.</help>
               <defaultValue>operator</defaultValue>
@@ -1723,8 +1735,8 @@ setVariable(&#xd;
             </field>
             <field description="Тип" name="type" type="I">
               <selectionValues>
-                <option description="Выражение">1</option>
                 <option description="Код на Java">0</option>
+                <option description="Выражение">1</option>
                 <option description="Запрос">2</option>
               </selectionValues>
               <help>Данное поле определяет тип реализации функции.</help>
@@ -1759,12 +1771,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <help>Это поле доступно, если поле &quot;Тип&quot; настроено на Запрос. Запрос будут рассчитываться во время выполнения функции.</help>
               <defaultValue/>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" type="S">
-              <defaultValue>false</defaultValue>
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
             </field>
             <field advanced="true" description="Многопоточный" name="concurrent" type="B">
               <help>Определяет возможность одновременного выполнения нескольких вызовов этой функции.</help>
@@ -1835,16 +1847,16 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                       </field>
                       <field description="Тип" name="type" type="S">
                         <selectionValues>
-                          <option description="Целочисленный">I</option>
-                          <option description="Строковый">S</option>
+                          <option description="Бинарный блок">A</option>
                           <option description="Булевский">B</option>
-                          <option description="Длинный целочисленный">L</option>
-                          <option description="С плавающей запятой">F</option>
-                          <option description="С плавающей запятой (64-бит)">E</option>
+                          <option description="Строковый">S</option>
+                          <option description="Цвет">C</option>
                           <option description="Дата">D</option>
                           <option description="Табличный">T</option>
-                          <option description="Цвет">C</option>
-                          <option description="Бинарный блок">A</option>
+                          <option description="С плавающей запятой (64-бит)">E</option>
+                          <option description="С плавающей запятой">F</option>
+                          <option description="Целочисленный">I</option>
+                          <option description="Длинный целочисленный">L</option>
                         </selectionValues>
                         <help>Тип поля.</help>
                         <defaultValue>I</defaultValue>
@@ -1922,39 +1934,39 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                           <option description="По умолчанию">
                             <nullValue/>
                           </option>
-                          <option description="Список">list</option>
                           <option description="Дата">date</option>
-                          <option description="Время">time</option>
                           <option description="Дата/время">dateTime</option>
-                          <option description="Индикатор">bar</option>
-                          <option description="Байты">bytes</option>
                           <option description="Формат значения">formatString</option>
                           <option description="Экземпляр класса">instance</option>
-                          <option description="Период времени">period</option>
-                          <option description="Экземпляр внешнего класса">foreignInstance</option>
-                          <option description="Выражение">expression</option>
-                          <option description="Выбор функции">functionselector</option>
-                          <option description="Пароль">password</option>
-                          <option description="Текстовый редактор">text</option>
-                          <option description="HTML">html</option>
-                          <option description="Текстовая область">textarea</option>
-                          <option description="Иерархический список">hierarchicalList</option>
-                          <option description="Встроенная текстовая область">etextarea</option>
-                          <option description="Контекст">context</option>
-                          <option description="Маска контекстов">contextmask</option>
-                          <option description="Шрифт">font</option>
-                          <option description="IP адрес">ip</option>
-                          <option description="Бокс">box</option>
-                          <option description="Изображение">image</option>
-                          <option description="Звук">sound</option>
-                          <option description="Hex">hex</option>
-                          <option description="Ссылка">reference</option>
-                          <option description="Активатор">activator</option>
                           <option description="Редактор кода">code</option>
-                          <option description="Счетчик">spinner</option>
-                          <option description="Уровень события">eventLevel</option>
                           <option description="Временной диапазон">dateRange</option>
+                          <option description="Выбор функции">functionselector</option>
+                          <option description="Звук">sound</option>
+                          <option description="Текстовая область">textarea</option>
+                          <option description="Бокс">box</option>
+                          <option description="Ссылка">reference</option>
                           <option description="Вычисление">evaluation</option>
+                          <option description="Индикатор">bar</option>
+                          <option description="Пароль">password</option>
+                          <option description="Уровень события">eventLevel</option>
+                          <option description="Контекст">context</option>
+                          <option description="HTML">html</option>
+                          <option description="Hex">hex</option>
+                          <option description="Текстовый редактор">text</option>
+                          <option description="Счетчик">spinner</option>
+                          <option description="Изображение">image</option>
+                          <option description="Период времени">period</option>
+                          <option description="Выражение">expression</option>
+                          <option description="IP адрес">ip</option>
+                          <option description="Список">list</option>
+                          <option description="Встроенная текстовая область">etextarea</option>
+                          <option description="Экземпляр внешнего класса">foreignInstance</option>
+                          <option description="Иерархический список">hierarchicalList</option>
+                          <option description="Маска контекстов">contextmask</option>
+                          <option description="Байты">bytes</option>
+                          <option description="Время">time</option>
+                          <option description="Активатор">activator</option>
+                          <option description="Шрифт">font</option>
                         </selectionValues>
                         <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                         <defaultValue>
@@ -1978,11 +1990,11 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
+                                    <option description="Регулярное выражение">R</option>
+                                    <option description="Валидатор выражений">E</option>
                                     <option description="Валидатор идентификаторов">I</option>
                                     <option description="Лимиты">L</option>
                                     <option description="Не NULL">N</option>
-                                    <option description="Регулярное выражение">R</option>
-                                    <option description="Валидатор выражений">E</option>
                                   </selectionValues>
                                   <defaultValue>
                                     <nullValue/>
@@ -1992,6 +2004,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                   <defaultValue/>
                                 </field>
                               </fields>
+                              <bindings>
+                                <binding>
+                                  <reference>options#options</reference>
+                                  <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                </binding>
+                              </bindings>
                             </format>
                           </table>
                         </defaultValue>
@@ -2234,6 +2252,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                         <defaultValue/>
                       </field>
                     </fields>
+                    <bindings>
+                      <binding>
+                        <reference>options#options</reference>
+                        <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                      </binding>
+                    </bindings>
                   </format>
                 </table>
               </defaultValue>
@@ -2322,16 +2346,16 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                 </field>
                                 <field description="Тип" name="type" type="S">
                                   <selectionValues>
-                                    <option description="Целочисленный">I</option>
-                                    <option description="Строковый">S</option>
+                                    <option description="Бинарный блок">A</option>
                                     <option description="Булевский">B</option>
-                                    <option description="Длинный целочисленный">L</option>
-                                    <option description="С плавающей запятой">F</option>
-                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Цвет">C</option>
                                     <option description="Дата">D</option>
                                     <option description="Табличный">T</option>
-                                    <option description="Цвет">C</option>
-                                    <option description="Бинарный блок">A</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Длинный целочисленный">L</option>
                                   </selectionValues>
                                   <help>Тип поля.</help>
                                   <defaultValue>I</defaultValue>
@@ -2409,39 +2433,39 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
-                                    <option description="Список">list</option>
                                     <option description="Дата">date</option>
-                                    <option description="Время">time</option>
                                     <option description="Дата/время">dateTime</option>
-                                    <option description="Индикатор">bar</option>
-                                    <option description="Байты">bytes</option>
                                     <option description="Формат значения">formatString</option>
                                     <option description="Экземпляр класса">instance</option>
-                                    <option description="Период времени">period</option>
-                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                    <option description="Выражение">expression</option>
-                                    <option description="Выбор функции">functionselector</option>
-                                    <option description="Пароль">password</option>
-                                    <option description="Текстовый редактор">text</option>
-                                    <option description="HTML">html</option>
-                                    <option description="Текстовая область">textarea</option>
-                                    <option description="Иерархический список">hierarchicalList</option>
-                                    <option description="Встроенная текстовая область">etextarea</option>
-                                    <option description="Контекст">context</option>
-                                    <option description="Маска контекстов">contextmask</option>
-                                    <option description="Шрифт">font</option>
-                                    <option description="IP адрес">ip</option>
-                                    <option description="Бокс">box</option>
-                                    <option description="Изображение">image</option>
-                                    <option description="Звук">sound</option>
-                                    <option description="Hex">hex</option>
-                                    <option description="Ссылка">reference</option>
-                                    <option description="Активатор">activator</option>
                                     <option description="Редактор кода">code</option>
-                                    <option description="Счетчик">spinner</option>
-                                    <option description="Уровень события">eventLevel</option>
                                     <option description="Временной диапазон">dateRange</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Ссылка">reference</option>
                                     <option description="Вычисление">evaluation</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Список">list</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Иерархический список">hierarchicalList</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Время">time</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Шрифт">font</option>
                                   </selectionValues>
                                   <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                                   <defaultValue>
@@ -2465,11 +2489,11 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                               <option description="По умолчанию">
                                                 <nullValue/>
                                               </option>
+                                              <option description="Регулярное выражение">R</option>
+                                              <option description="Валидатор выражений">E</option>
                                               <option description="Валидатор идентификаторов">I</option>
                                               <option description="Лимиты">L</option>
                                               <option description="Не NULL">N</option>
-                                              <option description="Регулярное выражение">R</option>
-                                              <option description="Валидатор выражений">E</option>
                                             </selectionValues>
                                             <defaultValue>
                                               <nullValue/>
@@ -2479,6 +2503,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                             <defaultValue/>
                                           </field>
                                         </fields>
+                                        <bindings>
+                                          <binding>
+                                            <reference>options#options</reference>
+                                            <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                          </binding>
+                                        </bindings>
                                       </format>
                                     </table>
                                   </defaultValue>
@@ -2573,11 +2603,9 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <help>Параметр точности определяет временной интервал, используемый для поиска гранул по временной метке. Из-за ошибок округления временная метка гранулы может отличаться от рассчитанного значения. Поэтому движок поиска гранул находит гранулы, которые лежат в интервале, близком к рассчитанной временной метке. Интервал определяется как (временная метка - точность, временная метка + точность).</help>
               <defaultValue>10</defaultValue>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" nullable="true" type="S">
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>
@@ -2643,16 +2671,16 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                 </field>
                                 <field description="Тип" name="type" type="S">
                                   <selectionValues>
-                                    <option description="Целочисленный">I</option>
-                                    <option description="Строковый">S</option>
+                                    <option description="Бинарный блок">A</option>
                                     <option description="Булевский">B</option>
-                                    <option description="Длинный целочисленный">L</option>
-                                    <option description="С плавающей запятой">F</option>
-                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Цвет">C</option>
                                     <option description="Дата">D</option>
                                     <option description="Табличный">T</option>
-                                    <option description="Цвет">C</option>
-                                    <option description="Бинарный блок">A</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Длинный целочисленный">L</option>
                                   </selectionValues>
                                   <help>Тип поля.</help>
                                   <defaultValue>I</defaultValue>
@@ -2730,39 +2758,39 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
-                                    <option description="Список">list</option>
                                     <option description="Дата">date</option>
-                                    <option description="Время">time</option>
                                     <option description="Дата/время">dateTime</option>
-                                    <option description="Индикатор">bar</option>
-                                    <option description="Байты">bytes</option>
                                     <option description="Формат значения">formatString</option>
                                     <option description="Экземпляр класса">instance</option>
-                                    <option description="Период времени">period</option>
-                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                    <option description="Выражение">expression</option>
-                                    <option description="Выбор функции">functionselector</option>
-                                    <option description="Пароль">password</option>
-                                    <option description="Текстовый редактор">text</option>
-                                    <option description="HTML">html</option>
-                                    <option description="Текстовая область">textarea</option>
-                                    <option description="Иерархический список">hierarchicalList</option>
-                                    <option description="Встроенная текстовая область">etextarea</option>
-                                    <option description="Контекст">context</option>
-                                    <option description="Маска контекстов">contextmask</option>
-                                    <option description="Шрифт">font</option>
-                                    <option description="IP адрес">ip</option>
-                                    <option description="Бокс">box</option>
-                                    <option description="Изображение">image</option>
-                                    <option description="Звук">sound</option>
-                                    <option description="Hex">hex</option>
-                                    <option description="Ссылка">reference</option>
-                                    <option description="Активатор">activator</option>
                                     <option description="Редактор кода">code</option>
-                                    <option description="Счетчик">spinner</option>
-                                    <option description="Уровень события">eventLevel</option>
                                     <option description="Временной диапазон">dateRange</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Ссылка">reference</option>
                                     <option description="Вычисление">evaluation</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Список">list</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Иерархический список">hierarchicalList</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Время">time</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Шрифт">font</option>
                                   </selectionValues>
                                   <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                                   <defaultValue>
@@ -2786,11 +2814,11 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                               <option description="По умолчанию">
                                                 <nullValue/>
                                               </option>
+                                              <option description="Регулярное выражение">R</option>
+                                              <option description="Валидатор выражений">E</option>
                                               <option description="Валидатор идентификаторов">I</option>
                                               <option description="Лимиты">L</option>
                                               <option description="Не NULL">N</option>
-                                              <option description="Регулярное выражение">R</option>
-                                              <option description="Валидатор выражений">E</option>
                                             </selectionValues>
                                             <defaultValue>
                                               <nullValue/>
@@ -2800,6 +2828,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                             <defaultValue/>
                                           </field>
                                         </fields>
+                                        <bindings>
+                                          <binding>
+                                            <reference>options#options</reference>
+                                            <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                          </binding>
+                                        </bindings>
                                       </format>
                                     </table>
                                   </defaultValue>
@@ -2904,10 +2938,10 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <selectionValues>
                 <option description="Нет прав"/>
                 <option description="Наблюдатель">observer</option>
-                <option description="Оператор">operator</option>
                 <option description="Менеджер">manager</option>
-                <option description="Инженер">engineer</option>
                 <option description="Администратор">admin</option>
+                <option description="Инженер">engineer</option>
+                <option description="Оператор">operator</option>
               </selectionValues>
               <help>Данное поле используется для задания уровня прав доступа в контексте модели (либо контекст, к которому прикреплена относительная модель, либо контекст экземпляра экземплярной модели), необходимый для подписки на событие.</help>
               <defaultValue>observer</defaultValue>
@@ -2916,10 +2950,10 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <selectionValues>
                 <option description="Нет прав"/>
                 <option description="Наблюдатель">observer</option>
-                <option description="Оператор">operator</option>
                 <option description="Менеджер">manager</option>
-                <option description="Инженер">engineer</option>
                 <option description="Администратор">admin</option>
+                <option description="Инженер">engineer</option>
+                <option description="Оператор">operator</option>
               </selectionValues>
               <help>Данное поле используется для задания уровня прав доступа в контексте модели (либо контекст, к которому прикреплена относительная модель, либо контекст экземпляра экземплярной модели), необходимый для генерирования текущего события.</help>
               <defaultValue>admin</defaultValue>
@@ -2931,12 +2965,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                 <nullValue/>
               </defaultValue>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" type="S">
-              <defaultValue>false</defaultValue>
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
             </field>
           </fields>
           <validators contentType="base64">HEseHQ==</validators>
@@ -3008,12 +3042,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                 </table>
               </defaultValue>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" type="S">
-              <defaultValue>false</defaultValue>
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
+              <defaultValue>
+                <nullValue/>
+              </defaultValue>
             </field>
           </fields>
           <validators contentType="base64">HEseHQ==</validators>
@@ -3070,16 +3104,16 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                 </field>
                                 <field description="Тип" name="type" type="S">
                                   <selectionValues>
-                                    <option description="Целочисленный">I</option>
-                                    <option description="Строковый">S</option>
+                                    <option description="Бинарный блок">A</option>
                                     <option description="Булевский">B</option>
-                                    <option description="Длинный целочисленный">L</option>
-                                    <option description="С плавающей запятой">F</option>
-                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="Строковый">S</option>
+                                    <option description="Цвет">C</option>
                                     <option description="Дата">D</option>
                                     <option description="Табличный">T</option>
-                                    <option description="Цвет">C</option>
-                                    <option description="Бинарный блок">A</option>
+                                    <option description="С плавающей запятой (64-бит)">E</option>
+                                    <option description="С плавающей запятой">F</option>
+                                    <option description="Целочисленный">I</option>
+                                    <option description="Длинный целочисленный">L</option>
                                   </selectionValues>
                                   <help>Тип поля.</help>
                                   <defaultValue>I</defaultValue>
@@ -3157,39 +3191,39 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                     <option description="По умолчанию">
                                       <nullValue/>
                                     </option>
-                                    <option description="Список">list</option>
                                     <option description="Дата">date</option>
-                                    <option description="Время">time</option>
                                     <option description="Дата/время">dateTime</option>
-                                    <option description="Индикатор">bar</option>
-                                    <option description="Байты">bytes</option>
                                     <option description="Формат значения">formatString</option>
                                     <option description="Экземпляр класса">instance</option>
-                                    <option description="Период времени">period</option>
-                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
-                                    <option description="Выражение">expression</option>
-                                    <option description="Выбор функции">functionselector</option>
-                                    <option description="Пароль">password</option>
-                                    <option description="Текстовый редактор">text</option>
-                                    <option description="HTML">html</option>
-                                    <option description="Текстовая область">textarea</option>
-                                    <option description="Иерархический список">hierarchicalList</option>
-                                    <option description="Встроенная текстовая область">etextarea</option>
-                                    <option description="Контекст">context</option>
-                                    <option description="Маска контекстов">contextmask</option>
-                                    <option description="Шрифт">font</option>
-                                    <option description="IP адрес">ip</option>
-                                    <option description="Бокс">box</option>
-                                    <option description="Изображение">image</option>
-                                    <option description="Звук">sound</option>
-                                    <option description="Hex">hex</option>
-                                    <option description="Ссылка">reference</option>
-                                    <option description="Активатор">activator</option>
                                     <option description="Редактор кода">code</option>
-                                    <option description="Счетчик">spinner</option>
-                                    <option description="Уровень события">eventLevel</option>
                                     <option description="Временной диапазон">dateRange</option>
+                                    <option description="Выбор функции">functionselector</option>
+                                    <option description="Звук">sound</option>
+                                    <option description="Текстовая область">textarea</option>
+                                    <option description="Бокс">box</option>
+                                    <option description="Ссылка">reference</option>
                                     <option description="Вычисление">evaluation</option>
+                                    <option description="Индикатор">bar</option>
+                                    <option description="Пароль">password</option>
+                                    <option description="Уровень события">eventLevel</option>
+                                    <option description="Контекст">context</option>
+                                    <option description="HTML">html</option>
+                                    <option description="Hex">hex</option>
+                                    <option description="Текстовый редактор">text</option>
+                                    <option description="Счетчик">spinner</option>
+                                    <option description="Изображение">image</option>
+                                    <option description="Период времени">period</option>
+                                    <option description="Выражение">expression</option>
+                                    <option description="IP адрес">ip</option>
+                                    <option description="Список">list</option>
+                                    <option description="Встроенная текстовая область">etextarea</option>
+                                    <option description="Экземпляр внешнего класса">foreignInstance</option>
+                                    <option description="Иерархический список">hierarchicalList</option>
+                                    <option description="Маска контекстов">contextmask</option>
+                                    <option description="Байты">bytes</option>
+                                    <option description="Время">time</option>
+                                    <option description="Активатор">activator</option>
+                                    <option description="Шрифт">font</option>
                                   </selectionValues>
                                   <help>Данный параметр определяет, как поле отображается и изменяется в пользовательском интерфейсе.</help>
                                   <defaultValue>
@@ -3213,11 +3247,11 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                               <option description="По умолчанию">
                                                 <nullValue/>
                                               </option>
+                                              <option description="Регулярное выражение">R</option>
+                                              <option description="Валидатор выражений">E</option>
                                               <option description="Валидатор идентификаторов">I</option>
                                               <option description="Лимиты">L</option>
                                               <option description="Не NULL">N</option>
-                                              <option description="Регулярное выражение">R</option>
-                                              <option description="Валидатор выражений">E</option>
                                             </selectionValues>
                                             <defaultValue>
                                               <nullValue/>
@@ -3227,6 +3261,12 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
                                             <defaultValue/>
                                           </field>
                                         </fields>
+                                        <bindings>
+                                          <binding>
+                                            <reference>options#options</reference>
+                                            <expression>{validator} == &apos;E&apos; ? expressionEditorOptions(null) : &quot;&quot;</expression>
+                                          </binding>
+                                        </bindings>
                                       </format>
                                     </table>
                                   </defaultValue>
@@ -3323,10 +3363,10 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <selectionValues>
                 <option description="Нет прав"/>
                 <option description="Наблюдатель">observer</option>
-                <option description="Оператор">operator</option>
                 <option description="Менеджер">manager</option>
-                <option description="Инженер">engineer</option>
                 <option description="Администратор">admin</option>
+                <option description="Инженер">engineer</option>
+                <option description="Оператор">operator</option>
               </selectionValues>
               <help>Данное поле определяет уровень прав доступа в контексте модели (либо контекст, к которому прикрепляется относительная модель, либо контекст экземпляра экземплярной модели), необходимый для чтения переменной.</help>
               <defaultValue>observer</defaultValue>
@@ -3335,10 +3375,10 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <selectionValues>
                 <option description="Нет прав"/>
                 <option description="Наблюдатель">observer</option>
-                <option description="Оператор">operator</option>
                 <option description="Менеджер">manager</option>
-                <option description="Инженер">engineer</option>
                 <option description="Администратор">admin</option>
+                <option description="Инженер">engineer</option>
+                <option description="Оператор">operator</option>
               </selectionValues>
               <help>Данное поле определяет уровень прав доступа в контексте модели (либо контекст, к которому прикрепляется относительная модель, либо контекст экземпляра экземплярной модели), необходимый для записи переменной.</help>
               <defaultValue>manager</defaultValue>
@@ -3385,11 +3425,9 @@ public class %ScriptClassNamePattern% implements FunctionImplementation
               <help>Флаг, указывающий, что событие обновления переменной будет содержать предыдущее значение переменной</help>
               <defaultValue>0</defaultValue>
             </field>
-            <field description="Унаследованное Свойство" name="inheritedMark" type="B">
-              <help>Отмеченные свойства будут изменяться в соответствии с их родительскими моделями</help>
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Родительская модель" hidden="true" name="parent" nullable="true" type="S">
+            <field description="Источник наследования" editor="context" name="inheritedFrom" nullable="true" readonly="true" type="S">
+              <editorOptions contentType="base64">HEYeHBxyb290Q29udGV4dB0cUx0cRh5OHRxBHhodHEQe0JrQvtGA0L3QtdCy0LDRjyDQv9Cw0L3QtdC70YwdHEUeY29udGV4dB0dHBxjb250ZXh0VHlwZXMdHFQdHEEeHEYeHBxjb250ZXh0VHlwZR0cUx0cQR4dHEQe0KLQuNC/INC60L7QvdGC0LXQutGB0YLQsB0dHR0cRB7QotC40L/RiyDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHBxjb250ZXh0TWFza3MdHFQdHEEeHEYeHBxjb250ZXh0TWFzax0cUx0cQR4dHEQe0JzQsNGB0LrQsCDQutC+0L3RgtC10LrRgdGC0L7Qsh0dHR0cRB7QnNCw0YHQutC4INC60L7QvdGC0LXQutGB0YLQvtCyHR0cTR4xHRxYHjEdHRxSHhwaHRwcUh4cbW9kZWwdHR0cHFIeHHVzZXJzLioubW9kZWxzLiouKh0dHFIeHHVzZXJzLioubW9kZWxzX2dyb3Vwcy4qLiouKh0dHR0=</editorOptions>
+              <help>Модель, из которой унаследована данная сущность.</help>
               <defaultValue>
                 <nullValue/>
               </defaultValue>

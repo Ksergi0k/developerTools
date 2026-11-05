@@ -60,7 +60,7 @@
                           <formatId id="8"/>
                         </table>
                       </value>
-                      <value name="icon">
+                      <value name="dockIcon">
                         <table>
                           <formatId id="7"/>
                           <records>
@@ -157,21 +157,10 @@
                           </records>
                         </table>
                       </value>
-                      <value name="currentBreakpoint">
-                        <table>
-                          <formatId id="16"/>
-                          <records>
-                            <record>
-                              <value name="name">none</value>
-                              <value name="description">None</value>
-                              <value name="value">0</value>
-                            </record>
-                          </records>
-                        </table>
-                      </value>
+                      <value contentType="base64" name="currentBreakpoint">HE4ebmFtZR0cTh5kZXNjcmlwdGlvbh0cTh52YWx1ZR0cTh5lbmFibGVkHRxSHhxub25lHRxOb25lHRwwHRwxHR0=</value>
                       <value name="customProperties">
                         <table>
-                          <formatId id="17"/>
+                          <formatId id="16"/>
                         </table>
                       </value>
                       <value name="state">RUNNING</value>
@@ -185,7 +174,7 @@
               <value name="type">eventLog</value>
               <value name="parameters">
                 <table>
-                  <formatId id="18"/>
+                  <formatId id="17"/>
                   <records>
                     <record>
                       <value name="name">eventLog</value>
@@ -196,21 +185,13 @@
                       </value>
                       <value name="gridBreakpoints">
                         <table>
-                          <formatId id="19"/>
+                          <formatId id="18"/>
                           <records>
                             <record>
                               <value name="breakpoint">none</value>
                               <value name="style"/>
                               <value name="containerStyle">show-header:true*~*icon:{imageType=0, imageData={&quot;id&quot;: null, &quot;name&quot;: null, &quot;preview&quot;: &quot;null&quot;, &quot;data&quot;: null, &quot;shallow copy&quot;: false}, imageUrl=}*~*maximizable:true*~*collapsible:false*~*dock-movable:true*~*dock-collapsed:false*~*dock-floatable:true*~*dock-resizable:true*~*dock-tab-position:top*~*dock-preferred-width:0*~*dock-preferred-height:0*~*dock-minimum-width:0*~*dock-minimum-height:0*~*order-id:0*~*active:false*~*gridx:1*~*gridy:1*~*grid-width:2*~*grid-height:2*~*overflow:auto*~*</value>
                             </record>
-                          </records>
-                        </table>
-                      </value>
-                      <value name="icon">
-                        <table>
-                          <formatId id="7"/>
-                          <records>
-                            <record/>
                           </records>
                         </table>
                       </value>
@@ -243,7 +224,7 @@
                       </value>
                       <value name="additionalActionSettings">
                         <table>
-                          <formatId id="20"/>
+                          <formatId id="19"/>
                         </table>
                       </value>
                       <value name="additionalActionStyle"/>
@@ -287,24 +268,24 @@
                       <value name="smartFilterDisplayMode">SMART_FILTER_COMPONENT_MODE</value>
                       <value name="smartFilterControlStates">
                         <table>
-                          <formatId id="21"/>
+                          <formatId id="20"/>
                           <records>
                             <record>
                               <value name="COMPONENT_SMART_FILTER_COLUMN">creationtime</value>
                               <value name="COMPONENT_SMART_FILTER_TYPE">5</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="22"/>
+                                  <formatId id="21"/>
                                   <records>
                                     <record>
                                       <value name="PANE_FIELD_INCLUDED_IN">
                                         <table>
-                                          <formatId id="23"/>
+                                          <formatId id="22"/>
                                         </table>
                                       </value>
                                       <value name="PANE_FIELD_DATE_TIME_RANGE">
                                         <table>
-                                          <formatId id="24"/>
+                                          <formatId id="23"/>
                                         </table>
                                       </value>
                                     </record>
@@ -317,12 +298,12 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">2</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="25"/>
+                                  <formatId id="24"/>
                                   <records>
                                     <record>
                                       <value name="PANE_FIELD_INCLUDED_IN">
                                         <table>
-                                          <formatId id="26"/>
+                                          <formatId id="25"/>
                                         </table>
                                       </value>
                                     </record>
@@ -335,12 +316,12 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">2</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="25"/>
+                                  <formatId id="24"/>
                                   <records>
                                     <record>
                                       <value name="PANE_FIELD_INCLUDED_IN">
                                         <table>
-                                          <formatId id="26"/>
+                                          <formatId id="25"/>
                                         </table>
                                       </value>
                                     </record>
@@ -353,12 +334,12 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">1</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="27"/>
+                                  <formatId id="26"/>
                                   <records>
                                     <record>
                                       <value name="PANE_FIELD_EQUALS">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -366,12 +347,12 @@
                                       </value>
                                       <value name="PANE_FIELD_INCLUDED_IN">
                                         <table>
-                                          <formatId id="29"/>
+                                          <formatId id="28"/>
                                         </table>
                                       </value>
                                       <value name="PANE_FIELD_DOES_NOT_EQUAL">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -379,7 +360,7 @@
                                       </value>
                                       <value name="PANE_FIELD_GREATER_THAN">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -387,7 +368,7 @@
                                       </value>
                                       <value name="PANE_FIELD_GREATER_OR_EQUAL_THAN">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -395,7 +376,7 @@
                                       </value>
                                       <value name="PANE_FIELD_LESS_THAN">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -403,7 +384,7 @@
                                       </value>
                                       <value name="PANE_FIELD_LESS_OR_EQUAL_THAN">
                                         <table>
-                                          <formatId id="28"/>
+                                          <formatId id="27"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -419,7 +400,7 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">6</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="30"/>
+                                  <formatId id="29"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -431,7 +412,7 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">6</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="30"/>
+                                  <formatId id="29"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -443,7 +424,7 @@
                               <value name="COMPONENT_SMART_FILTER_TYPE">6</value>
                               <value name="COMPONENT_SMART_FILTER_STATE">
                                 <table>
-                                  <formatId id="30"/>
+                                  <formatId id="29"/>
                                   <records>
                                     <record/>
                                   </records>
@@ -455,7 +436,7 @@
                       </value>
                       <value name="originalFormat">
                         <table>
-                          <formatId id="31"/>
+                          <formatId id="30"/>
                           <records>
                             <record/>
                           </records>
@@ -463,7 +444,7 @@
                       </value>
                       <value name="treeRecordsSettings">
                         <table>
-                          <formatId id="32"/>
+                          <formatId id="31"/>
                           <records>
                             <record/>
                           </records>
@@ -488,7 +469,7 @@
                       <value name="mode">1</value>
                       <value name="eventList">
                         <table>
-                          <formatId id="33"/>
+                          <formatId id="32"/>
                           <records>
                             <record>
                               <value name="mask">administration</value>
@@ -534,7 +515,7 @@
                       <value name="showData">1</value>
                       <value name="historySection">
                         <table>
-                          <formatId id="34"/>
+                          <formatId id="33"/>
                         </table>
                       </value>
                       <value name="currentSectionFormat">
@@ -544,7 +525,7 @@
                             <record>
                               <value name="fields">
                                 <table>
-                                  <formatId id="35"/>
+                                  <formatId id="34"/>
                                   <records>
                                     <record>
                                       <value name="oldname">creationtime</value>
@@ -555,7 +536,7 @@
                                       <value name="nullable">1</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -571,7 +552,7 @@
                                       <value name="editor">html</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -587,7 +568,7 @@
                                       <value name="editor">html</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -601,7 +582,7 @@
                                       <value name="defaultValue">0</value>
                                       <value name="selvals">
                                         <table>
-                                          <formatId id="37"/>
+                                          <formatId id="36"/>
                                           <records>
                                             <record>
                                               <value name="value">0</value>
@@ -633,7 +614,7 @@
                                       <value name="editor">eventLevel</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -648,7 +629,7 @@
                                       <value name="defaultValue"/>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -656,7 +637,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -671,7 +652,7 @@
                                       <value contentType="base64" name="defaultValue">HE4eYXV0aG9yHRxOHnRpbWUdHE4edGV4dB0=</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -679,7 +660,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -694,7 +675,7 @@
                                       <value contentType="base64" name="defaultValue">HE4ebmFtZR0cTh52YWx1ZR0cTh5kYXRlHRxOHmF1dGhvch0=</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -702,7 +683,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -724,7 +705,7 @@
                             <record>
                               <value name="fields">
                                 <table>
-                                  <formatId id="35"/>
+                                  <formatId id="34"/>
                                   <records>
                                     <record>
                                       <value name="oldname">creationtime</value>
@@ -735,7 +716,7 @@
                                       <value name="nullable">1</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -751,7 +732,7 @@
                                       <value name="editor">html</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -767,7 +748,7 @@
                                       <value name="editor">html</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -781,7 +762,7 @@
                                       <value name="defaultValue">0</value>
                                       <value name="selvals">
                                         <table>
-                                          <formatId id="37"/>
+                                          <formatId id="36"/>
                                           <records>
                                             <record>
                                               <value name="value">0</value>
@@ -813,7 +794,7 @@
                                       <value name="editor">eventLevel</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -828,7 +809,7 @@
                                       <value name="defaultValue"/>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -836,7 +817,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -852,7 +833,7 @@
                                       <value name="nullable">1</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -860,7 +841,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -876,7 +857,7 @@
                                       <value name="nullable">1</value>
                                       <value name="editorOptions">
                                         <table>
-                                          <formatId id="36"/>
+                                          <formatId id="35"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -884,7 +865,7 @@
                                       </value>
                                       <value name="validators">
                                         <table>
-                                          <formatId id="38"/>
+                                          <formatId id="37"/>
                                           <records>
                                             <record/>
                                           </records>
@@ -901,7 +882,7 @@
                       </value>
                       <value name="filtersList">
                         <table>
-                          <formatId id="39"/>
+                          <formatId id="38"/>
                           <records>
                             <record>
                               <value name="context">users.admin.filters.alerts</value>
@@ -997,7 +978,7 @@
                       </value>
                       <value name="rowsPerPageChoices">
                         <table>
-                          <formatId id="40"/>
+                          <formatId id="39"/>
                           <records>
                             <record>
                               <value name="value">5</value>
@@ -1046,28 +1027,36 @@
                       </value>
                       <value name="currentSectionSeverityStatistics">
                         <table>
-                          <formatId id="41"/>
+                          <formatId id="40"/>
                         </table>
                       </value>
                       <value name="historySectionSeverityStatistics">
                         <table>
-                          <formatId id="41"/>
+                          <formatId id="40"/>
                         </table>
                       </value>
                       <value name="columnsSettings">
                         <table>
-                          <formatId id="42"/>
+                          <formatId id="41"/>
                         </table>
                       </value>
                       <value name="showDataFieldNames">1</value>
                       <value name="updatedEvent">
                         <table>
-                          <formatId id="43"/>
+                          <formatId id="42"/>
                         </table>
                       </value>
                       <value name="componentLocation">
                         <table>
-                          <formatId id="44"/>
+                          <formatId id="43"/>
+                          <records>
+                            <record/>
+                          </records>
+                        </table>
+                      </value>
+                      <value name="dockIcon">
+                        <table>
+                          <formatId id="7"/>
                           <records>
                             <record/>
                           </records>
@@ -1084,7 +1073,7 @@
       <entry>
         <string>headContent</string>
         <table>
-          <formatId id="45"/>
+          <formatId id="44"/>
         </table>
       </entry>
     </properties>
@@ -1327,7 +1316,7 @@
             </binding>
             <binding>
               <reference>templateProcessingExpression#options</reference>
-              <expression>variableAvailable({.:}, &apos;elements&apos;) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Контекст по умолчанию&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Таблица по умолчанию&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Ссылка&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Ссылки&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Возвращаемое значение&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Права доступа&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание контекста по умолчанию&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание таблицы по умолчанию&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание ряда по умолчанию&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Тип&gt;&lt;S=&lt;Общий=0&gt;&lt;Условие=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Переменная&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Переменные окружения&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
+              <expression>variableAvailable({.:}, &apos;elements&apos;) &amp;&amp; !isEmpty({.:childInfo$templateProcessingExpression}) ? encode(table(&apos;&lt;&lt;context&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Контекст по умолчанию&gt;&gt;&lt;&lt;table&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Таблица по умолчанию&gt;&gt;&lt;&lt;references&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;reference&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Ссылка&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Ссылки&gt;&gt;&lt;&lt;expectedResult&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Возвращаемое значение&gt;&gt;&lt;&lt;permissionsDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Права доступа&gt;&gt;&lt;&lt;contextDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание контекста по умолчанию&gt;&gt;&lt;&lt;tableDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание таблицы по умолчанию&gt;&gt;&lt;&lt;rowDescription&gt;&lt;S&gt;&lt;F=N&gt;&lt;A=&lt;NULL&gt;&gt;&lt;D=Описание ряда по умолчанию&gt;&gt;&lt;&lt;type&gt;&lt;I&gt;&lt;F=H&gt;&lt;A=0&gt;&lt;D=Тип&gt;&lt;S=&lt;Общий=0&gt;&lt;Условие=1&gt;&gt;&gt;&lt;&lt;environmentVariables&gt;&lt;T&gt;&lt;F=N&gt;&lt;A=&lt;F=&lt;&lt;variable&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Переменная&gt;&gt;&lt;&lt;description&gt;&lt;S&gt;&lt;A=&gt;&lt;D=Описание&gt;&gt;&gt;&gt;&lt;D=Переменные окружения&gt;&gt;&lt;M=1&gt;&lt;X=1&gt;&apos;, {.:}, {.:elements}))  : &apos;&apos;</expression>
             </binding>
             <binding>
               <reference>cacheEnabled#hidden</reference>
@@ -1502,8 +1491,11 @@
                         <help>Индекс вкладки, которую будет занимать пристыковываемый компонент в панели с вкладками. Индексируется с нуля, где 0 — первая вкладка, 1 — вторая и так далее.</help>
                         <defaultValue>0</defaultValue>
                       </field>
-                      <field description="Активный" name="active" type="B">
+                      <field description="Активная вкладка" name="dockActive" type="B">
                         <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
+                        <aliases>
+                          <alias>active</alias>
+                        </aliases>
                         <defaultValue>0</defaultValue>
                       </field>
                     </fields>
@@ -1540,46 +1532,46 @@
                 <option description="Системное дерево">systemTree</option>
                 <option description="Индикатор выполнения">progressBar</option>
                 <option description="Вкладка">tab</option>
-                <option description="Таблица с данными">dataTableEditor</option>
-                <option description="Электронная таблица">spreadsheet</option>
                 <option description="Заголовок таблицы">dataTableEditorHeader</option>
                 <option description="Таймер">timer</option>
-                <option description="Классовая таблица">classDataTableEditor</option>
-                <option description="Список полей класса">classFieldList</option>
-                <option description="Журнал событий">eventLog</option>
                 <option description="Векторное изображение">vectorDrawing</option>
                 <option description="Регулятор">slider</option>
-                <option description="Список контекстов">contextList</option>
                 <option description="Коннектор">connector</option>
                 <option description="Текстовое поле">textField</option>
                 <option description="Текстовая область">textArea</option>
-                <option description="Выпадающее меню">dropDownButton</option>
-                <option description="Кнопка">button</option>
+                <option description="Выпадающее меню">dropdownMenu</option>
                 <option description="Выпадающий список">dropdownList</option>
+                <option description="Выпадающее дерево">treeSelect</option>
+                <option description="Кнопка">button</option>
                 <option description="Чекбокс">checkBox</option>
                 <option description="Группа чекбоксов">checkBoxGroup</option>
                 <option description="Переключатель">toggleButton</option>
                 <option description="Радиокнопки">radioButton</option>
                 <option description="Дата/время">dateTimePicker</option>
-                <option description="Группа кнопок">buttonGroup</option>
-                <option description="Выпадающее дерево">treeSelect</option>
-                <option description="Числовое поле">numberField</option>
                 <option description="Время">timePicker</option>
+                <option description="Группа кнопок">buttonGroup</option>
+                <option description="Числовое поле">numberField</option>
                 <option description="Загрузчик">uploader</option>
+                <option description="Таблица с данными">dataTableEditor</option>
+                <option description="Журнал событий">eventLog</option>
+                <option description="Электронная таблица">spreadsheet</option>
+                <option description="Классовая таблица">classDataTableEditor</option>
+                <option description="Список полей класса">classFieldList</option>
+                <option description="Список контекстов">contextList</option>
                 <option description="Карта">map</option>
                 <option description="Хлебные крошки">breadcrumb</option>
                 <option description="Меню">menu</option>
+                <option description="Диаграмма">lineChart</option>
+                <option description="Столбчатая диаграмма">barChart</option>
+                <option description="Диаграмма с областями">areaChart</option>
+                <option description="Круговая диаграмма">pieChart</option>
                 <option description="Диаграмма Ганта">ganttChart</option>
                 <option description="Пузырьковая диаграмма">bubbleChart</option>
-                <option description="Столбчатая диаграмма">barChart</option>
                 <option description="Диаграмма японские свечи">candlestickChart</option>
                 <option description="Столбчатая диаграмма интервалов">intervalBarChart</option>
-                <option description="Диаграмма">lineChart</option>
                 <option description="Статистическая диаграмма">statisticalChart</option>
                 <option description="Диаграмма отклонений">deviationChart</option>
                 <option description="Диаграмма интервалов">intervalChart</option>
-                <option description="Диаграмма с областями">areaChart</option>
-                <option description="Круговая диаграмма">pieChart</option>
                 <option description="Лепестковая диаграмма">spiderChart</option>
                 <option description="Полярная диаграмма">polarChart</option>
                 <option description="Индикатор">gauge</option>
@@ -1655,22 +1647,18 @@
                 </table>
               </defaultValue>
             </field>
-            <field description="Контекстное меню" name="contextMenu" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
-            </field>
             <field description="Показать заголовок" name="showHeader" type="B">
               <help>Настраивает, должен ли отображаться заголовок пристыковываемого окна.</help>
               <defaultValue>1</defaultValue>
             </field>
-            <field description="Описание" name="description" type="S">
+            <field description="Заголовок" name="dockTitle" type="S">
               <help>Текст заголовка пристыковываемого окна.</help>
+              <aliases>
+                <alias>description</alias>
+              </aliases>
               <defaultValue/>
             </field>
-            <field description="Пиктограмма" name="icon" type="T">
+            <field description="Иконка окна" name="dockIcon" type="T">
               <defaultValue>
                 <table>
                   <format maxRecords="2147483647"/>
@@ -1904,15 +1892,17 @@
                 <option description="С прокруткой">scrollable</option>
                 <option description="Без прокрутки">dockable</option>
               </selectionValues>
+              <help>&lt;p&gt;Поведение инструментальной панели, если содержимое не помещается на экране:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;С прокруткой&lt;/b&gt; — если содержимое выходит за пределы экрана, появляется вертикальная полоса прокрутки.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Без прокрутки&lt;/b&gt; — содержимое инструментальной панели масштабируется по размеру экрана.&lt;/li&gt;&lt;/ul&gt;</help>
               <defaultValue>dockable</defaultValue>
             </field>
-            <field description="Показывать фон сетки" name="showGridBackground" type="S">
+            <field description="Показывать сетку" name="showGridBackground" type="S">
               <selectionValues>
                 <option description="Отсутствует">none</option>
                 <option description="Строки">rows</option>
                 <option description="Колонки">columns</option>
                 <option description="Строки и столбцы">rowsAndColumns</option>
               </selectionValues>
+              <help>Определяет, какие линии сетки отображаются. Это свойство применимо только к режиму редактирования и не влияет на обычную работу информационной панели.</help>
               <defaultValue>rowsAndColumns</defaultValue>
             </field>
             <field description="Включить привязку к сетке" name="snapToGrid" type="B">
@@ -1977,14 +1967,12 @@
                 </table>
               </defaultValue>
             </field>
-            <field description="Текущее разрешение экрана" name="currentBreakpoint" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
+            <field description="Текущая точка перелома" name="currentBreakpoint" type="S">
+              <help>Имя активной точки перелома инструментальной панели. Должно совпадать с именем, определённым в таблице Точки перелома. В процессе редактирования инструментальной панели это свойство автоматически обновляется при выборе точки перелома в верхней панели инструментов Web UI Builder. В штатном режиме работы инструментальной панели это свойство автоматически обновляется при запуске инструментальной панели и при изменении размера окна браузера.</help>
+              <defaultValue>none</defaultValue>
             </field>
-            <field description="Разрешение экрана по умолчанию" name="defaultBreakpoint" type="S">
+            <field description="Точка перелома по умолчанию" name="defaultBreakpoint" type="S">
+              <help>&lt;p&gt;Имя точки перелома из таблицы &lt;b&gt;Точки перелома&lt;/b&gt;, настройки которой используются, если для текущей точки перелома не заданы собственные стили и значения свойств.&lt;/p&gt;&lt;p&gt;Обычно указывается точка перелома None.&lt;/p&gt;&lt;p&gt;Если настройки компонента отсутствуют как для текущей точки перелома, так и для точки перелома по умолчанию, компонент не отображается на инструментальной панели.&lt;/p&gt;</help>
               <defaultValue>none</defaultValue>
             </field>
             <field description="Дополнительные свойства" name="customProperties" type="T">
@@ -2509,35 +2497,6 @@
       </entry>
       <entry>
         <int>16</int>
-        <format maxRecords="1" minRecords="1">
-          <fields>
-            <field description="Имя" name="name" type="S">
-              <validators contentType="base64">HEweMSAyMTQ3NDgzNjQ3HQ==</validators>
-              <defaultValue/>
-            </field>
-            <field description="Описание" name="description" type="S">
-              <defaultValue/>
-            </field>
-            <field description="Значение" extendableSelectionValues="true" name="value" type="S">
-              <selectionValues>
-                <option description="None">0</option>
-                <option description="Mobile">320</option>
-                <option description="Full HD">1920</option>
-                <option description="Laptop">1366</option>
-                <option description="Tablet">800</option>
-                <option description="Ultra HD">3840</option>
-                <option description="QHD">2560</option>
-              </selectionValues>
-              <defaultValue>320</defaultValue>
-            </field>
-            <field description="Активный" name="enabled" type="B">
-              <defaultValue>1</defaultValue>
-            </field>
-          </fields>
-        </format>
-      </entry>
-      <entry>
-        <int>17</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Имя" name="name" type="S">
@@ -2793,7 +2752,7 @@
         </format>
       </entry>
       <entry>
-        <int>18</int>
+        <int>17</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Имя" name="name" nullable="true" type="S">
@@ -2821,16 +2780,6 @@
             </field>
             <field description="Показать заголовок" name="showHeader" type="B">
               <defaultValue>1</defaultValue>
-            </field>
-            <field description="Описание" name="description" type="S">
-              <defaultValue/>
-            </field>
-            <field description="Пиктограмма" name="icon" type="T">
-              <defaultValue>
-                <table>
-                  <format maxRecords="2147483647"/>
-                </table>
-              </defaultValue>
             </field>
             <field description="Максимизируемый" name="maximizable" type="B">
               <defaultValue>1</defaultValue>
@@ -2878,9 +2827,6 @@
               <defaultValue/>
             </field>
             <field description="Order ID" name="orderId" type="I">
-              <defaultValue>0</defaultValue>
-            </field>
-            <field description="Активный" name="active" type="B">
               <defaultValue>0</defaultValue>
             </field>
             <field description="Горизонтальное Положение" name="gridx" type="I">
@@ -3367,11 +3313,36 @@
                 </table>
               </defaultValue>
             </field>
+            <field description="Активная вкладка" name="dockActive" type="B">
+              <help>Указывает, что пристыковываемый компонент является выбранной вкладкой в случае, если компонент находится на панели с вкладками.</help>
+              <aliases>
+                <alias>active</alias>
+              </aliases>
+              <defaultValue>0</defaultValue>
+            </field>
+            <field description="Заголовок" name="dockTitle" type="S">
+              <help>Текст заголовка пристыковываемого окна.</help>
+              <aliases>
+                <alias>description</alias>
+              </aliases>
+              <defaultValue/>
+            </field>
+            <field description="Иконка окна" name="dockIcon" type="T">
+              <help>Изображение, которое будет использоваться в качестве иконки прикрепляемого окна.</help>
+              <aliases>
+                <alias>icon</alias>
+              </aliases>
+              <defaultValue>
+                <table>
+                  <format maxRecords="2147483647"/>
+                </table>
+              </defaultValue>
+            </field>
           </fields>
         </format>
       </entry>
       <entry>
-        <int>19</int>
+        <int>18</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Точка остановы" name="breakpoint" nullable="true" type="S">
@@ -3391,7 +3362,7 @@
         </format>
       </entry>
       <entry>
-        <int>20</int>
+        <int>19</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Уникальный идентификатор" name="uid" type="S">
@@ -3441,7 +3412,7 @@
         </format>
       </entry>
       <entry>
-        <int>21</int>
+        <int>20</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Столбец" name="COMPONENT_SMART_FILTER_COLUMN" type="S">
@@ -3471,7 +3442,7 @@
         </format>
       </entry>
       <entry>
-        <int>22</int>
+        <int>21</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Наличие Значений" name="PANE_FIELD_VALUE_PRESENCE" type="I">
@@ -3555,7 +3526,7 @@
         </format>
       </entry>
       <entry>
-        <int>23</int>
+        <int>22</int>
         <format maxRecords="2147483647">
           <fields>
             <field name="value" type="D">
@@ -3565,7 +3536,7 @@
         </format>
       </entry>
       <entry>
-        <int>24</int>
+        <int>23</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Начальная дата" name="startDate" type="D">
@@ -3578,7 +3549,7 @@
         </format>
       </entry>
       <entry>
-        <int>25</int>
+        <int>24</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Наличие Значений" name="PANE_FIELD_VALUE_PRESENCE" type="I">
@@ -3641,7 +3612,7 @@
         </format>
       </entry>
       <entry>
-        <int>26</int>
+        <int>25</int>
         <format maxRecords="2147483647">
           <fields>
             <field name="value" type="S">
@@ -3651,7 +3622,7 @@
         </format>
       </entry>
       <entry>
-        <int>27</int>
+        <int>26</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Наличие Значений" name="PANE_FIELD_VALUE_PRESENCE" type="I">
@@ -3701,7 +3672,7 @@
         </format>
       </entry>
       <entry>
-        <int>28</int>
+        <int>27</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field name="value" nullable="true" type="I">
@@ -3713,7 +3684,7 @@
         </format>
       </entry>
       <entry>
-        <int>29</int>
+        <int>28</int>
         <format maxRecords="2147483647">
           <fields>
             <field name="value" type="I">
@@ -3723,7 +3694,7 @@
         </format>
       </entry>
       <entry>
-        <int>30</int>
+        <int>29</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Наличие Значений" name="PANE_FIELD_VALUE_PRESENCE" type="I">
@@ -3753,7 +3724,7 @@
         </format>
       </entry>
       <entry>
-        <int>31</int>
+        <int>30</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Оригинальный формат" name="originalFormat" type="T">
@@ -3770,7 +3741,7 @@
         </format>
       </entry>
       <entry>
-        <int>32</int>
+        <int>31</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Имя столбца идентификатора записи" name="idColumnName" type="S">
@@ -3789,7 +3760,7 @@
         </format>
       </entry>
       <entry>
-        <int>33</int>
+        <int>32</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Маска контекстов" editor="contextmask" icon="fi_context" keyfield="true" name="mask" type="S">
@@ -3808,7 +3779,7 @@
         </format>
       </entry>
       <entry>
-        <int>34</int>
+        <int>33</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="ID события" hidden="true" name="id" type="L">
@@ -3909,7 +3880,7 @@
         </format>
       </entry>
       <entry>
-        <int>35</int>
+        <int>34</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
             <field hidden="true" name="oldname" type="S">
@@ -4085,7 +4056,7 @@
         </format>
       </entry>
       <entry>
-        <int>36</int>
+        <int>35</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Опции редактора" name="options" type="S">
@@ -4095,7 +4066,7 @@
         </format>
       </entry>
       <entry>
-        <int>37</int>
+        <int>36</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
             <field description="Значение" keyfield="true" name="value" nullable="true" type="S">
@@ -4112,7 +4083,7 @@
         </format>
       </entry>
       <entry>
-        <int>38</int>
+        <int>37</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
             <field description="Тип" name="validator" nullable="true" type="S">
@@ -4137,7 +4108,7 @@
         </format>
       </entry>
       <entry>
-        <int>39</int>
+        <int>38</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Контекст" name="context" type="S">
@@ -4153,7 +4124,7 @@
         </format>
       </entry>
       <entry>
-        <int>40</int>
+        <int>39</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="value" name="value" type="I">
@@ -4163,7 +4134,7 @@
         </format>
       </entry>
       <entry>
-        <int>41</int>
+        <int>40</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Уровень" name="level" type="I">
@@ -4187,7 +4158,7 @@
         </format>
       </entry>
       <entry>
-        <int>42</int>
+        <int>41</int>
         <format maxRecords="2147483647">
           <fields>
             <field description="Имя" name="name" type="S">
@@ -4315,7 +4286,7 @@
         </format>
       </entry>
       <entry>
-        <int>43</int>
+        <int>42</int>
         <format maxRecords="1">
           <fields>
             <field description="ID события" hidden="true" name="id" type="L">
@@ -4370,7 +4341,7 @@
         </format>
       </entry>
       <entry>
-        <int>44</int>
+        <int>43</int>
         <format maxRecords="1" minRecords="1">
           <fields>
             <field description="Путь" name="path" nullable="true" type="S">
@@ -4628,7 +4599,7 @@
         </format>
       </entry>
       <entry>
-        <int>45</int>
+        <int>44</int>
         <format maxRecords="2147483647" reorderable="true">
           <fields>
             <field description="Тип" hidden="true" name="type" type="S">
